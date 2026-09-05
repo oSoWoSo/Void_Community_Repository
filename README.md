@@ -336,5 +336,5 @@ Create PR
 | xdg-desktop-portal-hyprland | 1.3.11 | https://github.com/hyprwm/xdg-desktop-portal-hyprland | zenobit |  |
 | xut | 0.4.2 | https://codeberg.org/mobinmob/xut | mobinmob |  |
 | xxtools-git | 0.0.0 | https://github.com/Piraty/xxtools | zenobit |  |
-| zen-browser-bin | 1.21.16b | https://github.com/zen-browser/desktop | Bella109 | x86_64 aarch64 |
+| zen-browser-bin | 1.22b | https://github.com/zen-browser/desktop | Bella109 | x86_64 aarch64 |
 | zig | 0.16.0 | https://ziglang.org | Bella109 | x86_64* aarch64* |
