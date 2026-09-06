@@ -295,6 +295,7 @@ Create PR
 | raysession | 0.18.0 | https://raysession.tuxfamily.org/ | Trve_AY |  |
 | rebos | 3.5.2 | https://gitlab.com/Oglo12/rebos | zenobit |  |
 | rgc | 1.2.0 | https://github.com/flameshikari/rgc | zenobit |  |
+| river-compositor | 0.4.8 | https://codeberg.org/river/river | LinuxNation | ~i686* ~armv6l* ~armv7l* |
 | runkit | 1.4.0 | https://github.com/Letdown2491/runkit | zenobit |  |
 | rustdesk | 1.4.9 | https://github.com/rustdesk/rustdesk | Bella109 | x86_64* |
 | sdkmanager | 0.7.0 | https://gitlab.com/fdroid/sdkmanager | zenobit |  |

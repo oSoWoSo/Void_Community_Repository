@@ -259,6 +259,7 @@ on:
         - raysession
         - rebos
         - rgc
+        - river-compositor
         - runkit
         - rustdesk
         - sdkmanager
