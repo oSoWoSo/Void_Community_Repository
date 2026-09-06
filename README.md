@@ -169,6 +169,7 @@ Create PR
 | faugus-launcher | 2.2.2 | https://github.com/Faugus/faugus-launcher | zenobit |  |
 | fcitx5-lotus | 3.5.8 | https://github.com/LotusInputMethod/fcitx5-lotus | Coolllyn |  |
 | fcitx5-lotus-settings | 3.5.8 | https://github.com/LotusInputMethod/fcitx5-lotus | Coolllyn |  |
+| flyline | 1.7.1 | https://github.com/HalFrgrd/flyline | zenobit |  |
 | forgejo-runner | 13.1.0 | https://code.forgejo.org/forgejo/runner | zenobit |  |
 | FreeTube | 0.25.1 | https://github.com/FreeTubeApp/FreeTube | Bella109 | x86_64 |
 | ftxui | 7.0.3 | https://github.com/ArthurSonzogni/FTXUI | zenobit |  |

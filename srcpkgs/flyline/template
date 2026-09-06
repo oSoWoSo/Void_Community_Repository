@@ -1,0 +1,27 @@
+# Template file for 'flyline'
+pkgname=flyline
+version=1.7.1
+revision=1
+build_style=cargo
+hostmakedepends="pkg-config"
+depends="bash"
+short_desc="Bash plugin to replace readline for a modern line editing experience"
+maintainer="zenobit <zen@osowoso.org>"
+license="GPL-3.0-only, MIT"
+homepage="https://github.com/HalFrgrd/flyline"
+distfiles="https://github.com/HalFrgrd/flyline/archive/refs/tags/v${version}.tar.gz"
+checksum=067b68de0d1484a43fb77124fd2544f19b3ee30691635d038e94f13868ddb27f
+pre_check() {
+	# Remove failing tests
+	rm tests/docker_integration_tests.rs
+	echo -e "\n\nDocker integration tests removed\n\n"
+}
+
+do_install() {
+	vbin target/${RUST_TARGET}/release/libflyline.so flyline
+}
+
+post_install() {
+	vdoc README.md
+	vlicense LICENSE-MIT
+}
