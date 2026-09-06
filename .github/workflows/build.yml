@@ -289,6 +289,7 @@ on:
         - typobuster
         - undelete-btrfs
         - vbm
+        - vibepanel
         - Vish
         - vm-curator
         - void-hardwaremanager-git

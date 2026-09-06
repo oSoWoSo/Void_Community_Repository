@@ -325,6 +325,7 @@ Create PR
 | typobuster | 1.0.0 | https://github.com/nwg-piotr/typobuster | zenobit |  |
 | undelete-btrfs | 1.0 | https://github.com/danthem/undelete-btrfs | zenobit |  |
 | vbm | 1.0.2 | https://codeberg.org/oSoWoSo/vbm | zenobit |  |
+| vibepanel | 0.16.1 | https://github.com/prankstr/vibepanel | LinuxNation |  |
 | Vish | 1.1.3 | https://github.com/Lluciocc/Vish | zenobit |  |
 | vm-curator | 1.4.0 | https://github.com/mroboff/vm-curator | zenobit |  |
 | void-hardwaremanager-git | 0.0.0 | https://codeberg.org/pinguin-void/Void-Driver-App | zenobit | x86_64 aarch64 |

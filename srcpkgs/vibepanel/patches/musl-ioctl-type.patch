@@ -1,0 +1,21 @@
+Fix musl build: libc::ioctl's request parameter is libc::Ioctl, which is
+c_int on musl but c_ulong on glibc. Compute the ioctl request in c_ulong
+and cast to the platform's Ioctl type.
+
+--- a/crates/vibepanel/src/services/gpu.rs
++++ b/crates/vibepanel/src/services/gpu.rs
+@@ -110,11 +110,11 @@
+ const IOC_SIZESHIFT: u8 = IOC_TYPESHIFT + IOC_TYPEBITS;
+ const IOC_DIRSHIFT: u8 = IOC_SIZESHIFT + IOC_SIZEBITS;
+ 
+-const fn linux_iow(nr: u8, size: usize) -> libc::c_ulong {
+-    ((IOC_WRITE as libc::c_ulong) << IOC_DIRSHIFT)
++const fn linux_iow(nr: u8, size: usize) -> libc::Ioctl {
++    (((IOC_WRITE as libc::c_ulong) << IOC_DIRSHIFT)
+         | ((b'd' as libc::c_ulong) << IOC_TYPESHIFT)
+         | ((nr as libc::c_ulong) << IOC_NRSHIFT)
+-        | ((size as libc::c_ulong) << IOC_SIZESHIFT)
++        | ((size as libc::c_ulong) << IOC_SIZESHIFT)) as libc::Ioctl
+ }
+ 
+ #[repr(C)]
