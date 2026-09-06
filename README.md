@@ -230,6 +230,8 @@ Create PR
 | libcprime | 5.0.1 | https://gitlab.com/cubocore/libcprime | zenobit |  |
 | librewolf-bin | 155.0.1 | https://librewolf.net | zenobit | x86_64 aarch64 |
 | libspng | 0.7.4 | https://libspng.org/ | zenobit |  |
+| libtsm | 4.7.1 | https://github.com/kmscon/libtsm | zenobit |  |
+| libtsm-devel | 4.7.1 | https://github.com/kmscon/libtsm | zenobit |  |
 | linuxcommandlibrary | 4.5.0 | http://linuxcommandlibrary.com/ | zenobit | x86_64 aarch64 |
 | linuxcommandlibrary-desktop | 4.5.0 | http://linuxcommandlibrary.com/ | zenobit | x86_64 aarch64 |
 | llama.cpp | 10568 | https://github.com/ggml-org/llama.cpp | zenobit |  |

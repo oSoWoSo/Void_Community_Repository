@@ -171,6 +171,8 @@
 !/srcpkgs/libcprime
 !/srcpkgs/librewolf-bin
 !/srcpkgs/libspng
+!/srcpkgs/libtsm
+!/srcpkgs/libtsm-devel
 !/srcpkgs/linuxcommandlibrary
 !/srcpkgs/linuxcommandlibrary-desktop
 !/srcpkgs/llama.cpp
