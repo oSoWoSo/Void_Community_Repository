@@ -55,6 +55,7 @@ on:
         - android-sdk
         - aquamarine
         - brave-browser-bin
+        - brave-origin-bin
         - brow6el
         - btrfs-progs
         - bulletty

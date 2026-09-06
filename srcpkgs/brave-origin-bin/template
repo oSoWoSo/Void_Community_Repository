@@ -1,0 +1,62 @@
+# Template file for 'brave-origin-bin'
+pkgname=brave-origin-bin
+version=1.94.121
+revision=1
+archs="x86_64 aarc64"
+create_wrksrc=yes
+hostmakedepends="unzip"
+short_desc="Minimalist browser from the makers of Brave (binary)"
+maintainer="zenobit <zen@osowoso.org>"
+license="MPL-2.0"
+homepage="https://www.brave.com/"
+changelog="https://brave.com/latest/"
+distfiles="https://github.com/brave/brave-browser/releases/download/v${version}/brave-origin-${version}-linux-amd64.zip
+ https://github.com/brave/brave-browser/releases/download/v${version}/brave-origin-${version}-linux-arm64.zip"
+checksum="999655c6c47a6078b5b18965024dc5b5cc82b4cf82461578dc724d09519fb520
+ 85b96a8881004f3e9310664069b9fc6d3f4c653ba79b5c75d61c1d078c23bbb8"
+skip_extraction=yes
+nostrip=yes
+
+do_extract() {
+	case "$XBPS_TARGET_MACHINE" in
+		x86_64) unzip ${XBPS_SRCDISTDIR}/${pkgname}-${version}/brave-origin-${version}-linux-amd64.zip ;;
+		aarch64) unzip ${XBPS_SRCDISTDIR}/${pkgname}-${version}/brave-origin-${version}-linux-arm64.zip ;;
+	esac
+}
+
+do_install() {
+	vbin ${FILESDIR}/brave-origin
+	vlicense LICENSE
+
+	vmkdir opt/brave-origin
+	for f in brave \
+		brave-origin \
+		chrome-management-service \
+		chrome-sandbox \
+		chrome_crashpad_handler \
+		brave_100_percent.pak \
+		brave_200_percent.pak \
+		brave_resources.pak \
+		chrome_100_percent.pak \
+		chrome_200_percent.pak \
+		default-app-block \
+		icudtl.dat \
+		libqt5_shim.so \
+		libqt6_shim.so \
+		libvk_swiftshader.so \
+		libvulkan.so.1 \
+		resources.pak \
+		v8_context_snapshot.bin \
+		vk_swiftshader_icd.json \
+		MEIPreload \
+		PrivacySandboxAttestationsPreloaded \
+		resources \
+		apparmor.d \
+		locales; do
+			vcopy $f opt/brave-origin
+	done
+
+	for size in 16 24 32 48 64 128 256; do
+		vinstall product_logo_${size}.png 644 usr/share/icons/hicolor/${size}x${size}/apps brave-origin.png
+	done
+}
