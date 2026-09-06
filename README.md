@@ -220,6 +220,7 @@ Create PR
 | hyprwayland-scanner | 0.4.5 | https://github.com/hyprwm/hyprwayland-scanner | zenobit |  |
 | kairo | 1.7.3 | https://github.com/programmersd21/kairo | nerdyslacker |  |
 | kando | 2.3.1 | https://kando.menu | zenobit | x86_64 aarch64 |
+| kmscon | 10.0.3 | https://github.com/kmscon/kmscon | zenobit |  |
 | lazyrsync | 0.3.0 | https://github.com/westpoint-io/lazyrsync | zenobit |  |
 | lemonade-server | 10.6.0 | https://github.com/lemonade-sdk/lemonade | zenobit |  |
 | lgogdownloader | 3.18 | https://github.com/Sude-/lgogdownloader | zenobit |  |

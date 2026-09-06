@@ -161,6 +161,7 @@
 !/srcpkgs/hyprwayland-scanner
 !/srcpkgs/kairo
 !/srcpkgs/kando
+!/srcpkgs/kmscon
 !/srcpkgs/lazyrsync
 !/srcpkgs/lemonade-server
 !/srcpkgs/lgogdownloader
