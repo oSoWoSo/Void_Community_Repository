@@ -24,16 +24,13 @@ jobs:
       - name: Regenerate and upload main page
         env:
           SURFER_TOKEN: ${{ secrets.SURFER_TOKEN }}
+          TOKEN: ${{ secrets.WORKFLOWS }}
         run: |
+          set -e
           sudo apt-get install -y pandoc
           ./ocoman -m
           echo "Published to https://repo.osowoso.org/" >> $GITHUB_STEP_SUMMARY
 
-      - name: Push results
-        env:
-          TOKEN: ${{ secrets.WORKFLOWS }}
-        run: |
-          set -e
           git config --global user.name "oSoWoso-bot"
           git config --global user.email "mail@osowoso.org"
           # Fail loudly if any of these files is missing -- they are all
