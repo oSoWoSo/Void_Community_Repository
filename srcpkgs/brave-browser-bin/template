@@ -1,34 +1,70 @@
 # Template file for 'brave-browser-bin'
 pkgname=brave-browser-bin
-version=1.93.138
+version=1.94.121
 revision=1
 archs="x86_64 aarch64"
-hostmakedepends="rpmextract"
+hostmakedepends="unzip"
 short_desc="One of the most private browsers built on top off Chromium project"
 maintainer="zenobit <zen@osowoso.org>"
 license="MPL-2.0"
 homepage="https://www.brave.com/"
 changelog="https://raw.githubusercontent.com/brave/brave-browser/refs/heads/master/CHANGELOG_DESKTOP.md"
-distfiles="https://github.com/brave/brave-browser/releases/download/v${version}/brave-browser-${version}-1.x86_64.rpm
- https://github.com/brave/brave-browser/releases/download/v${version}/brave-browser-${version}-1.aarch64.rpm"
-checksum="2e4c19300339d0c5dd73841c5ee441c643e981a0f8ab892582929ee87769801d
- 59265b70746ba09a91cbf5dcdfc2e542286e03bf01192509d152dfa30593c098"
+distfiles="https://github.com/brave/brave-browser/releases/download/v${version}/brave-browser-${version}-linux-amd64.zip
+ https://github.com/brave/brave-browser/releases/download/v${version}/brave-browser-${version}-linux-arm64.zip"
+checksum="33a0c940037d97844c1848907b81de4418b98d07287f46220d07d88543b8a4b5
+ 23be774849966e7de35429bde652cb0e583237d803fb8f596422419fdea1be8d"
 replaces="brave-browser-arm-bin>=0"
+skip_extraction=yes
+repository=nonfree
+restricted=yes
+nostrip=yes
 
 do_extract() {
-	local archiv
 	case "$XBPS_TARGET_MACHINE" in
-		x86_64) archiv="brave-browser-${version}-1.x86_64.rpm" ;;
-		aarch64) archiv="brave-browser-${version}-1.aarch64.rpm" ;;
+		x86_64)
+			archiv="brave-browser-${version}-linux-amd64.zip"
+			;;
+		aarch64)
+			archiv="brave-browser-${version}-linux-arm64.zip"
+			;;
 	esac
-	vextract "${XBPS_SRCDISTDIR}/${pkgname}-${version}/${archiv}"
+	unzip ${XBPS_SRCDISTDIR}/${pkgname}-${version}/${archiv}
 }
 
 do_install() {
-	rm -f etc/cron.daily/brave-browser
-	vcopy * /
+	vbin ${FILESDIR}/brave
+	vlicense LICENSE
+
+	vmkdir opt/brave
+	for f in brave \
+		brave-browser \
+		chrome-management-service \
+		chrome-sandbox \
+		chrome_crashpad_handler \
+		brave_100_percent.pak \
+		brave_200_percent.pak \
+		brave_resources.pak \
+		chrome_100_percent.pak \
+		chrome_200_percent.pak \
+		default-app-block \
+		icudtl.dat \
+		libqt5_shim.so \
+		libqt6_shim.so \
+		libvk_swiftshader.so \
+		libvulkan.so.1 \
+		resources.pak \
+		v8_context_snapshot.bin \
+		vk_swiftshader_icd.json \
+		MEIPreload \
+		PrivacySandboxAttestationsPreloaded \
+		resources \
+		apparmor.d \
+		locales; do
+			vcopy "$f" opt/brave
+	done
+
 	for size in 16 24 32 48 64 128 256; do
-		vmkdir usr/share/icons/hicolor/${size}x${size}/apps
-		vcopy opt/brave.com/brave/product_logo_${size}.png usr/share/icons/hicolor/${size}x${size}/apps/brave-browser.png
+		vinstall product_logo_${size}.png 644 \
+			usr/share/icons/hicolor/${size}x${size}/apps brave-browser.png
 	done
 }

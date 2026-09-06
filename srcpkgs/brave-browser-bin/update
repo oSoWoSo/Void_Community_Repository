@@ -1,2 +1,2 @@
-site="https://api.github.com/repos/brave/brave-browser/releases/latest"
-pattern='"tag_name": *"v\K[\d.]+(?=")'
+site="https://github.com/brave/brave-browser/releases/latest"
+pattern='(?<=/tag/v)\d+\.\d+\.\d+(?=")'
