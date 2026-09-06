@@ -496,11 +496,16 @@ jobs:
           xbps-rindex -S --privkey /tmp/private.pem "$NEW_PKGS_DIR"/*.xbps
           rm -f /tmp/private.pem
 
-          if ! BUILDDIR="$NEW_PKGS_DIR" "${GITHUB_WORKSPACE}/extra/ocoman" -p; then
+          cd "${GITHUB_WORKSPACE}/extra/" || exit 1
+          if BUILDDIR="$NEW_PKGS_DIR" ./ocoman -p; then
+            echo "Packages updated"
+          else
             echo "ERROR: Command 'ocoman -p' failed!"
             exit 1
           fi
-          if ! "${GITHUB_WORKSPACE}/extra/ocoman" -a; then
+          if ./ocoman -a; then
+            echo "Arch pages updated"
+          else
             echo "ERROR: Command 'ocoman -a' failed!"
             exit 1
           fi
