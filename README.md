@@ -100,7 +100,7 @@ Create PR
 | caerus | 0.6.0 | https://github.com/mendescotta/Caerus | zenobit |  |
 | candy-icons-git | 0.11.1 | https://www.opendesktop.org/p/1305251/ | Trve_AY |  |
 | cc-switch | 3.20.1 | https://github.com/farion1231/cc-switch | zenobit | x86_64* aarch64* |
-| cliamp | 2.0.1 | https://github.com/bjarneo/cliamp | zenobit |  |
+| cliamp | 2.1.0 | https://github.com/bjarneo/cliamp | zenobit |  |
 | clitest | 0.5.0 | https://github.com/aureliojargas/clitest | zenobit |  |
 | Community-Repositories-Collection | 1 | https://repo.osowoso.org | zenobit |  |
 | corekeyboard | 5.0.1 | https://gitlab.com/cubocore/coreapps/corekeyboard | zenobit |  |
