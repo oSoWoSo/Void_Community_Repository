@@ -322,6 +322,7 @@ Create PR
 | tomlplusplus-devel | 3.4.0 | https://marzer.github.io/tomlplusplus/ | zenobit |  |
 | Trilium | 0.105.0 | https://github.com/TriliumNext/Trilium | zenobit |  |
 | tufw | 0.2.8 | https://github.com/peltho/tufw | zenobit |  |
+| tuios | 0.7.0 | https://github.com/Gaurav-Gosain/tuios | zenobit |  |
 | tuisic | 2.5.2 | https://github.com/Dark-Kernel/tuisic | zenobit |  |
 | typobuster | 1.0.0 | https://github.com/nwg-piotr/typobuster | zenobit |  |
 | undelete-btrfs | 1.0 | https://github.com/danthem/undelete-btrfs | zenobit |  |

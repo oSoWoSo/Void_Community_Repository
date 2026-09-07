@@ -286,6 +286,7 @@ on:
         - tomlplusplus-devel
         - Trilium
         - tufw
+        - tuios
         - tuisic
         - typobuster
         - undelete-btrfs
