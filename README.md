@@ -33,10 +33,10 @@ Pick your architecture there and you will see
 - nocross templates build support (GitHub aarch runner)
 - Binary repository https://repo.osowoso.org/
 
-## What we don't build?
+## What we don't build? (From source)
 Browsers: It's waste of energy and when you finish building is maybe already new version out  
 We provide repackaged binaries, they all have `-bin` after <pkgname>  
-(You can use AppImages[AM](https://github.com/ivan-hc/AM) and flatpaks they are usualy always latest)  
+(You can use AppImages and manage them with [AM](https://github.com/ivan-hc/AM), or flatpaks. They are usualy always latest)  
 
 ## How to use
 in https://repo.osowoso.org/`(architecture)`
