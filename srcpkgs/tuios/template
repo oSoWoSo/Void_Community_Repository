@@ -1,8 +1,9 @@
 # Template file for 'tuios'
 pkgname=tuios
 version=0.7.0
-revision=1
+revision=2
 build_style=go
+build_helper=qemu
 go_import_path="github.com/Gaurav-Gosain/tuios"
 go_package="./cmd/tuios"
 short_desc="Terminal UI OS (Terminal Multiplexer)"
@@ -14,4 +15,9 @@ checksum=a803c947890abf8f82f77f287eabe360d4f4aa25dc13059d4264d626a9771daf
 
 post_install() {
 	vlicense LICENSE
+	f=$(find "$GOPATH/bin" -name $pkgname)
+	for shell in bash fish zsh; do
+		vtargetrun "$f" completion "$shell" > "completion.$shell"
+		vcompletion "completion.$shell" "$shell"
+	done
 }
