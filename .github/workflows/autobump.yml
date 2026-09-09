@@ -125,25 +125,29 @@ jobs:
         timeout-minutes: 60
         run: |
           export PATH="/opt/xbps/usr/bin/:$PATH"
-          set +e
           cd /void-packages
-          sudo -Eu builder env XBPS_DISTDIR=/void-packages XBPS_MASTERDIR=/void-packages/masterdir XBPS_HOSTDIR=/void-packages/hostdir xxautobump "$TEMPLATE" >/tmp/autobump.out 2>/tmp/autobump.err
+          OLD_VERSION=$(sed -n 's|^version=||p' "srcpkgs/$TEMPLATE/template" | head -1 | tr -d '"')
+          set +e
+          sudo -Eu builder env XBPS_DISTDIR=/void-packages XBPS_MASTERDIR=/void-packages/masterdir XBPS_HOSTDIR=/void-packages/hostdir xxautobump "$TEMPLATE" 2>&1
           rc=$?
           set -e
-          cat /tmp/autobump.out
-          cat /tmp/autobump.err >&2
           echo "rc=$rc" >> "$GITHUB_OUTPUT"
-          if grep -qxF "$TEMPLATE" /tmp/autobump.out; then
-            echo "bumped=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "bumped=false" >> "$GITHUB_OUTPUT"
-          fi
           if [ -f "srcpkgs/$TEMPLATE/template" ]; then
             VERSION=$(sed -n 's|^version=||p' "srcpkgs/$TEMPLATE/template" | head -1 | tr -d '"')
           else
             VERSION=
           fi
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          if [ $rc -eq 0 ] && [ -n "$VERSION" ] && [ "$VERSION" != "$OLD_VERSION" ]; then
+            echo "bumped=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "bumped=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Sync bumped template back to repo
+        if: steps.bump.outputs.bumped == 'true'
+        run: |
+          cp -v "/void-packages/srcpkgs/$TEMPLATE/template" "extra/srcpkgs/$TEMPLATE/template"
 
       - name: Comment when nothing to bump
         if: steps.marker.outputs.handled == 'false' && steps.whitelist.outputs.in_list == 'true' && steps.bump.outputs.bumped == 'false'
