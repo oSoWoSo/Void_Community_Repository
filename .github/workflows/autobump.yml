@@ -1,0 +1,228 @@
+name: autobump
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: autobump-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  autobump:
+    name: Autobump ${{ github.event.issue.number }}
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'package-update')
+    container:
+      image: ghcr.io/osowoso/oco-builder-x86_64:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+      options: --platform linux/amd64 --privileged
+      volumes:
+        - /dev:/dev
+    env:
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+      ISSUE_BODY: ${{ github.event.issue.body }}
+      OCO_TOKEN: ${{ secrets.WORKFLOWS }}
+      GH_REPO: oSoWoSo/vOid_Community_repOsitory
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v6
+        with:
+          path: extra
+
+      - name: Prepare container
+        uses: ./extra/.github/actions/prepare-container
+
+      - name: Install xxtools-git
+        run: |
+          set -e
+          for i in 1 2 3; do
+            if sudo xbps-install -y xxtools-git; then
+              break
+            fi
+            sleep 5
+          done
+          command -v xxautobump || {
+            echo "::error::xxautobump not available (xxtools-git install failed)"
+            exit 1
+          }
+
+      - name: Extract template from issue body
+        id: template
+        run: |
+          PKG=$(printf '%s\n' "$ISSUE_BODY" |
+            sed -n 's|.*\*\*Package:\*\*[^`]*`\([^`]*\)`.*|\1|p' |
+            head -1)
+          if [ -z "$PKG" ]; then
+            PKG=$(printf '%s\n' "$ISSUE_BODY" |
+              sed -n 's|.*<!-- package-update:\([^>]*\) -->.*|\1|p' |
+              head -1)
+          fi
+          PKG=$(printf '%s' "$PKG" | tr -d '[:space:]')
+          if [ -z "$PKG" ]; then
+            echo "::error::could not extract package name from issue body"
+            exit 1
+          fi
+          # opencode-bin does not exist yet; the source template is named opencode.
+          [ "$PKG" = "opencode-bin" ] && PKG=opencode
+          # Hidden marker in issue body is resolve	lowercased; resolve resolve real template name case-insensitively.
+          found=$(find extra/srcpkgs -maxdepth 1 -mindepth 1 -type d -iname "$PKG" -printf '%f\n' 2>/dev/null | head -1)
+          [ -z "$found" ] || PKG="$found"
+          TEMPLATE="$PKG"
+          echo "TEMPLATE=$TEMPLATE" >> "$GITHUB_ENV"
+          echo "template=$TEMPLATE" >> "$GITHUB_OUTPUT"
+
+      - name: Skip if already handled
+        id: marker
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if curl -fsSL -H "Authorization: Bearer ${GH_TOKEN}" \
+              "https://api.github.com/repos/${GH_REPO}/issues/${ISSUE_NUMBER}/comments?per_page=100" \
+              | grep -q '<!-- autobump:'; then
+            echo "handled=true" >> "$GITHUB_OUTPUT"
+            echo "Already handled: skipping"
+          else
+            echo "handled=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Whitelist check
+        id: whitelist
+        if: steps.marker.outputs.handled == 'false'
+        run: |
+          if ! grep -qxF "$TEMPLATE" extra/src/autobump-pkgs; then
+            echo "in_list=false" >> "$GITHUB_OUTPUT"
+            curl -fsSL -X POST -H "Authorization: Bearer ${OCO_TOKEN:-$GITHUB_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${GH_REPO}/issues/${ISSUE_NUMBER}/comments" \
+              -d "$(printf '{"body":"Autobump skipped: **%s** is not listed in `src/autobump-pkgs`.\\n\\nAdd the template there to enable automatic updates."' "$TEMPLATE" )" || true
+            exit 0
+          fi
+          echo "in_list=true" >> "$GITHUB_OUTPUT"
+
+      - name: Merge templates and edit shlibs
+        if: steps.whitelist.outputs.in_list == 'true'
+        run: |
+          SHLIBS_FILE=/void-packages/common/shlibs extra/ocoman -l
+          echo "==> Copying templates..."
+          for template in extra/srcpkgs/*; do
+            template_name=$(basename "$template")
+            rm -rf "/void-packages/srcpkgs/$template_name"
+            cp -rv "$template" /void-packages/srcpkgs/
+          done
+          chown -R builder:builder /void-packages/srcpkgs /void-packages/common
+
+      - name: Run xxautobump
+        id: bump
+        if: steps.whitelist.outputs.in_list == 'true'
+        timeout-minutes: 30
+        run: |
+          export PATH="/opt/xbps/usr/bin/:$PATH"
+          set +e
+          cd /void-packages
+          sudo -Eu builder env XBPS_DISTDIR=/void-packages XBPS_MASTERDIR=/void-packages/masterdir XBPS_HOSTDIR=/void-packages/hostdir xxautobump "$TEMPLATE" >/tmp/autobump.out 2>/tmp/autobump.err
+          rc=$?
+          set -e
+          cat /tmp/autobump.out
+          cat /tmp/autobump.err >&2
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          if grep -qxF "$TEMPLATE" /tmp/autobump.out; then
+            echo "bumped=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "bumped=false" >> "$GITHUB_OUTPUT"
+          fi
+          if [ -f "srcpkgs/$TEMPLATE/template" ]; then
+            VERSION=$(sed -n 's|^version=||p' "srcpkgs/$TEMPLATE/template" | head -1 | tr -d '"')
+          else
+            VERSION=
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Comment when nothing to bump
+        if: steps.marker.outputs.handled == 'false' && steps.whitelist.outputs.in_list == 'true' && steps.bump.outputs.bumped == 'false'
+        run: |
+          curl -fsSL -X POST -H "Authorization: Bearer ${OCO_TOKEN:-$GITHUB_TOKEN}" \
+          -H "Accept: application/vnd.github+json" \
+          "https://api.github.com/repos/${GH_REPO}/issues/${ISSUE_NUMBER}/comments" \
+          -d "$(printf '{"body":"Autobump: no update needed for **%s** (xxautobump exit %s).\\n<!-- autobump:skip -->"' "$TEMPLATE" "${bump_rc:-?}")" || true
+        env:
+          bump_rc: ${{ steps.bump.outputs.rc }}
+
+      - name: Check for existing PR
+        id: pr_check
+        if: steps.marker.outputs.handled == 'false' && steps.whitelist.outputs.in_list == 'true' && steps.bump.outputs.bumped == 'true'
+        run: |
+          VERSION="${{ steps.bump.outputs.version }}"
+          HEAD_REF="autobump/${TEMPLATE}-${VERSION}"
+          OWNER="${GH_REPO%%/*}"
+          EXISTING=$(curl -fsSL -H "Authorization: Bearer ${OCO_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            -G "https://api.github.com/repos/${GH_REPO}/pulls" \
+            --data-urlencode "state=open" \
+            --data-urlencode "head=${OWNER}:${HEAD_REF}" \
+            | python3 -c 'import json, sys; d=json.load(sys.stdin); print(d[0]["number"] if d else "")' 2>/dev/null || true)
+          if [ -n "$EXISTING" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            curl -fsSL -X POST -H "Authorization: Bearer ${OCO_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${GH_REPO}/issues/${ISSUE_NUMBER}/comments" \
+              -d "$(printf '{"body":"Autoupdate PR already exists: #%s.\\n<!-- autobump:done -->"' "$EXISTING")" || true
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create branch  push
+        id: branch
+        if: steps.marker.outputs.handled == 'false' && steps.whitelist.outputs.in_list == 'true' && steps.bump.outputs.bumped == 'true' && steps.pr_check.outputs.skip == 'false'
+        run: |
+          cd extra
+          VERSION="${{ steps.bump.outputs.version }}"
+          BRANCH="autobump/${TEMPLATE}-${VERSION}"
+          git config user.name  "OCO autobump"
+          git config user.email  "autobump@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add "srcpkgs/$TEMPLATE/template"
+          git commit -m "$TEMPLATE: bump to $VERSION"
+          git push "https://x-access-token:${OCO_TOKEN}@github.com/${GH_REPO}.git" "HEAD:${BRANCH}"
+          echo "BRANCH=$BRANCH" >> "$GITHUB_ENV"
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+
+      - name: Open PR
+        id: pr
+        if: steps.marker.outputs.handled == 'false' && steps.whitelist.outputs.in_list == 'true' && steps.bump.outputs.bumped == 'true' && steps.pr_check.outputs.skip == 'false'
+        run: |
+          BODY="Automatic update for **$TEMPLATE** (${{ steps.bump.outputs.version }}).
+
+          Generated by the `autobump` workflow using `xxautobump` in the oco-builder image.
+
+          Closes #$ISSUE_NUMBER"
+          PR=$(python3 -c '
+          import json, sys
+          title = sys.argv[1] + ": " + sys.argv[2]
+          pr = {"title": title, "head": sys.argv[3], "base": "OCO", "body": sys.argv[4]}
+          print(json.dumps(pr))
+          ' "$TEMPLATE" "${{ steps.bump.outputs.version }}" "${{ steps.branch.outputs.branch }}" "$BODY")
+          RESP=$(curl -fsSL -X POST -H "Authorization: Bearer ${OCO_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${GH_REPO}/pulls" \
+            -d "$PR")
+          echo "number=$(printf '%s' "$RESP" | python3 -c 'import json, sys; print(json.load(sys.stdin)["number"])' 2>/dev/null || true)" >> "$GITHUB_OUTPUT"
+
+      - name: Comment on issue
+        if: steps.marker.outputs.handled == 'false' && steps.whitelist.outputs.in_list == 'true' && steps.bump.outputs.bumped == 'true' && steps.pr_check.outputs.skip == 'false'
+        env:
+          PR_NUMBER: ${{ steps.pr.outputs.number }}
+        run: |
+          if [ -n "$PR_NUMBER" ]; then
+            curl -fsSL -X POST -H "Authorization: Bearer ${OCO_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${GH_REPO}/issues/${ISSUE_NUMBER}/comments" \
+              -d "$(printf '{"body":"Autoupdate PR opened: **%s** -> #%s.\\n<!-- autobump:done -->"' "$TEMPLATE" "$PR_NUMBER")" || true
+          fi

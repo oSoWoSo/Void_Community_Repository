@@ -1,0 +1,16 @@
+# Templates for which a `package-update` issue automatically triggers an autobump.
+# One package name per line, '#' for comments. Packages listed here should be
+# safe for `xxautobump` (i.e. void-packages update-check can find the upstream
+# version and the distfiles URL derives from ${version} without extra mangling).
+#
+# To re-run the automation for an issue, remove any `<!-- autobump:* -->` marker
+# comment from the issue and re-apply the `package-update` label.
+brave-browser-bin
+brave-origin-bin
+brow6el
+helium-browser-bin
+librewolf-bin
+llama.cpp
+waterfox-bin
+zen-browser-bin
+opencode
