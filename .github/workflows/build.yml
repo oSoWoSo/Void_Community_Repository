@@ -551,7 +551,7 @@ jobs:
               _arm_musl=$(   arch_needed "aarch64-musl" && echo 1 || echo 0)
               matrix_configs=""
               [ "$_arm_native" = 1 ] && add_cfg "aarch64"      "aarch64"      "ubuntu-24.04-arm" "linux/arm64" 1 true
-              [ "$_arm_musl"  = 1 ] && add_cfg "aarch64-musl" "aarch64-musl" "ubuntu-24.04-arm" "linux/arm64" 1 true
+              [ "$_arm_musl"  = 1 ] && add_cfg "aarch64-musl" "aarch64" "ubuntu-24.04-arm" "linux/arm64" 1 true
               if [ -z "$matrix_configs" ]; then
                 echo "Warning: no packages for arm64 archs, defaulting to x86_64" >> "$GITHUB_STEP_SUMMARY"
                 add_cfg "x86_64" "x86_64" "ubuntu-latest" "linux/amd64" 1 false
@@ -562,7 +562,7 @@ jobs:
               arch_needed "x86_64"       && add_cfg "x86_64"       "x86_64" "ubuntu-latest"    "linux/amd64" 1 false
               arch_needed "aarch64"      && add_cfg "aarch64"      "aarch64" "ubuntu-24.04-arm" "linux/arm64" 1 true
               arch_needed "x86_64-musl"  && add_cfg "x86_64-musl"  "x86_64" "ubuntu-latest"    "linux/amd64" 1 false
-              arch_needed "aarch64-musl" && add_cfg "aarch64-musl" "aarch64-musl" "ubuntu-24.04-arm" "linux/arm64" 1 true
+              arch_needed "aarch64-musl" && add_cfg "aarch64-musl" "aarch64" "ubuntu-24.04-arm" "linux/arm64" 1 true
               if [ -z "$matrix_configs" ]; then
                 echo "Warning: no packages for any arch, defaulting to x86_64" >> "$GITHUB_STEP_SUMMARY"
                 add_cfg "x86_64" "x86_64" "ubuntu-latest" "linux/amd64" 1 false
@@ -575,7 +575,7 @@ jobs:
               arch_needed "x86_64-musl"  && add_cfg "x86_64-musl"  "x86_64" "ubuntu-latest"    "linux/amd64" 1 false
               needs_cross "aarch64-musl" && add_cfg "aarch64-musl" "x86_64" "ubuntu-latest"    "linux/amd64" 0 false
               needs_native "aarch64"      && add_cfg "aarch64"      "aarch64"      "ubuntu-24.04-arm" "linux/arm64" 1 true
-              needs_native "aarch64-musl" && add_cfg "aarch64-musl" "aarch64-musl" "ubuntu-24.04-arm" "linux/arm64" 1 true
+              needs_native "aarch64-musl" && add_cfg "aarch64-musl" "aarch64" "ubuntu-24.04-arm" "linux/arm64" 1 true
               if [ -z "$matrix_configs" ]; then
                 echo "Warning: no arch matched package list, defaulting to x86_64" >> "$GITHUB_STEP_SUMMARY"
                 add_cfg "x86_64" "x86_64" "ubuntu-latest" "linux/amd64" 1 false
