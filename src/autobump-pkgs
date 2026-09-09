@@ -3,8 +3,8 @@
 # safe for `xxautobump` (i.e. void-packages update-check can find the upstream
 # version and the distfiles URL derives from ${version} without extra mangling).
 #
-# To re-run the automation for an issue, remove any `<!-- autobump:* -->` marker
-# comment from the issue and re-apply the `package-update` label.
+# To re-run the automation for an issue, edit the issue body (e.g. bump the
+# version) — the workflow re-triggers on `edited` events.
 brave-browser-bin
 brave-origin-bin
 brow6el
