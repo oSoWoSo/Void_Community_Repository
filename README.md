@@ -269,7 +269,7 @@ Create PR
 | odin2-standalone | 2.4.1 | https://thewavewarden.com/pages/odin-2 | Trve_AY |  |
 | odin2-vst3 | 2.4.1 | https://thewavewarden.com/pages/odin-2 | Trve_AY |  |
 | omniroute | 3.8.24 | https://github.com/diegosouzapw/OmniRoute | zenobit |  |
-| opencode | 1.18.29 | https://github.com/anomalyco/opencode | zenobit | x86_64 aarch64 |
+| opencode | 1.18.30 | https://github.com/anomalyco/opencode | zenobit | x86_64 aarch64 |
 | patchance | 1.4.0 | https://raysession.tuxfamily.org/ | Trve_AY |  |
 | pinguintv-installer-git | 0.0.0 | https://pinguin-tv.de/installer.html | Bella109 | x86_64 |
 | pop-fonts | 0.0.0 | https://github.com/pop-os/fonts | Bella109 |  |
