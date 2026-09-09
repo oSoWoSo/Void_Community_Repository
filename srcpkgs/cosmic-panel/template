@@ -1,25 +1,20 @@
 # Template file for 'cosmic-panel'
 pkgname=cosmic-panel
-version=1.1.0
+version=1.8.0
 revision=1
-archs="x86_64* i686"
+archs="x86_64*"
 build_style=cargo
-configure_args="--all"
-hostmakedepends="pkg-config just $(vopt_if sccache "rust-sccache")"
-makedepends="libxkbcommon-devel "
-depends="libxkbcommon"
-short_desc="XDG Shell Wrapper Panel for COSMIC"
-maintainer="Bella109 <belladev109@proton.me>"
+make_install_args="--path cosmic-panel-bin"
+hostmakedepends="pkg-config"
+makedepends="libxkbcommon-devel"
+short_desc="COSMIC applet for creating panels and docks"
+maintainer="zenobit <zen@osowoso.org>"
 license="GPL-3.0-only"
 homepage="https://github.com/pop-os/cosmic-panel"
 distfiles="https://github.com/pop-os/cosmic-panel/archive/refs/tags/epoch-${version}.tar.gz"
-checksum=e51a4aa1474a2505ca3e8ed80578428a7e24afd8e643e523ce100e7a0c2e2364
-build_options="sccache"
+checksum=3bc2f7d6481a5ad221c9ee505fcc068a7c28df42c54e171cc6a4c86a5a64549e
 
-pre_build() {
-	$(vopt_if sccache "export RUSTC_WRAPPER=/usr/bin/sccache")
-}
-
-do_install() {
-	just rootdir="${DESTDIR}" cargo-target-dir="target/${RUST_TARGET}" install
+post_install() {
+	vmkdir usr/share/cosmic
+	vcopy "data/default_schema/*" usr/share/cosmic
 }

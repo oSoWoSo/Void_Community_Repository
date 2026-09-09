@@ -1,20 +1,14 @@
 # Template file for 'cosmic-osd'
 pkgname=cosmic-osd
-version=1.1.0
-revision=2
-archs="x86_64* i686"
+version=1.8.0
+revision=1
+archs="x86_64*"
 build_style=cargo
-configure_args="--all"
 hostmakedepends="pkg-config"
-makedepends="libxkbcommon-devel pulseaudio-devel pipewire-devel clang22-devel eudev-libudev-devel libinput-devel just"
-depends="dbus-libs eudev-libudev lame libpulseaudio libxkbcommon libpulseaudio libsndfile libxcb libasyncns libflac libvorbis libogg libmpg123 libXau libXdmcp opus"
-short_desc="COSMIC OSD"
-maintainer="Bella109 <belladev109@proton.me>"
-license="GPL-3.0-only"
+makedepends="libxkbcommon-devel pulseaudio-devel eudev-libudev-devel libinput-devel"
+short_desc="On-Screen Display daemon for the COSMIC desktop"
+maintainer="zenobit <zen@osowoso.org>"
+license="GPL-3.0-or-later"
 homepage="https://github.com/pop-os/cosmic-osd"
 distfiles="https://github.com/pop-os/cosmic-osd/archive/refs/tags/epoch-${version}.tar.gz"
-checksum=0328dca2306639ebfa3e9b8610d1068fe5ea003dcf5b248c61d6443a10a8bd39
-
-do_install() {
-	just rootdir="${DESTDIR}" cargo-target-dir="target/${RUST_TARGET}" install
-}
+checksum=bbd26d958173d9474cf4e6f89ffe1f3ff8aa57348748c3540001195e8f242cb2

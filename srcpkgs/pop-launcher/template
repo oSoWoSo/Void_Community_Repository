@@ -1,25 +1,26 @@
 # Template file for 'pop-launcher'
+# build/install commands adapted from Arch Linux PKGBUILD
 pkgname=pop-launcher
-version=1.2.7
+version=1.8.0
 revision=1
-archs="x86_64* i686"
-build_style="cargo"
-configure_args=" --all"
-hostmakedepends="pkg-config just cargo cargo-auditable $(vopt_if sccache "rust-sccache")"
-makedepends="libxkbcommon-devel"
-checkdepends="qalculate"
+archs="x86_64*"
+build_style=cargo
+hostmakedepends="pkg-config just clang lld"
+makedepends="libxkbcommon-devel libqalculate-devel"
+depends="fd bash xdg-utils"
 short_desc="Modular IPC-based desktop launcher service"
-maintainer="Bella109 <belladev109@proton.me>"
-license="MPL-2.0"
+maintainer="zenobit <zen@osowoso.org>"
+license="MPL-2.0, GPL-3.0-only"
 homepage="https://github.com/pop-os/launcher"
-distfiles="https://github.com/pop-os/launcher/archive/refs/tags/${version}.tar.gz"
-checksum=e02ffd9876bb11c50118bf5e9c0bec57132f7010831da749dc6107e31ca198a6
-build_options="sccache"
+distfiles="https://github.com/pop-os/launcher/archive/refs/tags/epoch-${version}.tar.gz"
+checksum=6287973758602befaadf0be769d6ab4980bbfbe3353a6e8b0bfb6760d5a2aeef
 
-pre_build() {
-	$(vopt_if sccache "export RUSTC_WRAPPER=/usr/bin/sccache")
+
+do_build() {
+	export RUSTFLAGS="${RUSTFLAGS} -C link-arg=-fuse-ld=lld"
+	CC=clang just build-release --locked
 }
 
 do_install() {
-	just target-dir="target/${RUST_TARGET}/release" rootdir=${DESTDIR} install
+	just rootdir="${DESTDIR}" install
 }

@@ -1,23 +1,13 @@
 # Template file for 'cosmic-randr'
 pkgname=cosmic-randr
-version=1.1.0
+version=1.8.0
 revision=1
-archs="x86_64* i686"
+archs="x86_64*"
 build_style=cargo
-configure_args="--all"
-hostmakedepends="just $(vopt_if sccache "rust-sccache")"
-short_desc="Display and configure wayland display outputs"
-maintainer="Bella109 <belladev109@proton.me>"
+make_install_args="--path cli"
+short_desc="Library and utility for displaying and configuring Wayland outputs"
+maintainer="zenobit <zen@osowoso.org>"
 license="MPL-2.0"
 homepage="https://github.com/pop-os/cosmic-randr"
 distfiles="https://github.com/pop-os/cosmic-randr/archive/refs/tags/epoch-${version}.tar.gz"
-checksum=5a95f60da4e89efb2c2ec8b35bd23bf35b2ef39e71e769cc73493f57ec2eb264
-build_options="sccache"
-
-pre_build() {
-	$(vopt_if sccache "export RUSTC_WRAPPER=/usr/bin/sccache")
-}
-
-do_install() {
-	just rootdir="${DESTDIR}" cargo-target-dir="target/${RUST_TARGET}" install
-}
+checksum=226591921a26f0fa03cf3867b73d7d1af89bda16f4ea45eea75decd0bbcd1e29

@@ -1,13 +1,13 @@
+#!/bin/sh
 case "$ACTION" in
 pre)
-	if [ "$UPDATE" = "yes" ]; then
-		rm -rf /etc/sv/cosmic-greeter
-		rm -rf /etc/sv/cosmic-greeter-daemon
-	fi
-	;;
-post)
 	if [ "$UPDATE" = "no" ]; then
-		rm -rf /run/cosmic-greeter
+		if [ "$(readlink -f . 2>/dev/null || echo .)" != "/" ]; then
+			prefix="-P ."
+		fi
+		usermod ${prefix} -L -d /var/empty -s /bin/false \
+			-c "cosmic-greeter - for uninstalled package ${PKGNAME}" \
+			cosmic-greeter >/dev/null 2>&1
 	fi
 	;;
 esac

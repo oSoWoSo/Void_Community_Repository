@@ -1,31 +1,20 @@
 # Template file for 'cosmic-session'
 pkgname=cosmic-session
-version=1.1.0
+version=1.8.0
 revision=1
-archs="x86_64* i686"
+archs="x86_64*"
 build_style=cargo
-configure_args="--all --features autostart"
-hostmakedepends="just $(vopt_if sccache "rust-sccache")"
-makedepends="glib"
-depends="pop-fonts ttf-opensans"
-short_desc="Session for the COSMIC desktop"
-maintainer="Bella109 <belladev109@proton.me>"
+configure_args="--features autostart"
+hostmakedepends="just"
+depends="cosmic-icons default-cursors bash desktop-file-utils polkit elogind"
+short_desc="Session manager for the COSMIC desktop environment"
+maintainer="zenobit <zen@osowoso.org>"
 license="GPL-3.0-only"
 homepage="https://github.com/pop-os/cosmic-session"
 distfiles="https://github.com/pop-os/cosmic-session/archive/refs/tags/epoch-${version}.tar.gz"
-checksum=f2b1bc36cbc0a4dff2e2647c7bbaf1e53ed4fc6a13360110a5ffa8fc2922ce1d
-build_options="sccache"
-
-pre_build() {
-	$(vopt_if sccache "export RUSTC_WRAPPER=/usr/bin/sccache")
-}
+checksum=e6e82bce485af7ec8900ef09da5e317c8a1fd4b76901901acf6eaead778542e6
 
 do_install() {
-	just rootdir="${DESTDIR}" cargo-target-dir="target/${RUST_TARGET}" install
-	vmkdir "usr/share/glib-2.0/schemas/"
-	vinstall "${FILESDIR}/cosmic.session.gsettings.override" 644 "usr/share/glib-2.0/schemas/"
-}
-
-post_install() {
-	glib-compile-schemas ${DESTDIR}/usr/share/glib-2.0/schemas >/dev/null 2>&1
+	just --set cargo-target-dir "target/${RUST_TARGET}" \
+		--set rootdir ${DESTDIR} --set prefix /usr install
 }

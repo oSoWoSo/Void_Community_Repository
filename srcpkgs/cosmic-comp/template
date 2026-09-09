@@ -1,22 +1,20 @@
 # Template file for 'cosmic-comp'
 pkgname=cosmic-comp
-version=1.1.0
+version=1.8.0
 revision=1
-archs="x86_64* i686"
+archs="x86_64*"
 build_style=cargo
-configure_args="--all --no-default-features --features logind"
-hostmakedepends="pkg-config cargo"
-makedepends="eudev-libudev-devel libseat-devel libxkbcommon-devel libinput-devel pixman-devel libgbm-devel libdisplay-info-devel"
-depends="eudev-libudev expat libxkbcommon libdisplay-info libgbm libseat libinput libgcc libdrm libelogind libevdev libwacom libcap libgudev libffi libpcre2 mtdev pixman"
-short_desc="Wayland compositor of pop-os cosmic shell"
-maintainer="Bella109 <belladev109@proton.me>"
+configure_args="--no-default-features --features logind"
+hostmakedepends="pkg-config"
+makedepends="eudev-libudev-devel libseat-devel libxkbcommon-devel libinput-devel
+ pixman-devel libgbm-devel libdisplay-info-devel"
+short_desc="Compositor for the COSMIC desktop environment"
+maintainer="zenobit <zen@osowoso.org>"
 license="GPL-3.0-only"
 homepage="https://github.com/pop-os/cosmic-comp"
 distfiles="https://github.com/pop-os/cosmic-comp/archive/refs/tags/epoch-${version}.tar.gz"
-checksum=56fdf357a44f5138cab6fe9599d74a2bba3f5995b7155dd88c13e4f4c9e2cafd
+checksum=5944dcae5de80743a5200dc6b4b28147fae7fa6e7aedfe58012248b82b62355c
 
 do_install() {
-	CARGO_TARGET_DIR="target/${XBPS_RUST_TARGET}" make install
-	vbin target/${XBPS_RUST_TARGET}/release/cosmic-comp
-	vinstall data/cosmic.desktop 644 usr/share/wayland-session/cosmic.desktop
+	CARGO_TARGET_DIR="target/${RUST_TARGET}" DESTDIR=${DESTDIR} make install
 }

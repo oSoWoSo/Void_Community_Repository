@@ -1,25 +1,18 @@
 # Template file for 'cosmic-idle'
 pkgname=cosmic-idle
-version=1.1.0
+version=1.8.0
 revision=1
-archs="x86_64* i686"
+archs="x86_64*"
 build_style=cargo
-configure_args="--all"
-hostmakedepends="pkg-config just $(vopt_if sccache "rust-sccache")"
-makedepends="libxkbcommon-devel wayland-devel"
-depends="libxkbcommon"
-short_desc="COSMIC idle daemon"
-maintainer="Bella109 <belladev109@proton.me>"
+hostmakedepends="pkg-config just"
+makedepends="libxkbcommon-devel"
+short_desc="Idle daemon for the COSMIC desktop"
+maintainer="zenobit <zen@osowoso.org>"
 license="GPL-3.0-only"
 homepage="https://github.com/pop-os/cosmic-idle"
 distfiles="https://github.com/pop-os/cosmic-idle/archive/refs/tags/epoch-${version}.tar.gz"
-checksum=c305ca769949a8eb395fa40b26f28599e8961bd8df3cc3a97dc310209fccf39c
-build_options="sccache"
-
-pre_build() {
-	$(vopt_if sccache "export RUSTC_WRAPPER=/usr/bin/sccache")
-}
+checksum=b35c98a998687aca66cedbb02d5067c8de4a8340f8c3e12a4b7c44adfa59ef52
 
 do_install() {
-	just rootdir="${DESTDIR}" cargo-target-dir="target/${RUST_TARGET}" install
+	just --set cargo-target-dir "target/${RUST_TARGET}" --set rootdir ${DESTDIR} --set prefix /usr install
 }

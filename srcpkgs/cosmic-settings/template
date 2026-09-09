@@ -1,20 +1,19 @@
 # Template file for 'cosmic-settings'
 pkgname=cosmic-settings
-version=1.1.0
+version=1.8.0
 revision=1
-archs="x86_64* i686"
-build_style="cargo"
-configure_args="--all"
+archs="x86_64*"
+build_style=cargo
 hostmakedepends="pkg-config just"
-makedepends="libxkbcommon-devel eudev-libudev-devel libinput-devel mold pipewire-devel clang22-devel"
-depends="accountsservice cosmic-settings-daemon dbus-libs eudev-libudev gettext xkeyboard-config lame libpulseaudio libxkbcommon libpipewire libsndfile libxcb libasyncns libflac libvorbis libogg libmpg123 libXau libXdmcp opus iso-codes power-profiles-daemon"
-short_desc="Settings App for COSMIC"
-maintainer="Bella109 <belladev109@proton.me>"
+makedepends="libxkbcommon-devel eudev-libudev-devel libinput-devel libdav1d-devel"
+depends="cosmic-icons cosmic-randr accountsservice NetworkManager iso-codes pipewire ttf-opensans"
+short_desc="Settings application for the COSMIC desktop environment"
+maintainer="zenobit <zen@osowoso.org>"
 license="GPL-3.0-only"
 homepage="https://github.com/pop-os/cosmic-settings"
 distfiles="https://github.com/pop-os/cosmic-settings/archive/refs/tags/epoch-${version}.tar.gz"
-checksum=c73dca78ef21bd402d703d46c363f81158a623120b6554fef2e4245944ede3ac
+checksum=669bb605a63806a8afc751d78c17d7f0e8adc5297247919773b9184ab53328ac
 
 do_install() {
-	just rootdir="${DESTDIR}" cargo-target-dir="target/${RUST_TARGET}" install
+	just --set cargo-target-dir "target/${RUST_TARGET}" --set rootdir ${DESTDIR} --set prefix /usr install
 }

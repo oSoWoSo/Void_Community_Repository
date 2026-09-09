@@ -1,0 +1,19 @@
+# Template file for 'cosmic-initial-setup'
+pkgname=cosmic-initial-setup
+version=1.8.0
+revision=1
+archs="x86_64*"
+build_style=cargo
+hostmakedepends="pkg-config just"
+makedepends="libxkbcommon-devel libzstd-devel eudev-libudev-devel libinput-devel"
+depends="blocaled iso-codes"
+short_desc="Initial setup for the COSMIC desktop"
+maintainer="zenobit <zen@osowoso.org>"
+license="GPL-3.0-only"
+homepage="https://github.com/pop-os/cosmic-initial-setup"
+distfiles="https://github.com/pop-os/cosmic-initial-setup/archive/refs/tags/epoch-${version}.tar.gz"
+checksum=54096043127b802320966b343d675cb7323aa2614a9b89522730c7ccbe4369a0
+
+do_install() {
+	just --set cargo-target-dir "target/${RUST_TARGET}" --set rootdir ${DESTDIR} --set prefix /usr install
+}

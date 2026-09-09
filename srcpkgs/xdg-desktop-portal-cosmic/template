@@ -1,20 +1,20 @@
 # Template file for 'xdg-desktop-portal-cosmic'
 pkgname=xdg-desktop-portal-cosmic
-version=1.1.0
+version=1.8.0
 revision=1
 archs="x86_64*"
-build_style=gnu-makefile
-build_helper="rust"
-hostmakedepends="pkg-config cargo"
-makedepends="libxkbcommon-devel libzstd-devel pipewire-devel clang libglib-devel libgbm-devel"
-depends="libgbm libpipewire glib libxkbcommon libdrm expat zlib libmount libffi libpcre2 libblkid xdg-desktop-portal"
-short_desc="Cosmic backend for xdg-desktop-portal"
-maintainer="Bella109 <belladev109@proton.me>"
-license="GPL-3.0-only"
+build_style=cargo
+hostmakedepends="just pkg-config llvm18 clang18"
+makedepends="libxkbcommon-devel libgbm-devel pipewire-devel llvm18-devel
+ glib-devel gstreamer1-devel"
+depends="xdg-desktop-portal"
+short_desc="Backend implementation for xdg-desktop-portal for COSMIC"
+maintainer="zenobit <zen@osowoso.org>"
+license="GPL-3.0-or-later"
 homepage="https://github.com/pop-os/xdg-desktop-portal-cosmic"
 distfiles="https://github.com/pop-os/xdg-desktop-portal-cosmic/archive/refs/tags/epoch-${version}.tar.gz"
-checksum=fc055d98c302de8ca309bcb37d3254af353fa6ea85dbd32f345f34db7ba16b79
-build_options="sccache"
+checksum=8b37ce6241388539eadf0b001f4136315056593d061fa8352aa7e6785a86e943
 
-export VERGEN_GIT_COMMIT_DATE="${version}_${revision}"
-export VERGEN_GIT_SHA="${version}_${revision}"
+do_install() {
+	just --set rootdir ${DESTDIR} --set prefix /usr --set cargo-target-dir "target/${RUST_TARGET}" install
+}

@@ -54,6 +54,7 @@ on:
         -
         - android-sdk
         - aquamarine
+        - blocaled
         - brave-browser-bin
         - brave-origin-bin
         - brow6el
@@ -80,6 +81,7 @@ on:
         - cosmic-greeter
         - cosmic-icons
         - cosmic-idle
+        - cosmic-initial-setup
         - cosmic-launcher
         - cosmic-monitor
         - cosmic-notifications
@@ -91,6 +93,8 @@ on:
         - cosmic-session
         - cosmic-settings
         - cosmic-settings-daemon
+        - cosmic-sound-theme
+        - cosmic-store
         - cosmic-term
         - cosmic-tweaks
         - cosmic-wallpapers
@@ -118,6 +122,7 @@ on:
         - dankcalendar
         - DankMaterialShell
         - dashy
+        - default-cursors
         - desktop-tui
         - devedeng
         - distrobox

@@ -90,6 +90,7 @@ Create PR
 |:--------|:--------|:---------|:-----------|:------|
 | android-sdk | 36 | https://developer.android.com/studio | zenobit | x86_64 |
 | aquamarine | 0.14.0 | https://github.com/hyprwm/aquamarine | zenobit |  |
+| blocaled | 0.7 | https://github.com/lfs-book/blocaled | zenobit |  |
 | brave-browser-bin | 1.94.121 | https://www.brave.com/ | zenobit | x86_64 aarch64 |
 | brave-origin-bin | 1.94.121 | https://www.brave.com/ | zenobit | x86_64 aarc64 |
 | brow6el | 0.3.5 | https://brow6el.dev/ | zenobit | x86_64 |
@@ -105,32 +106,35 @@ Create PR
 | Community-Repositories-Collection | 1 | https://repo.osowoso.org | zenobit |  |
 | corekeyboard | 5.0.1 | https://gitlab.com/cubocore/coreapps/corekeyboard | zenobit |  |
 | cosign | 3.1.3 | https://github.com/sigstore/cosign | zenobit |  |
-| cosmic-applets | 1.1.0 | https://github.com/pop-os/cosmic-applets | Bella109 | x86_64* i686 |
-| cosmic-applibrary | 1.1.0 | https://github.com/pop-os/cosmic-applibrary | Bella109 | x86_64* i686 |
-| cosmic-bg | 1.1.0 | https://github.com/pop-os/cosmic-bg | Bella109 | x86_64* i686 |
-| cosmic-comp | 1.1.0 | https://github.com/pop-os/cosmic-comp | Bella109 | x86_64* i686 |
+| cosmic-applets | 1.8.0 | https://github.com/pop-os/cosmic-applets | zenobit | x86_64* |
+| cosmic-applibrary | 1.8.0 | https://github.com/pop-os/cosmic-app-library | zenobit | x86_64* |
+| cosmic-bg | 1.8.0 | https://github.com/pop-os/cosmic-bg | zenobit | x86_64* |
+| cosmic-comp | 1.8.0 | https://github.com/pop-os/cosmic-comp | zenobit | x86_64* |
 | cosmic-desktop-full | 1.1.0 | https://github.com/pop-os/cosmic-epoch | Bella109 | x86_64* |
 | cosmic-desktop-minimal | 1.1.0 | https://github.com/pop-os/cosmic-epoch | Bella109 | x86_64* |
-| cosmic-edit | 1.1.0 | https://github.com/pop-os/cosmic-edit | Bella109 | x86_64* |
-| cosmic-files | 1.1.0 | https://github.com/pop-os/cosmic-files | Bella109 | x86_64* |
-| cosmic-greeter | 1.1.0 | https://github.com/pop-os/cosmic-greeter | Bella109 | x86_64* i686 |
-| cosmic-icons | 1.1.0 | https://github.com/pop-os/cosmic-icons | Bella109 |  |
-| cosmic-idle | 1.1.0 | https://github.com/pop-os/cosmic-idle | Bella109 | x86_64* i686 |
-| cosmic-launcher | 1.1.0 | https://github.com/pop-os/cosmic-launcher | Bella109 | x86_64* i686 |
-| cosmic-monitor | 1.1.0 | https://github.com/pop-os/cosmic-monitor | Bella109 | x86_64* |
-| cosmic-notifications | 1.1.0 | https://github.com/pop-os/cosmic-notifications | Bella109 | x86_64* i686 |
-| cosmic-osd | 1.1.0 | https://github.com/pop-os/cosmic-osd | Bella109 | x86_64* i686 |
-| cosmic-panel | 1.1.0 | https://github.com/pop-os/cosmic-panel | Bella109 | x86_64* i686 |
-| cosmic-player | 1.1.0 | https://github.com/pop-os/cosmic-player | Bella109 | x86_64* i686 |
-| cosmic-randr | 1.1.0 | https://github.com/pop-os/cosmic-randr | Bella109 | x86_64* i686 |
-| cosmic-screenshot | 1.1.0 | https://github.com/pop-os/cosmic-screenshot | Bella109 | x86_64* i686 |
-| cosmic-session | 1.1.0 | https://github.com/pop-os/cosmic-session | Bella109 | x86_64* i686 |
-| cosmic-settings | 1.1.0 | https://github.com/pop-os/cosmic-settings | Bella109 | x86_64* i686 |
-| cosmic-settings-daemon | 1.1.0 | https://github.com/pop-os/cosmic-settings-daemon | Bella109 | x86_64* i686 |
-| cosmic-term | 1.1.0 | https://github.com/pop-os/cosmic-term | Bella109 | x86_64* |
+| cosmic-edit | 1.8.0 | https://github.com/pop-os/cosmic-edit | zenobit | x86_64* |
+| cosmic-files | 1.8.0 | https://github.com/pop-os/cosmic-files | zenobit | x86_64* |
+| cosmic-greeter | 1.8.0 | https://github.com/pop-os/cosmic-greeter | zenobit | x86_64* |
+| cosmic-icons | 1.8.0 | https://github.com/pop-os/cosmic-icons | zenobit | x86_64* |
+| cosmic-idle | 1.8.0 | https://github.com/pop-os/cosmic-idle | zenobit | x86_64* |
+| cosmic-initial-setup | 1.8.0 | https://github.com/pop-os/cosmic-initial-setup | zenobit | x86_64* |
+| cosmic-launcher | 1.8.0 | https://github.com/pop-os/cosmic-launcher | zenobit | x86_64* |
+| cosmic-monitor | 1.8.0 | https://github.com/pop-os/cosmic-monitor | zenobit | x86_64* |
+| cosmic-notifications | 1.8.0 | https://github.com/pop-os/cosmic-notifications | zenobit | x86_64* |
+| cosmic-osd | 1.8.0 | https://github.com/pop-os/cosmic-osd | zenobit | x86_64* |
+| cosmic-panel | 1.8.0 | https://github.com/pop-os/cosmic-panel | zenobit | x86_64* |
+| cosmic-player | 1.8.0 | https://github.com/pop-os/cosmic-player | zenobit | x86_64* |
+| cosmic-randr | 1.8.0 | https://github.com/pop-os/cosmic-randr | zenobit | x86_64* |
+| cosmic-screenshot | 1.8.0 | https://github.com/pop-os/cosmic-screenshot | zenobit | x86_64* |
+| cosmic-session | 1.8.0 | https://github.com/pop-os/cosmic-session | zenobit | x86_64* |
+| cosmic-settings | 1.8.0 | https://github.com/pop-os/cosmic-settings | zenobit | x86_64* |
+| cosmic-settings-daemon | 1.8.0 | https://github.com/pop-os/cosmic-settings-daemon | zenobit | x86_64* |
+| cosmic-sound-theme | 1.8.0 | https://github.com/pop-os/cosmic-sound-theme | zenobit | x86_64* |
+| cosmic-store | 1.8.0 | https://github.com/pop-os/cosmic-store | zenobit | x86_64* |
+| cosmic-term | 1.8.0 | https://github.com/pop-os/cosmic-term | zenobit | x86_64* |
 | cosmic-tweaks | 0.2.2 | https://github.com/cosmic-utils/cosmic-tweaks | Bella109 | x86_64 |
-| cosmic-wallpapers | 1.1.0 | https://github.com/pop-os/cosmic-wallpapers | Bella109 |  |
-| cosmic-workspaces-epoch | 1.1.0 | https://github.com/pop-os/cosmic-workspaces-epoch | Bella109 | x86_64* i686 |
+| cosmic-wallpapers | 1.8.0 | https://github.com/pop-os/cosmic-wallpapers | zenobit | x86_64* |
+| cosmic-workspaces-epoch | 1.8.0 | https://github.com/pop-os/cosmic-workspaces-epoch | zenobit | x86_64* |
 | CRC-black-hole | 1 | https://repo.osowoso.org | zenobit |  |
 | CRC-brgvos | 1 | https://repo.osowoso.org | zenobit |  |
 | CRC-cereus-core | 1 | https://repo.osowoso.org | zenobit |  |
@@ -154,6 +158,7 @@ Create PR
 | dankcalendar | 1.6.1 | https://github.com/AvengeMedia/dankcalendar | zenobit |  |
 | DankMaterialShell | 1.5.3 | https://github.com/AvengeMedia/DankMaterialShell | zenobit |  |
 | dashy | 4.1.5 | https://github.com/Lissy93/dashy | zenobit |  |
+| default-cursors | 1 | https://www.voidlinux.org | zenobit |  |
 | desktop-tui | 0.3.2 | https://github.com/Julien-cpsn/desktop-tui | zenobit |  |
 | devedeng | 4.22.1 | https://www.rastersoft.com/programas/devede.html | Bella109 |  |
 | distrobox | 1.8.2.5 | https://distrobox.it/ | zenobit |  |
@@ -274,7 +279,7 @@ Create PR
 | pinguintv-installer-git | 0.0.0 | https://pinguin-tv.de/installer.html | Bella109 | x86_64 |
 | pop-fonts | 0.0.0 | https://github.com/pop-os/fonts | Bella109 |  |
 | pop-icons | 3.5.1 | https://github.com/pop-os/icon-theme | Bella109 |  |
-| pop-launcher | 1.2.7 | https://github.com/pop-os/launcher | Bella109 | x86_64* i686 |
+| pop-launcher | 1.8.0 | https://github.com/pop-os/launcher | zenobit | x86_64* |
 | pop-sounds-theme | 5.5.1 | https://github.com/pop-os/gtk-theme | Bella109 |  |
 | proxelar | 0.5.1 | https://github.com/emanuele-em/proxelar | zenobit |  |
 | python3-anysqlite | 0.0.5 | https://github.com/karpetrosyan/anysqlite | zenobit |  |
@@ -340,7 +345,7 @@ Create PR
 | vtm | 2026.07.30 | https://github.com/directvt/vtm | zenobit |  |
 | waterfox-bin | 6.7.2 | https://www.waterfox.net | zenobit | x86_64 aarch64 |
 | wpgtk | 6.7.1 | https://github.com/deviantfero/wpgtk/ | zenobit |  |
-| xdg-desktop-portal-cosmic | 1.1.0 | https://github.com/pop-os/xdg-desktop-portal-cosmic | Bella109 | x86_64* |
+| xdg-desktop-portal-cosmic | 1.8.0 | https://github.com/pop-os/xdg-desktop-portal-cosmic | zenobit | x86_64* |
 | xdg-desktop-portal-hyprland | 1.3.11 | https://github.com/hyprwm/xdg-desktop-portal-hyprland | zenobit |  |
 | xut | 0.4.2 | https://codeberg.org/mobinmob/xut | mobinmob |  |
 | xxtools-git | 0.0.0 | https://github.com/Piraty/xxtools | zenobit |  |

@@ -1,16 +1,16 @@
 # Template file for 'cosmic-icons'
 pkgname=cosmic-icons
-version=1.1.0
+version=1.8.0
 revision=1
+archs="x86_64*"
 hostmakedepends="just"
-depends="pop-icons"
-short_desc="COSMIC Icon Package"
-maintainer="Bella109 <belladev109@proton.me>"
+short_desc="System76 Cosmic icon theme for Linux"
+maintainer="zenobit <zen@osowoso.org>"
 license="CC-BY-SA-4.0"
 homepage="https://github.com/pop-os/cosmic-icons"
 distfiles="https://github.com/pop-os/cosmic-icons/archive/refs/tags/epoch-${version}.tar.gz"
-checksum=1de684477013b47c0f9757e575ed638bbdcd2ffc30829f8e707f5eeba581233b
+checksum=a85368f132859fcc00ef07304dd8688f9d372b3b83b2b2f39477585e4b9c247b
 
 do_install() {
-	just rootdir="${DESTDIR}" install
+	just --set rootdir ${DESTDIR} --set prefix /usr install
 }

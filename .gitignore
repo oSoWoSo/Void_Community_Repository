@@ -31,6 +31,7 @@
 # Start of templates list
 !/srcpkgs/android-sdk
 !/srcpkgs/aquamarine
+!/srcpkgs/blocaled
 !/srcpkgs/brave-browser-bin
 !/srcpkgs/brave-origin-bin
 !/srcpkgs/brow6el
@@ -57,6 +58,7 @@
 !/srcpkgs/cosmic-greeter
 !/srcpkgs/cosmic-icons
 !/srcpkgs/cosmic-idle
+!/srcpkgs/cosmic-initial-setup
 !/srcpkgs/cosmic-launcher
 !/srcpkgs/cosmic-monitor
 !/srcpkgs/cosmic-notifications
@@ -68,6 +70,8 @@
 !/srcpkgs/cosmic-session
 !/srcpkgs/cosmic-settings
 !/srcpkgs/cosmic-settings-daemon
+!/srcpkgs/cosmic-sound-theme
+!/srcpkgs/cosmic-store
 !/srcpkgs/cosmic-term
 !/srcpkgs/cosmic-tweaks
 !/srcpkgs/cosmic-wallpapers
@@ -95,6 +99,7 @@
 !/srcpkgs/dankcalendar
 !/srcpkgs/DankMaterialShell
 !/srcpkgs/dashy
+!/srcpkgs/default-cursors
 !/srcpkgs/desktop-tui
 !/srcpkgs/devedeng
 !/srcpkgs/distrobox

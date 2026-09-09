@@ -1,25 +1,19 @@
 # Template file for 'cosmic-applets'
 pkgname=cosmic-applets
-version=1.1.0
+version=1.8.0
 revision=1
-archs="x86_64* i686"
+archs="x86_64*"
 build_style=cargo
-configure_args="--all"
-hostmakedepends="pkg-config just $(vopt_if sccache "rust-sccache")"
-makedepends="libxkbcommon-devel eudev-libudev-devel dbus-devel pulseaudio-devel libinput-devel pipewire-devel clang19-devel"
-depends="cosmic-icons dbus-libs eudev-libudev lame libpulseaudio libxkbcommon libpulseaudio libsndfile libxcb libasyncns libflac libvorbis libogg libmpg123 libXau libXdmcp opus"
-short_desc="Applets for COSMIC"
-maintainer="Bella109 <belladev109@proton.me>"
+hostmakedepends="pkg-config just"
+makedepends="libxkbcommon-devel eudev-libudev-devel dbus-devel pulseaudio-devel libinput-devel"
+short_desc="Applets for COSMIC Panel"
+maintainer="zenobit <zen@osowoso.org>"
 license="GPL-3.0-only"
 homepage="https://github.com/pop-os/cosmic-applets"
 distfiles="https://github.com/pop-os/cosmic-applets/archive/refs/tags/epoch-${version}.tar.gz"
-checksum=72e109b16e1135824a9b5ad02ffeff0e52a30efb24aab9b7023f0b6265f7c54c
-build_options="sccache"
-
-pre_build() {
-	$(vopt_if sccache "export RUSTC_WRAPPER=/usr/bin/sccache")
-}
+checksum=11364c2827d878a8f1aa2ee084c448b677ad97fe077aab7316040591e4ce24a4
 
 do_install() {
-	just rootdir=${DESTDIR} target="${RUST_TARGET}/release" install
+	just --set targetdir "target/${RUST_TARGET}" --set rootdir ${DESTDIR} \
+		--set prefix /usr --set cosmic-applets-bin cosmic-applets install
 }
