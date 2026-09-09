@@ -305,7 +305,7 @@ Create PR
 | sfizz-lib | 1.2.3 | https://sfztools.github.io/sfizz/ | Trve_AY |  |
 | sfizz-lv2 | 1.2.3 | https://sfztools.github.io/sfizz/ | Trve_AY |  |
 | sfizz-vst3 | 1.2.3 | https://sfztools.github.io/sfizz/ | Trve_AY |  |
-| shattered-pixel-dungeon | 3.3.8 | https://github.com/00-Evan/shattered-pixel-dungeon | zenobit |  |
+| shattered-pixel-dungeon | 4.0.0 | https://github.com/00-Evan/shattered-pixel-dungeon | zenobit |  |
 | simplex-chat | 7.0.0 | https://simplex.chat | rayfadh | ~i686 |
 | simplex-chat-desktop | 7.0.0 | https://simplex.chat | rayfadh | ~i686 |
 | surge-xt | 1.3.4 | https://surge-synthesizer.github.io/ | Trve_AY |  |
