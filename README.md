@@ -151,7 +151,7 @@ Create PR
 | CRC-xlibre | 1 | https://repo.osowoso.org | zenobit |  |
 | crush | 0.90.0 | https://github.com/charmbracelet/crush | zenobit |  |
 | cwal | 0.10.1 | https://github.com/nitinbhat972/cwal | zenobit |  |
-| dankcalendar | 0.3.1 | https://github.com/AvengeMedia/dankcalendar | zenobit |  |
+| dankcalendar | 1.6.1 | https://github.com/AvengeMedia/dankcalendar | zenobit |  |
 | DankMaterialShell | 1.5.3 | https://github.com/AvengeMedia/DankMaterialShell | zenobit |  |
 | dashy | 4.1.5 | https://github.com/Lissy93/dashy | zenobit |  |
 | desktop-tui | 0.3.2 | https://github.com/Julien-cpsn/desktop-tui | zenobit |  |
