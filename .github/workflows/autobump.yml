@@ -22,18 +22,18 @@ jobs:
       image: ghcr.io/osowoso/oco-builder-x86_64:latest
       credentials:
         username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
+        password: ${{ secrets.BOT }}
       options: --platform linux/amd64 --privileged
       volumes:
         - /dev:/dev
     env:
       ISSUE_NUMBER: ${{ github.event.issue.number }}
       ISSUE_BODY: ${{ github.event.issue.body }}
-      OCO_TOKEN: ${{ secrets.WORKFLOWS }}
+      OCO_TOKEN: ${{ secrets.BOT }}
       GH_REPO: oSoWoSo/vOid_Community_repOsitory
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           path: extra
 
@@ -82,7 +82,7 @@ jobs:
       - name: Skip if already handled
         id: marker
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.BOT }}
         run: |
           if curl -fsSL -H "Authorization: Bearer ${GH_TOKEN}" \
               "https://api.github.com/repos/${GH_REPO}/issues/${ISSUE_NUMBER}/comments?per_page=100" \
@@ -122,7 +122,7 @@ jobs:
       - name: Run xxautobump
         id: bump
         if: steps.whitelist.outputs.in_list == 'true'
-        timeout-minutes: 30
+        timeout-minutes: 60
         run: |
           export PATH="/opt/xbps/usr/bin/:$PATH"
           set +e
