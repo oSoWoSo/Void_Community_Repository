@@ -231,7 +231,7 @@ Create PR
 | libbtrfsutil | 7.1 | https://btrfs.wiki.kernel.org/index.php/Main_Page | Enno Boland |  |
 | libbtrfsutil-devel | 7.1 | https://btrfs.wiki.kernel.org/index.php/Main_Page | Enno Boland |  |
 | libcprime | 5.0.1 | https://gitlab.com/cubocore/libcprime | zenobit |  |
-| librewolf-bin | 155.0.1 | https://librewolf.net | zenobit | x86_64 aarch64 |
+| librewolf-bin | 155.0.1.1 | https://librewolf.net | zenobit | x86_64 aarch64 |
 | libspng | 0.7.4 | https://libspng.org/ | zenobit |  |
 | libtsm | 4.7.1 | https://github.com/kmscon/libtsm | zenobit |  |
 | libtsm-devel | 4.7.1 | https://github.com/kmscon/libtsm | zenobit |  |
