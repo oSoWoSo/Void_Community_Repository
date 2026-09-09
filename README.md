@@ -338,7 +338,7 @@ Create PR
 | void-user-manager-git | 0.0.0 | https://codeberg.org/pinguin-void/void-user-manager | zenobit | x86_64 |
 | vote | 0.92 | https://codeberg.org/oSoWoSo/vote | zenobit |  |
 | vtm | 2026.07.30 | https://github.com/directvt/vtm | zenobit |  |
-| waterfox-bin | 6.7.1.1 | https://www.waterfox.net | zenobit | x86_64 aarch64 |
+| waterfox-bin | 6.7.2 | https://www.waterfox.net | zenobit | x86_64 aarch64 |
 | wpgtk | 6.7.1 | https://github.com/deviantfero/wpgtk/ | zenobit |  |
 | xdg-desktop-portal-cosmic | 1.1.0 | https://github.com/pop-os/xdg-desktop-portal-cosmic | Bella109 | x86_64* |
 | xdg-desktop-portal-hyprland | 1.3.11 | https://github.com/hyprwm/xdg-desktop-portal-hyprland | zenobit |  |
