@@ -1070,7 +1070,7 @@ do_test() {
 			| gum filter --reverse --limit 1 --header 'Selection mode?') \
 			|| { _y 'Aborted'; return 1; }
 
-		_runner=$(printf '%s\n' auto amd64 arm64 nativ \
+		_runner=$(printf '%s\n' auto amd64 arm64 nativ self-hosted \
 			| gum filter --reverse --limit 1 --header 'Runner?' --selected auto) \
 			|| { _y 'Aborted'; return 1; }
 
@@ -1103,11 +1103,7 @@ do_test() {
 	echo "  Templates:  $_pkgs"
 	echo ''
 
-	if [ "$_runner" = 'auto' ]; then
-		gh workflow run build.yml --repo "$_repo" --ref "$_ref" -f "templates=$_pkgs"
-	else
-		gh workflow run build.yml --repo "$_repo" --ref "$_ref" -f "runner=$_runner" -f "templates=$_pkgs"
-	fi
+	gh workflow run build.yml --repo "$_repo" --ref "$_ref" -f "runner=$_runner" -f "templates=$_pkgs"
 	[ $? -eq 0 ] || fatal 'failed to dispatch workflow (check gh auth / permissions)'
 
 	_run_id=$(gh run list --workflow=build.yml --branch "$_ref" --limit 1 \
