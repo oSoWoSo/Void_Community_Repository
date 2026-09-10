@@ -1,6 +1,6 @@
 # Template file for 'llama.cpp'
 pkgname=llama.cpp
-version=10568
+version=10896
 revision=1
 build_style=cmake
 configure_args="-DGGML_NATIVE=OFF -DGGML_VULKAN=ON -DGGML_BLAS=ON
@@ -14,7 +14,7 @@ maintainer="zenobit <zen@osowoso.org>"
 license="MIT"
 homepage="https://github.com/ggml-org/llama.cpp"
 distfiles="https://github.com/ggml-org/llama.cpp/archive/refs/tags/b${version}.tar.gz"
-checksum=e449131c3ab918aefc3027f8dad880b33d472c2600400ec65925c6e764a17660
+checksum=04539df07b859b1e0dc6f767b1a2d1b0d1d1d568e84d9e2cc9a186089b418395
 replaces="llama-cpp>=0"
 
 case $ARCH in
