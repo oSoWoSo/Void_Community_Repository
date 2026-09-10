@@ -2,8 +2,16 @@
 # Shared build loop used by both test-pr and build CI jobs.
 # Required env: PACKAGES, ARCH, BOOTSTRAP, TEST, NATIVE, FORCE
 # Writes built=true/false to GITHUB_OUTPUT when that variable is set.
+# When RESULT_FILE is set, appends `pkg<tab>version<tab>ok|fail|skip` per
+# package so the update-status job can refresh the README build table.
 . "${GITHUB_WORKSPACE}/extra/src/pkg-helpers.sh"
 export PATH="/opt/xbps/usr/bin/:$PATH"
+
+if [ -n "${RESULT_FILE:-}" ]; then
+	mkdir -p "$(dirname "$RESULT_FILE")"
+	: > "$RESULT_FILE"
+fi
+
 cd /void-packages
 
 xbps_test=''
@@ -33,8 +41,10 @@ echo
 BUILT=false
 FAILED=false
 for pkg in $PKGS; do
+	_ver=$(grep '^version=' "srcpkgs/$pkg/template" 2>/dev/null | head -n1 | cut -d= -f2- | tr -d '"' | tr -d ' ')
 	if ! pkg_arch_ok "$pkg" "$ARCH"; then
 		echo "==> Skipping ${pkg}: not available for ${ARCH}"
+		[ -n "${RESULT_FILE:-}" ] && printf '%s\t%s\tskip\n' "$pkg" "$_ver" >> "$RESULT_FILE"
 		continue
 	fi
 
@@ -64,8 +74,10 @@ for pkg in $PKGS; do
 	echo "==> Building ${pkg}"
 	if sudo -Eu builder ./xbps-src -j"$(nproc)" -s $force_flag $arch_flag $xbps_test pkg "$pkg"; then
 		BUILT=true
+		[ -n "${RESULT_FILE:-}" ] && printf '%s\t%s\tok\n' "$pkg" "$_ver" >> "$RESULT_FILE"
 	else
 		FAILED=true
+		[ -n "${RESULT_FILE:-}" ] && printf '%s\t%s\tfail\n' "$pkg" "$_ver" >> "$RESULT_FILE"
 	fi
 	echo
 done

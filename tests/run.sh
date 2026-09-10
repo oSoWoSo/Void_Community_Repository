@@ -343,6 +343,29 @@ else
 	echo '  (skipped: python3 not on PATH)'
 fi
 
+echo '== build-status.py =='
+
+if command -v python3 >/dev/null 2>&1; then
+	_bs_wd=$(mktemp -d)
+	mkdir -p "$_bs_wd/results/build-results-x86_64" "$_bs_wd/results/build-results-aarch64"
+	printf 'alpha\t1.0\tok\nbeta\t2.0\tfail\n' > "$_bs_wd/results/build-results-x86_64/results.tsv"
+	printf 'alpha\t1.0\tok\nbeta\t2.0\tskip\n' > "$_bs_wd/results/build-results-aarch64/results.tsv"
+	python3 "$SCRIPT_DIR/src/build-status.py" merge \
+		"$_bs_wd/results" "$_bs_wd/status.json" 42 2026-09-10 >/dev/null
+	it 'merge: per-arch cells (ok/ok)'
+	assert_eq "$(python3 "$SCRIPT_DIR/src/build-status.py" cell alpha "$_bs_wd/status.json" | tr '\n' ',')" 'ok,,ok,,42,2026-09-10,'
+	it 'merge: per-arch cells (fail/skip)'
+	assert_eq "$(python3 "$SCRIPT_DIR/src/build-status.py" cell beta "$_bs_wd/status.json" | tr '\n' ',')" 'fail,,skip,,42,2026-09-10,'
+	it 'cell: unknown pkg all empty'
+	assert_eq "$(python3 "$SCRIPT_DIR/src/build-status.py" cell ghost "$_bs_wd/status.json" | tr '\n' ',')" ',,,,,,'
+	python3 "$SCRIPT_DIR/src/build-status.py" prune "$_bs_wd/status.json" alpha >/dev/null
+	it 'prune: removes entry'
+	assert_eq "$(python3 "$SCRIPT_DIR/src/build-status.py" cell alpha "$_bs_wd/status.json" | tr '\n' ',')" ',,,,,,'
+	rm -rf "$_bs_wd"
+else
+	echo '  (skipped: python3 not on PATH)'
+fi
+
 echo '== _check_nocross_chain =='
 
 eval "$(awk '

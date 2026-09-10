@@ -18,6 +18,8 @@ SRCPKGS='srcpkgs'
 TEMPLATES_LIST='/tmp/oco-templates-list'
 REPODATA_LIST_PY="${SCRIPT_DIR}/src/repodata-list.py"
 REPODATA_STRIP_PY="${SCRIPT_DIR}/src/repodata-strip.py"
+BUILD_STATUS_PY="${SCRIPT_DIR}/src/build-status.py"
+BUILD_STATUS_FILE="${SCRIPT_DIR}/src/build-status.json"
 BUILD_TEMPLATE="${SCRIPT_DIR}/src/build.yml.in"
 README="${SCRIPT_DIR}/README.md"
 WORKFLOW="${SCRIPT_DIR}/.github/workflows/build.yml"
@@ -347,15 +349,56 @@ generate_readme() {
 
 	awk '/^## Available/{exit} {print}' "$README" > "$_tmp"
 
+	# Build-result lookups. One field per line, in arch order:
+	# x86_64, x86_64-musl, aarch64, aarch64-musl, latest-run-id, run-date.
+	_row_status() {
+		_st_s1='' _st_s2='' _st_s3='' _st_s4='' _st_run='' _st_date=''
+		command -v python3 >/dev/null 2>&1 || return 0
+		_out=$(python3 "$BUILD_STATUS_PY" cell "$1" "$BUILD_STATUS_FILE" 2>/dev/null) || return 0
+		_st_s1=$(printf '%s\n' "$_out" | sed -n '1p')
+		_st_s2=$(printf '%s\n' "$_out" | sed -n '2p')
+		_st_s3=$(printf '%s\n' "$_out" | sed -n '3p')
+		_st_s4=$(printf '%s\n' "$_out" | sed -n '4p')
+		_st_run=$(printf '%s\n' "$_out" | sed -n '5p')
+		_st_date=$(printf '%s\n' "$_out" | sed -n '6p')
+	}
+
+	_status_cell() {
+		case "$1" in
+			ok)   printf '✅' ;;
+			fail) printf '❌' ;;
+			skip) printf '–' ;;
+		esac
+	}
+
 	{
 		echo '## Available templates (packages when built successfully)'
-		echo '| package | version | homepage | maintainer | notes |'
-		echo '|:--------|:--------|:---------|:-----------|:------|'
+		echo '| package | version | home | CI | x86_64 | x86_64-musl | aarch64 | aarch64-musl | maintainer | notes | popis |'
+		echo '|:--------|:--------|:-----|:---|:-------|:------------|:--------|:-------------|:-----------|:------|:------|'
 		while IFS= read -r _pkg; do
 			_tpl="$SRCPKGS/$_pkg/template"
 			[ -f "$_tpl" ] || continue
 			read_template_fields "$_tpl"
-			echo "| $_pkg | $_tpl_version | $_tpl_homepage | $_tpl_maintainer | $_tpl_archs |"
+
+			_home=''
+			[ -n "$_tpl_homepage" ] && _home="[home](${_tpl_homepage})"
+
+			_row_status "$_pkg"
+			_st_c1=$(_status_cell "$_st_s1")
+			_st_c2=$(_status_cell "$_st_s2")
+			_st_c3=$(_status_cell "$_st_s3")
+			_st_c4=$(_status_cell "$_st_s4")
+
+			_ci=''
+			if [ -n "$_st_run" ]; then
+				if [ -n "$_st_date" ]; then
+					_ci="[${_st_date}](${CI_URL}/actions/runs/${_st_run})"
+				else
+					_ci="[CI](${CI_URL}/actions/runs/${_st_run})"
+				fi
+			fi
+
+			echo "| $_pkg | $_tpl_version | $_home | $_ci | $_st_c1 | $_st_c2 | $_st_c3 | $_st_c4 | $_tpl_maintainer | $_tpl_archs | $_tpl_short_desc |"
 		done < "$TEMPLATES_LIST"
 	} >> "$_tmp"
 

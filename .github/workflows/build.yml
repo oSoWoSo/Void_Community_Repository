@@ -35,7 +35,7 @@ on:
         - auto
         - amd64
         - arm64
-        - nativ
+        - nocross
       all:
         description: 'Everything'
         required: false
@@ -70,6 +70,7 @@ on:
         - Community-Repositories-Collection
         - corekeyboard
         - cosign
+        - cosmic
         - cosmic-applets
         - cosmic-applibrary
         - cosmic-bg
@@ -267,6 +268,7 @@ on:
         - river-compositor
         - runkit
         - rustdesk
+        - sdbus-c++
         - sdkmanager
         - seamonkey-bin
         - sfizz-cli
@@ -346,7 +348,7 @@ jobs:
         with:
           # Need full history so we can diff against arbitrary base SHAs
           # (multi-commit pushes, force-pushes, PR bases).
-          fetch-depth: 0
+          fetch-depth: 23
 
       - name: Detect changed packages
         id: detect
@@ -410,10 +412,10 @@ jobs:
               _main_list=$(git show origin/OCO:.gitignore 2>/dev/null | sed -n 's|^!/srcpkgs/\([^/]*\)/*$|\1|p' | sort -fu || true)
               if [ -n "$_main_list" ]; then
                 _current_list=$(find srcpkgs -maxdepth 1 -mindepth 1 -type d -printf "%f\n" | sort -f)
-                _added=$(  grep -Fxvf <(printf '%s\n' "$_main_list")    <(printf '%s\n' "$_current_list") || true)
-                _removed=$(grep -Fxvf <(printf '%s\n' "$_current_list") <(printf '%s\n' "$_main_list")    || true)
+                _added=$(  grep -Fxvf <(printf '%s\n' "$_main_list") <(printf '%s\n' "$_current_list") || true)
+                _removed=$(grep -Fxvf <(printf '%s\n' "$_current_list") <(printf '%s\n' "$_main_list") || true)
                 removed=$(printf '%s\n' "$_removed" | tr '\n' ' ' | sed 's/ $//')
-                _common=$( grep -Fxf  <(printf '%s\n' "$_main_list")    <(printf '%s\n' "$_current_list") || true)
+                _common=$( grep -Fxf  <(printf '%s\n' "$_main_list") <(printf '%s\n' "$_current_list") || true)
                 _modified=""
                 for _pkg in $_common; do
                   if git show origin/OCO:srcpkgs/$_pkg/template 2>/dev/null \
@@ -541,49 +543,49 @@ jobs:
           _RUNNER="${INPUT_RUNNER:-auto}"
           case "$_RUNNER" in
             amd64)
-              _amd64=$(arch_needed "x86_64"       && echo 1 || echo 0)
-              _musl=$( arch_needed "x86_64-musl"  && echo 1 || echo 0)
+              _amd64=$(arch_needed "x86_64" && echo 1 || echo 0)
+              _musl=$(arch_needed "x86_64-musl" && echo 1 || echo 0)
               matrix_configs=""
-              [ "$_amd64" = 1 ] && add_cfg "x86_64"      "x86_64" "ubuntu-latest"    "linux/amd64" 1 false
-              [ "$_musl"  = 1 ] && add_cfg "x86_64-musl" "x86_64" "ubuntu-latest"    "linux/amd64" 1 false
+              [ "$_amd64" = 1 ]           && add_cfg "x86_64"       "x86_64"  "ubuntu-latest"    "linux/amd64" 1 false
+              [ "$_musl"  = 1 ]           && add_cfg "x86_64-musl"  "x86_64"  "ubuntu-latest"    "linux/amd64" 1 false
               if [ -z "$matrix_configs" ]; then
                 echo "Warning: no packages for amd64 archs, defaulting to x86_64" >> "$GITHUB_STEP_SUMMARY"
-                add_cfg "x86_64" "x86_64" "ubuntu-latest" "linux/amd64" 1 false
+                                             add_cfg "x86_64"       "x86_64"  "ubuntu-latest"    "linux/amd64" 1 false
               fi
               ;;
             arm64)
-              _arm_native=$(arch_needed "aarch64"      && echo 1 || echo 0)
-              _arm_musl=$(   arch_needed "aarch64-musl" && echo 1 || echo 0)
+              _arm_native=$(arch_needed "aarch64" && echo 1 || echo 0)
+              _arm_musl=$(arch_needed "aarch64-musl" && echo 1 || echo 0)
               matrix_configs=""
-              [ "$_arm_native" = 1 ] && add_cfg "aarch64"      "aarch64"      "ubuntu-24.04-arm" "linux/arm64" 1 true
-              [ "$_arm_musl"  = 1 ] && add_cfg "aarch64-musl" "aarch64" "ubuntu-24.04-arm" "linux/arm64" 1 true
+              [ "$_arm_native" = 1 ]      && add_cfg "aarch64"      "aarch64" "ubuntu-24.04-arm" "linux/arm64" 1 true
+              [ "$_arm_musl"  = 1 ]       && add_cfg "aarch64-musl" "aarch64" "ubuntu-24.04-arm" "linux/arm64" 1 true
               if [ -z "$matrix_configs" ]; then
                 echo "Warning: no packages for arm64 archs, defaulting to x86_64" >> "$GITHUB_STEP_SUMMARY"
-                add_cfg "x86_64" "x86_64" "ubuntu-latest" "linux/amd64" 1 false
+                                             add_cfg "x86_64"       "x86_64"  "ubuntu-latest"    "linux/amd64" 1 false
               fi
               ;;
-            nativ)
+            nocross)
               matrix_configs=""
-              arch_needed "x86_64"       && add_cfg "x86_64"       "x86_64" "ubuntu-latest"    "linux/amd64" 1 false
-              arch_needed "aarch64"      && add_cfg "aarch64"      "aarch64" "ubuntu-24.04-arm" "linux/arm64" 1 true
-              arch_needed "x86_64-musl"  && add_cfg "x86_64-musl"  "x86_64" "ubuntu-latest"    "linux/amd64" 1 false
-              arch_needed "aarch64-musl" && add_cfg "aarch64-musl" "aarch64" "ubuntu-24.04-arm" "linux/arm64" 1 true
+              arch_needed "x86_64"        && add_cfg "x86_64"       "x86_64"  "ubuntu-latest"    "linux/amd64" 1 false
+              arch_needed "aarch64"       && add_cfg "aarch64"      "aarch64" "ubuntu-24.04-arm" "linux/arm64" 1 true
+              arch_needed "x86_64-musl"   && add_cfg "x86_64-musl"  "x86_64"  "ubuntu-latest"    "linux/amd64" 1 false
+              arch_needed "aarch64-musl"  && add_cfg "aarch64-musl" "aarch64" "ubuntu-24.04-arm" "linux/arm64" 1 true
               if [ -z "$matrix_configs" ]; then
                 echo "Warning: no packages for any arch, defaulting to x86_64" >> "$GITHUB_STEP_SUMMARY"
-                add_cfg "x86_64" "x86_64" "ubuntu-latest" "linux/amd64" 1 false
+                                             add_cfg "x86_64"       "x86_64"  "ubuntu-latest"    "linux/amd64" 1 false
               fi
               ;;
             auto|*)
               matrix_configs=""
-              arch_needed "x86_64"       && add_cfg "x86_64"       "x86_64" "ubuntu-latest"    "linux/amd64" 1 false
-              needs_cross "aarch64"      && add_cfg "aarch64"      "x86_64" "ubuntu-latest"    "linux/amd64" 0 false
-              arch_needed "x86_64-musl"  && add_cfg "x86_64-musl"  "x86_64" "ubuntu-latest"    "linux/amd64" 1 false
-              needs_cross "aarch64-musl" && add_cfg "aarch64-musl" "x86_64" "ubuntu-latest"    "linux/amd64" 0 false
-              needs_native "aarch64"      && add_cfg "aarch64"      "aarch64"      "ubuntu-24.04-arm" "linux/arm64" 1 true
+              arch_needed "x86_64"        && add_cfg "x86_64"       "x86_64"  "ubuntu-latest"    "linux/amd64" 1 false
+              needs_cross "aarch64"       && add_cfg "aarch64"      "x86_64"  "ubuntu-latest"    "linux/amd64" 0 false
+              arch_needed "x86_64-musl"   && add_cfg "x86_64-musl"  "x86_64"  "ubuntu-latest"    "linux/amd64" 1 false
+              needs_cross "aarch64-musl"  && add_cfg "aarch64-musl" "x86_64"  "ubuntu-latest"    "linux/amd64" 0 false
+              needs_native "aarch64"      && add_cfg "aarch64"      "aarch64" "ubuntu-24.04-arm" "linux/arm64" 1 true
               needs_native "aarch64-musl" && add_cfg "aarch64-musl" "aarch64" "ubuntu-24.04-arm" "linux/arm64" 1 true
               if [ -z "$matrix_configs" ]; then
                 echo "Warning: no arch matched package list, defaulting to x86_64" >> "$GITHUB_STEP_SUMMARY"
-                add_cfg "x86_64" "x86_64" "ubuntu-latest" "linux/amd64" 1 false
+                                             add_cfg "x86_64"       "x86_64"  "ubuntu-latest"    "linux/amd64" 1 false
               fi
               ;;
           esac
@@ -716,7 +718,16 @@ jobs:
         if: needs.detect.outputs.packages != ''
         env:
           PACKAGES: ${{ needs.detect.outputs.packages }}
+          RESULT_FILE: ${{ runner.temp }}/results.tsv
         run: sh "${GITHUB_WORKSPACE}/extra/src/build-packages.sh"
+
+      - name: Upload per-arch build results
+        if: always() && needs.detect.outputs.packages != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-results-${{ matrix.config.arch }}
+          path: ${{ runner.temp }}/results.tsv
+          if-no-files-found: ignore
 
       - name: Sign and upload new packages
         if: steps.build.outputs.built == 'true'
@@ -771,3 +782,55 @@ jobs:
             echo "ERROR: Command 'ocoman -a' failed!"
             exit 1
           fi
+
+  update-status:
+    name: Update build status table
+    needs: [detect, build]
+    if: always() && (github.event_name == 'push' || github.event_name == 'repository_dispatch' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v6
+        with:
+          path: extra
+          fetch-depth: 0
+
+      - name: Download build results
+        uses: actions/download-artifact@v4
+        with:
+          path: extra/results
+
+      - name: Merge build results
+        env:
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 extra/src/build-status.py merge \
+            extra/results extra/src/build-status.json "$RUN_ID" "$(date -u +%Y-%m-%d)"
+
+      - name: Prune removed packages
+        if: needs.detect.outputs.removed != ''
+        env:
+          REMOVED: ${{ needs.detect.outputs.removed }}
+        run: |
+          python3 extra/src/build-status.py prune \
+            extra/src/build-status.json $REMOVED
+
+      - name: Regenerate list, README, and workflow
+        run: |
+          cd extra
+          ./ocoman -u
+
+      - name: Commit and push status updates
+        if: github.ref_name == 'OCO'
+        run: |
+          cd extra
+          git add README.md src/build-status.json
+          if git diff --cached --quiet; then
+            echo "No build-status changes to commit"
+            exit 0
+          fi
+          git config user.name "OCO build-bot"
+          git config user.email "build@users.noreply.github.com"
+          git commit -m "CI: update build status"
+          git push

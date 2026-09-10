@@ -86,268 +86,270 @@ Create PR
 - [Readme](https://github.com/void-linux/void-packages/blob/master/README.md)
 
 ## Available templates (packages when built successfully)
-| package | version | homepage | maintainer | notes |
-|:--------|:--------|:---------|:-----------|:------|
-| android-sdk | 36 | https://developer.android.com/studio | zenobit | x86_64 |
-| aquamarine | 0.14.0 | https://github.com/hyprwm/aquamarine | zenobit |  |
-| blocaled | 0.7 | https://github.com/lfs-book/blocaled | zenobit |  |
-| brave-browser-bin | 1.94.121 | https://www.brave.com/ | zenobit | x86_64 aarch64 |
-| brave-origin-bin | 1.94.121 | https://www.brave.com/ | zenobit | x86_64 aarc64 |
-| brow6el | 0.3.5 | https://brow6el.dev/ | zenobit | x86_64 |
-| btrfs-progs | 7.1 | https://btrfs.wiki.kernel.org/index.php/Main_Page | Enno Boland |  |
-| bulletty | 0.3.0 | https://github.com/crocidb/bulletty | zenobit |  |
-| bun | 1.4.0 | https://bun.sh | zenobit | aarch64* x86_64* |
-| bun-bootstrap | 1.4.0 | https://bun.sh | zenobit | x86_64* aarch64* |
-| caerus | 0.6.0 | https://github.com/mendescotta/Caerus | zenobit |  |
-| candy-icons-git | 0.11.1 | https://www.opendesktop.org/p/1305251/ | Trve_AY |  |
-| cc-switch | 3.20.1 | https://github.com/farion1231/cc-switch | zenobit | x86_64* aarch64* |
-| cliamp | 2.1.0 | https://github.com/bjarneo/cliamp | zenobit |  |
-| clitest | 0.5.0 | https://github.com/aureliojargas/clitest | zenobit |  |
-| Community-Repositories-Collection | 1 | https://repo.osowoso.org | zenobit |  |
-| corekeyboard | 5.0.1 | https://gitlab.com/cubocore/coreapps/corekeyboard | zenobit |  |
-| cosign | 3.1.3 | https://github.com/sigstore/cosign | zenobit |  |
-| cosmic-applets | 1.8.0 | https://github.com/pop-os/cosmic-applets | zenobit | x86_64* |
-| cosmic-applibrary | 1.8.0 | https://github.com/pop-os/cosmic-app-library | zenobit | x86_64* |
-| cosmic-bg | 1.8.0 | https://github.com/pop-os/cosmic-bg | zenobit | x86_64* |
-| cosmic-comp | 1.8.0 | https://github.com/pop-os/cosmic-comp | zenobit | x86_64* |
-| cosmic-desktop-full | 1.1.0 | https://github.com/pop-os/cosmic-epoch | Bella109 | x86_64* |
-| cosmic-desktop-minimal | 1.1.0 | https://github.com/pop-os/cosmic-epoch | Bella109 | x86_64* |
-| cosmic-edit | 1.8.0 | https://github.com/pop-os/cosmic-edit | zenobit | x86_64* |
-| cosmic-files | 1.8.0 | https://github.com/pop-os/cosmic-files | zenobit | x86_64* |
-| cosmic-greeter | 1.8.0 | https://github.com/pop-os/cosmic-greeter | zenobit | x86_64* |
-| cosmic-icons | 1.8.0 | https://github.com/pop-os/cosmic-icons | zenobit | x86_64* |
-| cosmic-idle | 1.8.0 | https://github.com/pop-os/cosmic-idle | zenobit | x86_64* |
-| cosmic-initial-setup | 1.8.0 | https://github.com/pop-os/cosmic-initial-setup | zenobit | x86_64* |
-| cosmic-launcher | 1.8.0 | https://github.com/pop-os/cosmic-launcher | zenobit | x86_64* |
-| cosmic-monitor | 1.8.0 | https://github.com/pop-os/cosmic-monitor | zenobit | x86_64* |
-| cosmic-notifications | 1.8.0 | https://github.com/pop-os/cosmic-notifications | zenobit | x86_64* |
-| cosmic-osd | 1.8.0 | https://github.com/pop-os/cosmic-osd | zenobit | x86_64* |
-| cosmic-panel | 1.8.0 | https://github.com/pop-os/cosmic-panel | zenobit | x86_64* |
-| cosmic-player | 1.8.0 | https://github.com/pop-os/cosmic-player | zenobit | x86_64* |
-| cosmic-randr | 1.8.0 | https://github.com/pop-os/cosmic-randr | zenobit | x86_64* |
-| cosmic-screenshot | 1.8.0 | https://github.com/pop-os/cosmic-screenshot | zenobit | x86_64* |
-| cosmic-session | 1.8.0 | https://github.com/pop-os/cosmic-session | zenobit | x86_64* |
-| cosmic-settings | 1.8.0 | https://github.com/pop-os/cosmic-settings | zenobit | x86_64* |
-| cosmic-settings-daemon | 1.8.0 | https://github.com/pop-os/cosmic-settings-daemon | zenobit | x86_64* |
-| cosmic-sound-theme | 1.8.0 | https://github.com/pop-os/cosmic-sound-theme | zenobit | x86_64* |
-| cosmic-store | 1.8.0 | https://github.com/pop-os/cosmic-store | zenobit | x86_64* |
-| cosmic-term | 1.8.0 | https://github.com/pop-os/cosmic-term | zenobit | x86_64* |
-| cosmic-tweaks | 0.2.2 | https://github.com/cosmic-utils/cosmic-tweaks | Bella109 | x86_64 |
-| cosmic-wallpapers | 1.8.0 | https://github.com/pop-os/cosmic-wallpapers | zenobit | x86_64* |
-| cosmic-workspaces-epoch | 1.8.0 | https://github.com/pop-os/cosmic-workspaces-epoch | zenobit | x86_64* |
-| CRC-black-hole | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-brgvos | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-cereus-core | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-cereus-extra | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-cosmic | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-d77void | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-hyprland | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-jake | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-lazy | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-librewolf | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-noid | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-odyssey | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-sofijacom | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-sonicde | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-split | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-voiders | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-vostock | 1 | https://repo.osowoso.org | zenobit |  |
-| CRC-xlibre | 1 | https://repo.osowoso.org | zenobit |  |
-| crush | 0.90.0 | https://github.com/charmbracelet/crush | zenobit |  |
-| cwal | 0.10.1 | https://github.com/nitinbhat972/cwal | zenobit |  |
-| dankcalendar | 1.6.1 | https://github.com/AvengeMedia/dankcalendar | zenobit |  |
-| DankMaterialShell | 1.5.3 | https://github.com/AvengeMedia/DankMaterialShell | zenobit |  |
-| dashy | 4.1.5 | https://github.com/Lissy93/dashy | zenobit |  |
-| default-cursors | 1 | https://www.voidlinux.org | zenobit |  |
-| desktop-tui | 0.3.2 | https://github.com/Julien-cpsn/desktop-tui | zenobit |  |
-| devedeng | 4.22.1 | https://www.rastersoft.com/programas/devede.html | Bella109 |  |
-| distrobox | 1.8.2.5 | https://distrobox.it/ | zenobit |  |
-| dragonfly-reverb | 3.2.10 | https://michaelwillis.github.io/dragonfly-reverb | Trve_AY |  |
-| dragonfly-reverb-clap | 3.2.10 | https://michaelwillis.github.io/dragonfly-reverb | Trve_AY |  |
-| dragonfly-reverb-doc | 3.2.10 | https://michaelwillis.github.io/dragonfly-reverb | Trve_AY |  |
-| dragonfly-reverb-lv2 | 3.2.10 | https://michaelwillis.github.io/dragonfly-reverb | Trve_AY |  |
-| dragonfly-reverb-standalone | 3.2.10 | https://michaelwillis.github.io/dragonfly-reverb | Trve_AY |  |
-| dragonfly-reverb-vst | 3.2.10 | https://michaelwillis.github.io/dragonfly-reverb | Trve_AY |  |
-| dragonfly-reverb-vst3 | 3.2.10 | https://michaelwillis.github.io/dragonfly-reverb | Trve_AY |  |
-| drako | 0.3.3 | https://github.com/lucky7xz/drako | zenobit |  |
-| easybashgui | 15.0.2 | https://github.com/BashGui/easybashgui | zenobit |  |
-| faugus-launcher | 2.2.2 | https://github.com/Faugus/faugus-launcher | zenobit |  |
-| fcitx5-lotus | 3.5.8 | https://github.com/LotusInputMethod/fcitx5-lotus | Coolllyn |  |
-| fcitx5-lotus-settings | 3.5.8 | https://github.com/LotusInputMethod/fcitx5-lotus | Coolllyn |  |
-| flyline | 1.7.1 | https://github.com/HalFrgrd/flyline | zenobit |  |
-| forgejo-runner | 13.1.0 | https://code.forgejo.org/forgejo/runner | zenobit |  |
-| FreeTube | 0.25.1 | https://github.com/FreeTubeApp/FreeTube | Bella109 | x86_64 |
-| ftxui | 7.0.3 | https://github.com/ArthurSonzogni/FTXUI | zenobit |  |
-| ftxui-devel | 7.0.3 | https://github.com/ArthurSonzogni/FTXUI | zenobit |  |
-| gama | 1.2.1 | https://github.com/termkit/gama | zenobit |  |
-| gh-dash | 4.25.2 | https://github.com/dlvhdr/gh-dash | zenobit |  |
-| gh-lazy | 0.6.6 | https://github.com/gizmo385/gh-lazy | zenobit |  |
-| ghgrab | 2.0.2 | https://github.com/abhixdd/ghgrab | zenobit |  |
-| glaze | 8.2.0 | https://github.com/stephenberry/glaze | zenobit |  |
-| gofer | 0.5.1 | https://codeberg.org/JakeAtLinux/Gofer | zenobit |  |
-| gradle | 9.7.0 | https://gradle.org | zenobit |  |
-| graphite-gtk-theme | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| graphite-gtk-theme-all | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| graphite-gtk-theme-black | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| graphite-gtk-theme-black-compact | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| graphite-gtk-theme-compact | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| graphite-gtk-theme-compact-all | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| graphite-gtk-theme-dark | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| graphite-gtk-theme-dark-compact | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| graphite-gtk-theme-light | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| graphite-gtk-theme-light-compact | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| graphite-gtk-theme-nord | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| graphite-gtk-theme-nord-compact | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| graphite-gtk-theme-nord-dark | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| graphite-gtk-theme-nord-dark-compact | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| graphite-gtk-theme-nord-light | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| graphite-gtk-theme-nord-light-compact | 2025.07.06 | https://github.com/vinceliuice/Graphite-gtk-theme | zenobit |  |
-| gum-panel | 2.0.0.001 | https://codeberg.org/oSoWoSo/gum | zenobit |  |
-| helium-browser-bin | 0.16.6.1 | https://helium.computer | zenobit | x86_64 aarch64 |
-| hister | 0.19.0 | https://github.com/asciimoo/hister | zenobit |  |
-| hyprcursor | 0.1.13 | https://github.com/hyprwm/hyprcursor | zenobit |  |
-| hyprdynamicmonitors | 1.4.0 | https://github.com/fiffeek/hyprdynamicmonitors | zenobit |  |
-| hyprgraphics | 0.3.0 | https://github.com/hyprwm/hyprgraphics | zenobit |  |
-| hypridle | 0.1.7 | https://github.com/hyprwm/hypridle | zenobit |  |
-| hyprland | 0.52.1 | https://hyprland.org/ | zenobit |  |
-| hyprland-devel | 0.52.1 | https://hyprland.org/ | zenobit |  |
-| hyprland-guiutils | 0.1.0 | https://github.com/hyprwm/hyprland-guiutils | zenobit |  |
-| hyprland-protocols | 0.7.0 | https://github.com/hyprwm/hyprland-protocols | zenobit |  |
-| hyprland-qt-support | 0.1.0 | https://github.com/hyprwm/hyprland-qt-support | zenobit |  |
-| hyprlang | 0.6.8 | https://github.com/hyprwm/hyprlang | zenobit |  |
-| hyprlock | 0.9.2 | https://github.com/hyprwm/hyprlock | zenobit |  |
-| hyprmoncfg | 1.14.2 | https://github.com/crmne/hyprmoncfg/ | zenobit |  |
-| hyprpaper | 0.7.6 | https://github.com/hyprwm/hyprpaper | zenobit |  |
-| hyprpicker | 0.4.7 | https://github.com/hyprwm/hyprpicker | zenobit |  |
-| hyprpolkitagent | 0.1.3 | https://github.com/hyprwm/hyprpolkitagent | zenobit |  |
-| hyprsunset | 0.3.3 | https://github.com/hyprwm/hyprsunset | zenobit |  |
-| hyprsysteminfo | 0.1.3 | https://github.com/hyprwm/hyprsysteminfo | zenobit |  |
-| hyprtoolkit | 0.3.0 | https://github.com/hyprwm/hyprtoolkit | zenobit |  |
-| hyprutils | 0.13.1 | https://github.com/hyprwm/hyprutils | zenobit |  |
-| hyprwayland-scanner | 0.4.5 | https://github.com/hyprwm/hyprwayland-scanner | zenobit |  |
-| kairo | 1.7.3 | https://github.com/programmersd21/kairo | nerdyslacker |  |
-| kando | 2.3.1 | https://kando.menu | zenobit | x86_64 aarch64 |
-| kmscon | 10.0.3 | https://github.com/kmscon/kmscon | zenobit |  |
-| lazyrsync | 0.3.0 | https://github.com/westpoint-io/lazyrsync | zenobit |  |
-| lemonade-server | 10.6.0 | https://github.com/lemonade-sdk/lemonade | zenobit |  |
-| lgogdownloader | 3.18 | https://github.com/Sude-/lgogdownloader | zenobit |  |
-| libbtrfs | 7.1 | https://btrfs.wiki.kernel.org/index.php/Main_Page | Enno Boland |  |
-| libbtrfs-devel | 7.1 | https://btrfs.wiki.kernel.org/index.php/Main_Page | Enno Boland |  |
-| libbtrfsutil | 7.1 | https://btrfs.wiki.kernel.org/index.php/Main_Page | Enno Boland |  |
-| libbtrfsutil-devel | 7.1 | https://btrfs.wiki.kernel.org/index.php/Main_Page | Enno Boland |  |
-| libcprime | 5.0.1 | https://gitlab.com/cubocore/libcprime | zenobit |  |
-| librewolf-bin | 155.0.1.1 | https://librewolf.net | zenobit | x86_64 aarch64 |
-| libspng | 0.7.4 | https://libspng.org/ | zenobit |  |
-| libtsm | 4.7.1 | https://github.com/kmscon/libtsm | zenobit |  |
-| libtsm-devel | 4.7.1 | https://github.com/kmscon/libtsm | zenobit |  |
-| linuxcommandlibrary | 4.5.0 | http://linuxcommandlibrary.com/ | zenobit | x86_64 aarch64 |
-| linuxcommandlibrary-desktop | 4.5.0 | http://linuxcommandlibrary.com/ | zenobit | x86_64 aarch64 |
-| llama.cpp | 10568 | https://github.com/ggml-org/llama.cpp | zenobit |  |
-| llmfit | 1.1.14 | https://github.com/AlexsJones/llmfit | zenobit |  |
-| lunasvg | 3.5.0 | https://github.com/sammycage/lunasvg | zenobit |  |
-| lunasvg-devel | 3.5.0 | https://github.com/sammycage/lunasvg | zenobit |  |
-| ly | 1.4.0 | https://codeberg.org/fairyglade/ly | zenobit | i686 x86_64 |
-| lycan | 0.1.2 | https://github.com/tutkuofnight/lycan | Bella109 | x86_64* |
-| menu-themes | 0.8.0 | https://github.com/kando-menu/menu-themes | zenobit |  |
-| mesa-amber | 26.1.2 | https://www.mesa3d.org/ | Bella109 |  |
-| nebula-gtk | 1.3.7 | https://github.com/Letdown2491/nebula-gtk | zenobit |  |
-| NuvioDesktop | 0.3.5 | https://github.com/blarns/NuvioForLinux | Bella109 | x86_64* |
-| nvchecker | 2.22 | https://github.com/lilydjwg/nvchecker | zenobit |  |
-| nwg-bar | 0.1.6 | https://github.com/nwg-piotr/nwg-bar | zenobit |  |
-| nwg-clipman | 0.2.8 | https://github.com/nwg-piotr/nwg-clipman | zenobit |  |
-| nwg-displays | 0.4.4 | https://nwg-piotr.github.io/nwg-shell/nwg-displays | zenobit |  |
-| nwg-dock | 0.4.3 | https://nwg-piotr.github.io/nwg-shell/nwg-dock | zenobit |  |
-| nwg-dock-hyprland | 0.4.11 | https://github.com/nwg-piotr/nwg-dock-hyprland | zenobit |  |
-| nwg-drawer | 0.7.5 | https://nwg-piotr.github.io/nwg-shell/nwg-drawer | zenobit |  |
-| nwg-hello | 0.4.5 | https://github.com/nwg-piotr/nwg-hello | zenobit |  |
-| nwg-icon-picker | 0.1.1 | https://github.com/nwg-piotr/nwg-icon-picker | zenobit |  |
-| nwg-menu | 0.1.9 | https://nwg-piotr.github.io/nwg-shell/nwg-menu | zenobit |  |
-| nwg-panel | 0.10.15 | https://nwg-piotr.github.io/nwg-shell/nwg-panel | zenobit |  |
-| nwg-readme-browser | 0.1.7 | https://nwg-piotr.github.io/nwg-shell/nwg-readme-browser | zenobit |  |
-| nwg-shell | 0.5.50 | https://nwg-piotr.github.io/nwg-shell | zenobit |  |
-| nwg-shell-config | 0.5.65 | https://nwg-piotr.github.io/nwg-shell/nwg-shell-config | zenobit |  |
-| nwg-shell-wallpapers | 1.5 | https://github.com/nwg-piotr/nwg-shell-wallpapers | zenobit |  |
-| odin2 | 2.4.1 | https://thewavewarden.com/pages/odin-2 | Trve_AY |  |
-| odin2-clap | 2.4.1 | https://thewavewarden.com/pages/odin-2 | Trve_AY |  |
-| odin2-common | 2.4.1 | https://thewavewarden.com/pages/odin-2 | Trve_AY |  |
-| odin2-lv2 | 2.4.1 | https://thewavewarden.com/pages/odin-2 | Trve_AY |  |
-| odin2-standalone | 2.4.1 | https://thewavewarden.com/pages/odin-2 | Trve_AY |  |
-| odin2-vst3 | 2.4.1 | https://thewavewarden.com/pages/odin-2 | Trve_AY |  |
-| omniroute | 3.8.24 | https://github.com/diegosouzapw/OmniRoute | zenobit |  |
-| opencode | 1.18.30 | https://github.com/anomalyco/opencode | zenobit | x86_64 aarch64 |
-| patchance | 1.4.0 | https://raysession.tuxfamily.org/ | Trve_AY |  |
-| pinguintv-installer-git | 0.0.0 | https://pinguin-tv.de/installer.html | Bella109 | x86_64 |
-| pop-fonts | 0.0.0 | https://github.com/pop-os/fonts | Bella109 |  |
-| pop-icons | 3.5.1 | https://github.com/pop-os/icon-theme | Bella109 |  |
-| pop-launcher | 1.8.0 | https://github.com/pop-os/launcher | zenobit | x86_64* |
-| pop-sounds-theme | 5.5.1 | https://github.com/pop-os/gtk-theme | Bella109 |  |
-| proxelar | 0.5.1 | https://github.com/emanuele-em/proxelar | zenobit |  |
-| python3-anysqlite | 0.0.5 | https://github.com/karpetrosyan/anysqlite | zenobit |  |
-| python3-geographiclib | 2.1 | https://geographiclib.sourceforge.io/ | zenobit |  |
-| python3-geopy | 2.4.1 | https://github.com/geopy/geopy | zenobit |  |
-| python3-hishel | 1.1.9 | https://github.com/karpetrosyan/hishel | zenobit |  |
-| python3-inline-snapshot | 0.32.6 | https://15r10nk.github.io/inline-snapshot/latest | zenobit |  |
-| python3-linkify-it-py | 2.1.0 | https://github.com/tsutsu3/linkify-it-py | Orphaned |  |
-| python3-PyGithub | 2.8.1 | https://pygithub.readthedocs.io/ | Orphan |  |
-| python3-structlog | 26.1.0 | https://github.com/hynek/structlog | zenobit |  |
-| python3-textual | 5.3.0 | https://textual.textualize.io | icp |  |
-| python3-uc-micro-py | 2.0.0 | https://github.com/tsutsu3/uc.micro-py | Orphaned |  |
-| qrunsvmgr | 0.2.5 | https://codeberg.org/ItsZariep/qrunsvmgr | zenobit |  |
-| quickemu | 4.9.9 | https://github.com/quickemu-project/quickemu | zenobit |  |
-| quickosdl | 0.3.2 | https://github.com/lj3954/quickosdl | zenobit |  |
-| quickshell+ | 0.3.1 | https://quickshell.org | zenobit |  |
-| radicle | 1.8.0 | https://radicle.dev/ | zenobit |  |
-| raysession | 0.18.0 | https://raysession.tuxfamily.org/ | Trve_AY |  |
-| rebos | 3.5.2 | https://gitlab.com/Oglo12/rebos | zenobit |  |
-| rgc | 1.2.0 | https://github.com/flameshikari/rgc | zenobit |  |
-| river-compositor | 0.4.8 | https://codeberg.org/river/river | LinuxNation | ~i686* ~armv6l* ~armv7l* |
-| runkit | 1.4.0 | https://github.com/Letdown2491/runkit | zenobit |  |
-| rustdesk | 1.4.9 | https://github.com/rustdesk/rustdesk | Bella109 | x86_64* |
-| sdkmanager | 0.7.0 | https://gitlab.com/fdroid/sdkmanager | zenobit |  |
-| seamonkey-bin | 2.53.24 | https://www.seamonkey-project.org/ | zenobit | x86_64 |
-| sfizz-cli | 1.2.3 | https://sfztools.github.io/sfizz/ | Trve_AY |  |
-| sfizz-git | 1.2.3 | https://sfztools.github.io/sfizz/ | Trve_AY |  |
-| sfizz-lib | 1.2.3 | https://sfztools.github.io/sfizz/ | Trve_AY |  |
-| sfizz-lv2 | 1.2.3 | https://sfztools.github.io/sfizz/ | Trve_AY |  |
-| sfizz-vst3 | 1.2.3 | https://sfztools.github.io/sfizz/ | Trve_AY |  |
-| shattered-pixel-dungeon | 4.0.0 | https://github.com/00-Evan/shattered-pixel-dungeon | zenobit |  |
-| simplex-chat | 7.0.0 | https://simplex.chat | rayfadh | ~i686 |
-| simplex-chat-desktop | 7.0.0 | https://simplex.chat | rayfadh | ~i686 |
-| surge-xt | 1.3.4 | https://surge-synthesizer.github.io/ | Trve_AY |  |
-| surge-xt-clap | 1.3.4 | https://surge-synthesizer.github.io/ | Trve_AY |  |
-| surge-xt-common | 1.3.4 | https://surge-synthesizer.github.io/ | Trve_AY |  |
-| surge-xt-lv2 | 1.3.4 | https://surge-synthesizer.github.io/ | Trve_AY |  |
-| surge-xt-standalone | 1.3.4 | https://surge-synthesizer.github.io/ | Trve_AY |  |
-| surge-xt-vst3 | 1.3.4 | https://surge-synthesizer.github.io/ | Trve_AY |  |
-| svi | 0.2.2 | https://codeberg.org/LinuxNation/svi | zenobit |  |
-| tdf | 0.5.0 | https://github.com/itsjunetime/tdf | zenobit |  |
-| tiki | 0.6.1 | https://github.com/boolean-maybe/tiki | zenobit |  |
-| tls-client | 1.15.1 | https://github.com/bogdanfinn/tls-client | zenobit |  |
-| tomlplusplus | 3.4.0 | https://marzer.github.io/tomlplusplus/ | zenobit |  |
-| tomlplusplus-devel | 3.4.0 | https://marzer.github.io/tomlplusplus/ | zenobit |  |
-| Trilium | 0.105.0 | https://github.com/TriliumNext/Trilium | zenobit |  |
-| tufw | 0.2.8 | https://github.com/peltho/tufw | zenobit |  |
-| tuios | 0.7.0 | https://github.com/Gaurav-Gosain/tuios | zenobit |  |
-| tuisic | 2.5.2 | https://github.com/Dark-Kernel/tuisic | zenobit |  |
-| typobuster | 1.0.0 | https://github.com/nwg-piotr/typobuster | zenobit |  |
-| undelete-btrfs | 1.0 | https://github.com/danthem/undelete-btrfs | zenobit |  |
-| vbm | 1.0.2 | https://codeberg.org/oSoWoSo/vbm | zenobit |  |
-| vibepanel | 0.16.1 | https://github.com/prankstr/vibepanel | LinuxNation |  |
-| Vish | 1.1.3 | https://github.com/Lluciocc/Vish | zenobit |  |
-| vm-curator | 1.4.0 | https://github.com/mroboff/vm-curator | zenobit |  |
-| void-hardwaremanager-git | 0.0.0 | https://codeberg.org/pinguin-void/Void-Driver-App | zenobit | x86_64 aarch64 |
-| void-live-creator-git | 0.0.0 | https://codeberg.org/pinguin-void/void-live-creator | zenobit |  |
-| void-software-store | 1.9.4.02 | https://codeberg.org/oSoWoSo/void-software-store | zenobit |  |
-| void-software-store-git | 999 | https://codeberg.org/pinguin-void/void-software-store | zenobit |  |
-| void-src-builder-git | 0.0.0 | https://codeberg.org/pinguin-void/void-src-builder | zenobit |  |
-| void-user-manager-git | 0.0.0 | https://codeberg.org/pinguin-void/void-user-manager | zenobit | x86_64 |
-| vote | 0.92 | https://codeberg.org/oSoWoSo/vote | zenobit |  |
-| vtm | 2026.07.30 | https://github.com/directvt/vtm | zenobit |  |
-| waterfox-bin | 6.7.2 | https://www.waterfox.net | zenobit | x86_64 aarch64 |
-| wpgtk | 6.7.1 | https://github.com/deviantfero/wpgtk/ | zenobit |  |
-| xdg-desktop-portal-cosmic | 1.8.0 | https://github.com/pop-os/xdg-desktop-portal-cosmic | zenobit | x86_64* |
-| xdg-desktop-portal-hyprland | 1.3.11 | https://github.com/hyprwm/xdg-desktop-portal-hyprland | zenobit |  |
-| xut | 0.4.2 | https://codeberg.org/mobinmob/xut | mobinmob |  |
-| xxtools-git | 0.0.0 | https://github.com/Piraty/xxtools | zenobit |  |
-| zen-browser-bin | 1.22b | https://github.com/zen-browser/desktop | Bella109 | x86_64 aarch64 |
-| zig | 0.16.0 | https://ziglang.org | Bella109 | x86_64* aarch64* |
+| package | version | home | CI | x86_64 | x86_64-musl | aarch64 | aarch64-musl | maintainer | notes | popis |
+|:--------|:--------|:-----|:---|:-------|:------------|:--------|:-------------|:-----------|:------|:------|
+| android-sdk | 36 | [home](https://developer.android.com/studio) |  |  |  |  |  | zenobit | x86_64 | Android SDK platform 36 and build-tools 29.0.3 |
+| aquamarine | 0.15.0 | [home](https://github.com/hyprwm/aquamarine) |  |  |  |  |  | zenobit |  | Aquamarine is a very light linux rendering backend library |
+| blocaled | 0.7 | [home](https://github.com/lfs-book/blocaled) |  |  |  |  |  | zenobit |  | Standalone implementation of the localed D-Bus service |
+| brave-browser-bin | 1.94.121 | [home](https://www.brave.com/) |  |  |  |  |  | zenobit | x86_64 aarch64 | One of the most private browsers built on top off Chromium project |
+| brave-origin-bin | 1.94.121 | [home](https://www.brave.com/) |  |  |  |  |  | zenobit | x86_64 aarc64 | Minimalist browser from the makers of Brave (binary) |
+| brow6el | 0.3.5 | [home](https://brow6el.dev/) |  |  |  |  |  | zenobit | x86_64 | Minimalistic graphical terminal web browser using sixels |
+| btrfs-progs | 7.1 | [home](https://btrfs.wiki.kernel.org/index.php/Main_Page) |  |  |  |  |  | Enno Boland |  | Btrfs filesystem utilities |
+| bulletty | 0.3.0 | [home](https://github.com/crocidb/bulletty) |  |  |  |  |  | zenobit |  | Feed reader for the terminal that stores the articles as Markdown |
+| bun | 1.4.0 | [home](https://bun.sh) |  |  |  |  |  | zenobit | aarch64* x86_64* | JavaScript runtime, bundler, transpiler, and package manager |
+| bun-bootstrap | 1.4.0 | [home](https://bun.sh) |  |  |  |  |  | zenobit | x86_64* aarch64* | Bootstrap package for bun (prebuilt binary) |
+| caerus | 0.6.0 | [home](https://github.com/mendescotta/Caerus) |  |  |  |  |  | zenobit |  | Package manager for Void Linux, inspired by Synaptic |
+| candy-icons-git | 0.11.1 | [home](https://www.opendesktop.org/p/1305251/) |  |  |  |  |  | Trve_AY |  | Sweet gradient icons, sweet rainbow folders included |
+| cc-switch | 3.20.1 | [home](https://github.com/farion1231/cc-switch) |  |  |  |  |  | zenobit | x86_64* aarch64* | Assistant for Claude Code, Codex, OpenCode, OpenClaw & Gemini CLI |
+| cliamp | 2.1.0 | [home](https://github.com/bjarneo/cliamp) |  |  |  |  |  | zenobit |  | Terminal music player inspired by winamp |
+| clitest | 0.5.0 | [home](https://github.com/aureliojargas/clitest) |  |  |  |  |  | zenobit |  | Command Line Tester |
+| Community-Repositories-Collection | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| corekeyboard | 5.0.1 | [home](https://gitlab.com/cubocore/coreapps/corekeyboard) |  |  |  |  |  | zenobit |  | X11 based virtual keyboard for C Suite |
+| cosign | 3.1.3 | [home](https://github.com/sigstore/cosign) |  |  |  |  |  | zenobit |  | Code signing and transparency for containers and binaries |
+| cosmic | 1.8.0 | [home](https://system76.com/cosmic) |  |  |  |  |  | zenobit | x86_64* | COSMIC meta-package for Void Linux |
+| cosmic-applets | 1.8.0 | [home](https://github.com/pop-os/cosmic-applets) |  |  |  |  |  | zenobit | x86_64* | Applets for COSMIC Panel |
+| cosmic-applibrary | 1.8.0 | [home](https://github.com/pop-os/cosmic-app-library) |  |  |  |  |  | zenobit | x86_64* | Application launcher for the COSMIC desktop |
+| cosmic-bg | 1.8.0 | [home](https://github.com/pop-os/cosmic-bg) |  |  |  |  |  | zenobit | x86_64* | COSMIC session service which applies backgrounds to displays |
+| cosmic-comp | 1.8.0 | [home](https://github.com/pop-os/cosmic-comp) |  |  |  |  |  | zenobit | x86_64* | Compositor for the COSMIC desktop environment |
+| cosmic-desktop-full | 1.1.0 | [home](https://github.com/pop-os/cosmic-epoch) |  |  |  |  |  | Bella109 | x86_64* | Full Cosmic Desktop |
+| cosmic-desktop-minimal | 1.1.0 | [home](https://github.com/pop-os/cosmic-epoch) |  |  |  |  |  | Bella109 | x86_64* | Meta Package for COSMIC Desktop |
+| cosmic-edit | 1.8.0 | [home](https://github.com/pop-os/cosmic-edit) |  |  |  |  |  | zenobit | x86_64* | Text editor for the COSMIC desktop |
+| cosmic-files | 1.8.0 | [home](https://github.com/pop-os/cosmic-files) |  |  |  |  |  | zenobit | x86_64* | File manager for the COSMIC desktop environment |
+| cosmic-greeter | 1.8.0 | [home](https://github.com/pop-os/cosmic-greeter) |  |  |  |  |  | zenobit | x86_64* | COSMIC greeter for greetd |
+| cosmic-icons | 1.8.0 | [home](https://github.com/pop-os/cosmic-icons) |  |  |  |  |  | zenobit | x86_64* | System76 Cosmic icon theme for Linux |
+| cosmic-idle | 1.8.0 | [home](https://github.com/pop-os/cosmic-idle) |  |  |  |  |  | zenobit | x86_64* | Idle daemon for the COSMIC desktop |
+| cosmic-initial-setup | 1.8.0 | [home](https://github.com/pop-os/cosmic-initial-setup) |  |  |  |  |  | zenobit | x86_64* | Initial setup for the COSMIC desktop |
+| cosmic-launcher | 1.8.0 | [home](https://github.com/pop-os/cosmic-launcher) |  |  |  |  |  | zenobit | x86_64* | Layer Shell frontend for pop-launcher |
+| cosmic-monitor | 1.8.0 | [home](https://github.com/pop-os/cosmic-monitor) |  |  |  |  |  | zenobit | x86_64* | System monitor for the COSMIC desktop |
+| cosmic-notifications | 1.8.0 | [home](https://github.com/pop-os/cosmic-notifications) |  |  |  |  |  | zenobit | x86_64* | Layer Shell notifications daemon for the COSMIC desktop |
+| cosmic-osd | 1.8.0 | [home](https://github.com/pop-os/cosmic-osd) |  |  |  |  |  | zenobit | x86_64* | On-Screen Display daemon for the COSMIC desktop |
+| cosmic-panel | 1.8.0 | [home](https://github.com/pop-os/cosmic-panel) |  |  |  |  |  | zenobit | x86_64* | COSMIC applet for creating panels and docks |
+| cosmic-player | 1.8.0 | [home](https://github.com/pop-os/cosmic-player) |  |  |  |  |  | zenobit | x86_64* | Media player for the COSMIC desktop |
+| cosmic-randr | 1.8.0 | [home](https://github.com/pop-os/cosmic-randr) |  |  |  |  |  | zenobit | x86_64* | Library and utility for displaying and configuring Wayland outputs |
+| cosmic-screenshot | 1.8.0 | [home](https://github.com/pop-os/cosmic-screenshot) |  |  |  |  |  | zenobit | x86_64* | Utility for capturing screenshots via XDG Desktop Portal |
+| cosmic-session | 1.8.0 | [home](https://github.com/pop-os/cosmic-session) |  |  |  |  |  | zenobit | x86_64* | Session manager for the COSMIC desktop environment |
+| cosmic-settings | 1.8.0 | [home](https://github.com/pop-os/cosmic-settings) |  |  |  |  |  | zenobit | x86_64* | Settings application for the COSMIC desktop environment |
+| cosmic-settings-daemon | 1.8.0 | [home](https://github.com/pop-os/cosmic-settings-daemon) |  |  |  |  |  | zenobit | x86_64* | Settings daemon for the COSMIC desktop environment |
+| cosmic-sound-theme | 1.8.0 | [home](https://github.com/pop-os/cosmic-sound-theme) |  |  |  |  |  | zenobit | x86_64* | Sound theme for the COSMIC desktop environment |
+| cosmic-store | 1.8.0 | [home](https://github.com/pop-os/cosmic-store) |  |  |  |  |  | zenobit | x86_64* | Cosmic App Store |
+| cosmic-term | 1.8.0 | [home](https://github.com/pop-os/cosmic-term) |  |  |  |  |  | zenobit | x86_64* | COSMIC terminal emulator |
+| cosmic-tweaks | 0.2.2 | [home](https://github.com/cosmic-utils/cosmic-tweaks) |  |  |  |  |  | Bella109 | x86_64 | Tweaks for COSMIC |
+| cosmic-wallpapers | 1.8.0 | [home](https://github.com/pop-os/cosmic-wallpapers) |  |  |  |  |  | zenobit | x86_64* | Wallpapers for the COSMIC Desktop Environment |
+| cosmic-workspaces-epoch | 1.8.0 | [home](https://github.com/pop-os/cosmic-workspaces-epoch) |  |  |  |  |  | zenobit | x86_64* | COSMIC workspaces |
+| CRC-black-hole | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-brgvos | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-cereus-core | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-cereus-extra | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-cosmic | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-d77void | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-hyprland | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-jake | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-lazy | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-librewolf | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-noid | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-odyssey | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-sofijacom | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-sonicde | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-split | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-voiders | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-vostock | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| CRC-xlibre | 1 | [home](https://repo.osowoso.org) |  |  |  |  |  | zenobit |  | CRC: Collection of community repositories |
+| crush | 0.90.0 | [home](https://github.com/charmbracelet/crush) |  |  |  |  |  | zenobit |  | Glamourous AI coding agent for your favourite terminal |
+| cwal | 0.10.1 | [home](https://github.com/nitinbhat972/cwal) |  |  |  |  |  | zenobit |  | Blazing-fast pywal-like color palette generator written in C |
+| dankcalendar | 1.6.1 | [home](https://github.com/AvengeMedia/dankcalendar) |  |  |  |  |  | zenobit |  | Calendar app for the Dank Linux desktop (Local, Google, CalDAV, iCloud) |
+| DankMaterialShell | 1.5.3 | [home](https://github.com/AvengeMedia/DankMaterialShell) |  |  |  |  |  | zenobit |  | Desktop shell for wayland compositors built with Quickshell & GO |
+| dashy | 4.1.5 | [home](https://github.com/Lissy93/dashy) |  |  |  |  |  | zenobit |  | Self-hostable personal dashboard |
+| default-cursors | 1 | [home](https://www.voidlinux.org) |  |  |  |  |  | zenobit |  | Default cursor set |
+| desktop-tui | 0.3.2 | [home](https://github.com/Julien-cpsn/desktop-tui) |  |  |  |  |  | zenobit |  | Desktop environment without graphics |
+| devedeng | 4.22.1 | [home](https://www.rastersoft.com/programas/devede.html) |  |  |  |  |  | Bella109 |  | Create video DVDs and CDs |
+| distrobox | 1.8.2.5 | [home](https://distrobox.it/) |  |  |  |  |  | zenobit |  | Podman/Docker wrapper to use any linux distribution in your terminal |
+| dragonfly-reverb | 3.2.10 | [home](https://michaelwillis.github.io/dragonfly-reverb) |  |  |  |  |  | Trve_AY |  | Collection of reverbs |
+| dragonfly-reverb-clap | 3.2.10 | [home](https://michaelwillis.github.io/dragonfly-reverb) |  |  |  |  |  | Trve_AY |  | Collection of reverbs |
+| dragonfly-reverb-doc | 3.2.10 | [home](https://michaelwillis.github.io/dragonfly-reverb) |  |  |  |  |  | Trve_AY |  | Collection of reverbs |
+| dragonfly-reverb-lv2 | 3.2.10 | [home](https://michaelwillis.github.io/dragonfly-reverb) |  |  |  |  |  | Trve_AY |  | Collection of reverbs |
+| dragonfly-reverb-standalone | 3.2.10 | [home](https://michaelwillis.github.io/dragonfly-reverb) |  |  |  |  |  | Trve_AY |  | Collection of reverbs |
+| dragonfly-reverb-vst | 3.2.10 | [home](https://michaelwillis.github.io/dragonfly-reverb) |  |  |  |  |  | Trve_AY |  | Collection of reverbs |
+| dragonfly-reverb-vst3 | 3.2.10 | [home](https://michaelwillis.github.io/dragonfly-reverb) |  |  |  |  |  | Trve_AY |  | Collection of reverbs |
+| drako | 0.3.3 | [home](https://github.com/lucky7xz/drako) |  |  |  |  |  | zenobit |  | Grid-based, customizable TUI-Deck launcher |
+| easybashgui | 15.0.2 | [home](https://github.com/BashGui/easybashgui) |  |  |  |  |  | zenobit |  | Bash functions library that aims to give simple GUI functions |
+| faugus-launcher | 2.2.2 | [home](https://github.com/Faugus/faugus-launcher) |  |  |  |  |  | zenobit |  | Simple and lightweight app for running Windows games using UMU-Launcher |
+| fcitx5-lotus | 3.5.8 | [home](https://github.com/LotusInputMethod/fcitx5-lotus) |  |  |  |  |  | Coolllyn |  | Vietnamese input method for fcitx5 |
+| fcitx5-lotus-settings | 3.5.8 | [home](https://github.com/LotusInputMethod/fcitx5-lotus) |  |  |  |  |  | Coolllyn |  | Vietnamese input method for fcitx5 |
+| flyline | 1.7.1 | [home](https://github.com/HalFrgrd/flyline) |  |  |  |  |  | zenobit |  | Bash plugin to replace readline for a modern line editing experience |
+| forgejo-runner | 13.1.0 | [home](https://code.forgejo.org/forgejo/runner) |  |  |  |  |  | zenobit |  | Continuous integration for Forgejo |
+| FreeTube | 0.25.1 | [home](https://github.com/FreeTubeApp/FreeTube) |  |  |  |  |  | Bella109 | x86_64 | Client for watching YouTube Videos |
+| ftxui | 7.0.3 | [home](https://github.com/ArthurSonzogni/FTXUI) |  |  |  |  |  | zenobit |  | C++ Functional Terminal User Interface |
+| ftxui-devel | 7.0.3 | [home](https://github.com/ArthurSonzogni/FTXUI) |  |  |  |  |  | zenobit |  | C++ Functional Terminal User Interface |
+| gama | 1.2.1 | [home](https://github.com/termkit/gama) |  |  |  |  |  | zenobit |  | Manage your GitHub Actions from Terminal with great UI |
+| gh-dash | 4.25.2 | [home](https://github.com/dlvhdr/gh-dash) |  |  |  |  |  | zenobit |  | Rich terminal UI for GitHub that doesn't break your flow |
+| gh-lazy | 0.6.6 | [home](https://github.com/gizmo385/gh-lazy) |  |  |  |  |  | zenobit |  | Terminal UI for interacting with GitHub |
+| ghgrab | 2.0.2 | [home](https://github.com/abhixdd/ghgrab) |  |  |  |  |  | zenobit |  | Terminal tool to browse and download files in git forges |
+| glaze | 8.3.0 | [home](https://github.com/stephenberry/glaze) |  |  |  |  |  | zenobit |  | Extremely fast, in memory, JSON and interface library for modern C++ |
+| gofer | 0.5.1 | [home](https://codeberg.org/JakeAtLinux/Gofer) |  |  |  |  |  | zenobit |  | Fast, minimal application launcher written in pure Go. Supports both Way |
+| gradle | 9.7.0 | [home](https://gradle.org) |  |  |  |  |  | zenobit |  | Build system for Java/C/C++ software |
+| graphite-gtk-theme | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| graphite-gtk-theme-all | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| graphite-gtk-theme-black | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| graphite-gtk-theme-black-compact | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| graphite-gtk-theme-compact | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| graphite-gtk-theme-compact-all | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| graphite-gtk-theme-dark | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| graphite-gtk-theme-dark-compact | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| graphite-gtk-theme-light | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| graphite-gtk-theme-light-compact | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| graphite-gtk-theme-nord | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| graphite-gtk-theme-nord-compact | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| graphite-gtk-theme-nord-dark | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| graphite-gtk-theme-nord-dark-compact | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| graphite-gtk-theme-nord-light | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| graphite-gtk-theme-nord-light-compact | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
+| gum-panel | 2.0.0.001 | [home](https://codeberg.org/oSoWoSo/gum) |  |  |  |  |  | zenobit |  | Modified version of gum with panel support |
+| helium-browser-bin | 0.16.6.1 | [home](https://helium.computer) |  |  |  |  |  | zenobit | x86_64 aarch64 | Private, fast, and honest web browser based on Chromium (binary build) |
+| hister | 0.19.0 | [home](https://github.com/asciimoo/hister) |  |  |  |  |  | zenobit |  | Your own search engine |
+| hyprcursor | 0.1.13 | [home](https://github.com/hyprwm/hyprcursor) |  |  |  |  |  | zenobit |  | Hyprland cursor format, library and utilities |
+| hyprdynamicmonitors | 1.4.0 | [home](https://github.com/fiffeek/hyprdynamicmonitors) |  |  |  |  |  | zenobit |  | Hyprland configuration based on connected displays, power and lid state |
+| hyprgraphics | 0.5.1 | [home](https://github.com/hyprwm/hyprgraphics) |  |  |  |  |  | zenobit |  | Hyprland graphics resources and utilities |
+| hypridle | 0.1.8 | [home](https://github.com/hyprwm/hypridle) |  |  |  |  |  | zenobit |  | Hyprland's idle daemon |
+| hyprland | 0.56.2 | [home](https://hyprland.org/) |  |  |  |  |  | zenobit |  | Dynamic tiling Wayland compositor that doesn't sacrifice on its looks |
+| hyprland-devel | 0.56.2 | [home](https://hyprland.org/) |  |  |  |  |  | zenobit |  | Dynamic tiling Wayland compositor that doesn't sacrifice on its looks |
+| hyprland-guiutils | 0.2.2 | [home](https://github.com/hyprwm/hyprland-guiutils) |  |  |  |  |  | zenobit |  | Qt/QML utility apps for Hyprland |
+| hyprland-protocols | 0.7.0 | [home](https://github.com/hyprwm/hyprland-protocols) |  |  |  |  |  | zenobit |  | Wayland protocol extensions for Hyprland |
+| hyprland-qt-support | 0.1.0 | [home](https://github.com/hyprwm/hyprland-qt-support) |  |  |  |  |  | zenobit |  | QML style provider for Hypr* QT apps |
+| hyprlang | 0.6.8 | [home](https://github.com/hyprwm/hyprlang) |  |  |  |  |  | zenobit |  | Official implementation library for the hypr config language |
+| hyprlock | 0.9.6 | [home](https://github.com/hyprwm/hyprlock) |  |  |  |  |  | zenobit |  | Hyprland's GPU-accelerated screen locking utility |
+| hyprmoncfg | 1.14.2 | [home](https://github.com/crmne/hyprmoncfg/) |  |  |  |  |  | zenobit |  | Terminal-first monitor configurator and daemon for Hyprland |
+| hyprpaper | 0.8.4 | [home](https://github.com/hyprwm/hyprpaper) |  |  |  |  |  | zenobit |  | Fast wallpaper utility for wlroots compositors with IPC controls |
+| hyprpicker | 0.4.7 | [home](https://github.com/hyprwm/hyprpicker) |  |  |  |  |  | zenobit |  | Wlroots-compatible Wayland color picker that does not suck |
+| hyprpolkitagent | 0.2.0 | [home](https://github.com/hyprwm/hyprpolkitagent) |  |  |  |  |  | zenobit |  | Simple polkit authentication agent for Hyprland, written in QT/QML |
+| hyprsunset | 0.4.0 | [home](https://github.com/hyprwm/hyprsunset) |  |  |  |  |  | zenobit |  | Application to enable a blue-light filter on Hyprland |
+| hyprsysteminfo | 0.2.0 | [home](https://github.com/hyprwm/hyprsysteminfo) |  |  |  |  |  | zenobit |  | Tiny qt6/qml application to display system informations |
+| hyprtoolkit | 0.6.0 | [home](https://github.com/hyprwm/hyprtoolkit) |  |  |  |  |  | zenobit |  | Modern C++ Wayland-native GUI toolkit |
+| hyprutils | 0.14.2 | [home](https://github.com/hyprwm/hyprutils) |  |  |  |  |  | zenobit |  | Hyprland utilities library used across the ecosystem |
+| hyprwayland-scanner | 0.4.6 | [home](https://github.com/hyprwm/hyprwayland-scanner) |  |  |  |  |  | zenobit |  | Hyprland's implementation of wayland-scanner |
+| kairo | 1.7.3 | [home](https://github.com/programmersd21/kairo) |  |  |  |  |  | nerdyslacker |  | Fast, keyboard-first terminal task manager |
+| kando | 2.3.1 | [home](https://kando.menu) |  |  |  |  |  | zenobit | x86_64 aarch64 | Do things with utmost efficiency |
+| kmscon | 10.0.3 | [home](https://github.com/kmscon/kmscon) |  |  |  |  |  | zenobit |  | Linux KMS/DRM based virtual Console Emulator |
+| lazyrsync | 0.3.0 | [home](https://github.com/westpoint-io/lazyrsync) |  |  |  |  |  | zenobit |  | Friendly terminal UI for rsync |
+| lemonade-server | 10.6.0 | [home](https://github.com/lemonade-sdk/lemonade) |  |  |  |  |  | zenobit |  | Local LLM Serving with GPU and NPU acceleration (Server) |
+| lgogdownloader | 3.18 | [home](https://github.com/Sude-/lgogdownloader) |  |  |  |  |  | zenobit |  | Unofficial downloader to GOG.com for Linux users |
+| libbtrfs | 7.1 | [home](https://btrfs.wiki.kernel.org/index.php/Main_Page) |  |  |  |  |  | Enno Boland |  | Btrfs filesystem utilities |
+| libbtrfs-devel | 7.1 | [home](https://btrfs.wiki.kernel.org/index.php/Main_Page) |  |  |  |  |  | Enno Boland |  | Btrfs filesystem utilities |
+| libbtrfsutil | 7.1 | [home](https://btrfs.wiki.kernel.org/index.php/Main_Page) |  |  |  |  |  | Enno Boland |  | Btrfs filesystem utilities |
+| libbtrfsutil-devel | 7.1 | [home](https://btrfs.wiki.kernel.org/index.php/Main_Page) |  |  |  |  |  | Enno Boland |  | Btrfs filesystem utilities |
+| libcprime | 5.0.1 | [home](https://gitlab.com/cubocore/libcprime) |  |  |  |  |  | zenobit |  | Library for bookmarking, saving activities, sharing files and more |
+| librewolf-bin | 155.0.1.1 | [home](https://librewolf.net) |  |  |  |  |  | zenobit | x86_64 aarch64 | Community-maintained fork of Firefox focused on privacy and security |
+| libspng | 0.7.4 | [home](https://libspng.org/) |  |  |  |  |  | zenobit |  | Simple, modern libpng alternative |
+| libtsm | 4.7.1 | [home](https://github.com/kmscon/libtsm) |  |  |  |  |  | zenobit |  | Terminal-emulator State Machine |
+| libtsm-devel | 4.7.1 | [home](https://github.com/kmscon/libtsm) |  |  |  |  |  | zenobit |  | Terminal-emulator State Machine |
+| linuxcommandlibrary | 4.5.0 | [home](http://linuxcommandlibrary.com/) |  |  |  |  |  | zenobit | x86_64 aarch64 | Linux reference app with basics, tips and formatted man pages |
+| linuxcommandlibrary-desktop | 4.5.0 | [home](http://linuxcommandlibrary.com/) |  |  |  |  |  | zenobit | x86_64 aarch64 | Linux reference app with basics, tips and formatted man pages |
+| llama.cpp | 10568 | [home](https://github.com/ggml-org/llama.cpp) |  |  |  |  |  | zenobit |  | LLM inference in C/C++ |
+| llmfit | 1.1.14 | [home](https://github.com/AlexsJones/llmfit) |  |  |  |  |  | zenobit |  | Hundreds of models & providers, easy to find what fits your hardware |
+| lunasvg | 3.5.0 | [home](https://github.com/sammycage/lunasvg) |  |  |  |  |  | zenobit |  | SVG rendering and manipulation library in C++ |
+| lunasvg-devel | 3.5.0 | [home](https://github.com/sammycage/lunasvg) |  |  |  |  |  | zenobit |  | SVG rendering and manipulation library in C++ |
+| ly | 1.4.0 | [home](https://codeberg.org/fairyglade/ly) |  |  |  |  |  | zenobit | i686 x86_64 | Lightweight TUI (ncurses-like) display manager for Linux and BSD |
+| lycan | 0.1.2 | [home](https://github.com/tutkuofnight/lycan) |  |  |  |  |  | Bella109 | x86_64* | Lightweight PWA manager for Linux |
+| menu-themes | 0.8.0 | [home](https://github.com/kando-menu/menu-themes) |  |  |  |  |  | zenobit |  | Collection of menu themes for Kando |
+| mesa-amber | 26.1.2 | [home](https://www.mesa3d.org/) |  |  |  |  |  | Bella109 |  | Mesa for older hardware (legacy driver build) |
+| nebula-gtk | 1.3.7 | [home](https://github.com/Letdown2491/nebula-gtk) |  |  |  |  |  | zenobit |  | GTK frontend for Void Linux's XBPS tooling |
+| NuvioDesktop | 0.3.5 | [home](https://github.com/blarns/NuvioForLinux) |  |  |  |  |  | Bella109 | x86_64* | Multi Media Hub - multiple sources for watching Series, Movies and Anime |
+| nvchecker | 2.22 | [home](https://github.com/lilydjwg/nvchecker) |  |  |  |  |  | zenobit |  | New version checker for software releases |
+| nwg-bar | 0.1.6 | [home](https://github.com/nwg-piotr/nwg-bar) |  |  |  |  |  | zenobit |  | GTK3-based button bar for wlroots-based compositors |
+| nwg-clipman | 0.2.8 | [home](https://github.com/nwg-piotr/nwg-clipman) |  |  |  |  |  | zenobit |  | GTK based GUI for cliphist - nwg-shell clipboard manager |
+| nwg-displays | 0.4.4 | [home](https://nwg-piotr.github.io/nwg-shell/nwg-displays) |  |  |  |  |  | zenobit |  | Intuitive GUI to manage multiple displays for wayland |
+| nwg-dock | 0.4.3 | [home](https://nwg-piotr.github.io/nwg-shell/nwg-dock) |  |  |  |  |  | zenobit |  | GTK based dock for sway |
+| nwg-dock-hyprland | 0.4.11 | [home](https://github.com/nwg-piotr/nwg-dock-hyprland) |  |  |  |  |  | zenobit |  | GTK3-based dock for Hyprland |
+| nwg-drawer | 0.7.5 | [home](https://nwg-piotr.github.io/nwg-shell/nwg-drawer) |  |  |  |  |  | zenobit |  | Application drawer for wlroots-based Wayland compositors |
+| nwg-hello | 0.4.5 | [home](https://github.com/nwg-piotr/nwg-hello) |  |  |  |  |  | zenobit |  | GTK based greeter for greetd written in python |
+| nwg-icon-picker | 0.1.1 | [home](https://github.com/nwg-piotr/nwg-icon-picker) |  |  |  |  |  | zenobit |  | GTK icon chooser with a text search option |
+| nwg-menu | 0.1.9 | [home](https://nwg-piotr.github.io/nwg-shell/nwg-menu) |  |  |  |  |  | zenobit |  | MenuStart plugin to nwg-panel, also capable of working standalone |
+| nwg-panel | 0.10.15 | [home](https://nwg-piotr.github.io/nwg-shell/nwg-panel) |  |  |  |  |  | zenobit |  | GTK based panel for sway and Hyprland Wayland compositors |
+| nwg-readme-browser | 0.1.7 | [home](https://nwg-piotr.github.io/nwg-shell/nwg-readme-browser) |  |  |  |  |  | zenobit |  | WebKitGTK based README file browser |
+| nwg-shell | 0.5.50 | [home](https://nwg-piotr.github.io/nwg-shell) |  |  |  |  |  | zenobit |  | GTK based shell for sway and Hyprland Wayland compositors |
+| nwg-shell-config | 0.5.65 | [home](https://nwg-piotr.github.io/nwg-shell/nwg-shell-config) |  |  |  |  |  | zenobit |  | Graphical user interface for configuring sway and Hyprland |
+| nwg-shell-wallpapers | 1.5 | [home](https://github.com/nwg-piotr/nwg-shell-wallpapers) |  |  |  |  |  | zenobit |  | Selection of wallpapers contributed to the nwg-shell project |
+| odin2 | 2.4.1 | [home](https://thewavewarden.com/pages/odin-2) |  |  |  |  |  | Trve_AY |  | 24 voice polyphinic synthesizer with modulation and FX |
+| odin2-clap | 2.4.1 | [home](https://thewavewarden.com/pages/odin-2) |  |  |  |  |  | Trve_AY |  | 24 voice polyphinic synthesizer with modulation and FX |
+| odin2-common | 2.4.1 | [home](https://thewavewarden.com/pages/odin-2) |  |  |  |  |  | Trve_AY |  | 24 voice polyphinic synthesizer with modulation and FX |
+| odin2-lv2 | 2.4.1 | [home](https://thewavewarden.com/pages/odin-2) |  |  |  |  |  | Trve_AY |  | 24 voice polyphinic synthesizer with modulation and FX |
+| odin2-standalone | 2.4.1 | [home](https://thewavewarden.com/pages/odin-2) |  |  |  |  |  | Trve_AY |  | 24 voice polyphinic synthesizer with modulation and FX |
+| odin2-vst3 | 2.4.1 | [home](https://thewavewarden.com/pages/odin-2) |  |  |  |  |  | Trve_AY |  | 24 voice polyphinic synthesizer with modulation and FX |
+| omniroute | 3.8.24 | [home](https://github.com/diegosouzapw/OmniRoute) |  |  |  |  |  | zenobit |  | Universal AI gateway with smart routing for multiple LLM providers |
+| opencode | 1.18.30 | [home](https://github.com/anomalyco/opencode) |  |  |  |  |  | zenobit | x86_64 aarch64 | Open source AI coding agent |
+| patchance | 1.4.0 | [home](https://raysession.tuxfamily.org/) |  |  |  |  |  | Trve_AY |  | Jack patchbay GUI |
+| pinguintv-installer-git | 0.0.0 | [home](https://pinguin-tv.de/installer.html) |  |  |  |  |  | Bella109 | x86_64 | New GUI Installer for void |
+| pop-fonts | 0.0.0 | [home](https://github.com/pop-os/fonts) |  |  |  |  |  | Bella109 |  | Pop Fonts |
+| pop-icons | 3.5.1 | [home](https://github.com/pop-os/icon-theme) |  |  |  |  |  | Bella109 |  | TODO: pop-icons short_desc |
+| pop-launcher | 1.8.0 | [home](https://github.com/pop-os/launcher) |  |  |  |  |  | zenobit | x86_64* | Modular IPC-based desktop launcher service |
+| pop-sounds-theme | 5.5.1 | [home](https://github.com/pop-os/gtk-theme) |  |  |  |  |  | Bella109 |  | Pop sounds theme |
+| proxelar | 0.5.1 | [home](https://github.com/emanuele-em/proxelar) |  |  |  |  |  | zenobit |  | Scriptable local traffic workbench |
+| python3-anysqlite | 0.0.5 | [home](https://github.com/karpetrosyan/anysqlite) |  |  |  |  |  | zenobit |  | Provides interface to sqlite3 library and supports trio and asyncio |
+| python3-geographiclib | 2.1 | [home](https://geographiclib.sourceforge.io/) |  |  |  |  |  | zenobit |  | Python implementation of the geodesic routines |
+| python3-geopy | 2.4.1 | [home](https://github.com/geopy/geopy) |  |  |  |  |  | zenobit |  | Geocoding library for Python |
+| python3-hishel | 1.1.9 | [home](https://github.com/karpetrosyan/hishel) |  |  |  |  |  | zenobit |  |  Elegant HTTP Caching for Python |
+| python3-inline-snapshot | 0.32.6 | [home](https://15r10nk.github.io/inline-snapshot/latest) |  |  |  |  |  | zenobit |  | Boosts efficiency when writing tests |
+| python3-linkify-it-py | 2.1.0 | [home](https://github.com/tsutsu3/linkify-it-py) |  |  |  |  |  | Orphaned |  | Linkify plugin for markdown-it-py |
+| python3-PyGithub | 2.8.1 | [home](https://pygithub.readthedocs.io/) |  |  |  |  |  | Orphan |  | Python library to access the GitHub API v3 |
+| python3-structlog | 26.1.0 | [home](https://github.com/hynek/structlog) |  |  |  |  |  | zenobit |  | Simple, powerful, and fast logging for Python |
+| python3-textual | 5.3.0 | [home](https://textual.textualize.io) |  |  |  |  |  | icp |  | Modern Text User Interface framework |
+| python3-uc-micro-py | 2.0.0 | [home](https://github.com/tsutsu3/uc.micro-py) |  |  |  |  |  | Orphaned |  | Unicode category micro library |
+| qrunsvmgr | 0.2.5 | [home](https://codeberg.org/ItsZariep/qrunsvmgr) |  |  |  |  |  | zenobit |  | Service manager GUI (Qt6), supporting Runit and Dinit |
+| quickemu | 4.9.9 | [home](https://github.com/quickemu-project/quickemu) |  |  |  |  |  | zenobit |  | Quickly create and run optimised virtual machines |
+| quickosdl | 0.3.2 | [home](https://github.com/lj3954/quickosdl) |  |  |  |  |  | zenobit |  | Tool to quickly find URLs to images and download them |
+| quickshell+ | 0.3.1 | [home](https://quickshell.org) |  |  |  |  |  | zenobit |  | Flexible QtQuick-based desktop shell toolkit. Hyprland-enabled |
+| radicle | 1.8.0 | [home](https://radicle.dev/) |  |  |  |  |  | zenobit |  | Peer-to-peer code collaboration stack built on Git |
+| raysession | 0.18.0 | [home](https://raysession.tuxfamily.org/) |  |  |  |  |  | Trve_AY |  | Session manager for audio programs using the NSM API |
+| rebos | 3.5.2 | [home](https://gitlab.com/Oglo12/rebos) |  |  |  |  |  | zenobit |  | NixOS like repeatability for any Linux distribution |
+| rgc | 1.2.0 | [home](https://github.com/flameshikari/rgc) |  |  |  |  |  | zenobit |  | Rust alternative of grc |
+| river-compositor | 0.4.8 | [home](https://codeberg.org/river/river) |  |  |  |  |  | LinuxNation | ~i686* ~armv6l* ~armv7l* | Non-monolithic tiling Wayland compositor |
+| runkit | 1.4.0 | [home](https://github.com/Letdown2491/runkit) |  |  |  |  |  | zenobit |  | Graphical manager for runit services |
+| rustdesk | 1.4.9 | [home](https://github.com/rustdesk/rustdesk) |  |  |  |  |  | Bella109 | x86_64* | Alternative to AnyDesk |
+| sdbus-c++ | 2.3.1 | [home](https://github.com/Kistler-Group/sdbus-cpp) |  |  |  |  |  | Ly-sec |  | High-level C++ D-Bus library |
+| sdkmanager | 0.7.0 | [home](https://gitlab.com/fdroid/sdkmanager) |  |  |  |  |  | zenobit |  | Drop-in replacement for Android sdkmanager written in Python |
+| seamonkey-bin | 2.53.24 | [home](https://www.seamonkey-project.org/) |  |  |  |  |  | zenobit | x86_64 | All-in-one internet application suite |
+| sfizz-cli | 1.2.3 | [home](https://sfztools.github.io/sfizz/) |  |  |  |  |  | Trve_AY |  | SFZ sampler |
+| sfizz-git | 1.2.3 | [home](https://sfztools.github.io/sfizz/) |  |  |  |  |  | Trve_AY |  | SFZ sampler |
+| sfizz-lib | 1.2.3 | [home](https://sfztools.github.io/sfizz/) |  |  |  |  |  | Trve_AY |  | SFZ sampler |
+| sfizz-lv2 | 1.2.3 | [home](https://sfztools.github.io/sfizz/) |  |  |  |  |  | Trve_AY |  | SFZ sampler |
+| sfizz-vst3 | 1.2.3 | [home](https://sfztools.github.io/sfizz/) |  |  |  |  |  | Trve_AY |  | SFZ sampler |
+| shattered-pixel-dungeon | 4.0.0 | [home](https://github.com/00-Evan/shattered-pixel-dungeon) |  |  |  |  |  | zenobit |  | Open-source roguelike dungeon crawler with randomized levels and enemies |
+| simplex-chat | 7.0.0 | [home](https://simplex.chat) |  |  |  |  |  | rayfadh | ~i686 | Private and secure messaging application (CLI) |
+| simplex-chat-desktop | 7.0.0 | [home](https://simplex.chat) |  |  |  |  |  | rayfadh | ~i686 | Private and secure messaging application (CLI) |
+| surge-xt | 1.3.4 | [home](https://surge-synthesizer.github.io/) |  |  |  |  |  | Trve_AY |  | Subtractive hybrid synthesizer |
+| surge-xt-clap | 1.3.4 | [home](https://surge-synthesizer.github.io/) |  |  |  |  |  | Trve_AY |  | Subtractive hybrid synthesizer |
+| surge-xt-common | 1.3.4 | [home](https://surge-synthesizer.github.io/) |  |  |  |  |  | Trve_AY |  | Subtractive hybrid synthesizer |
+| surge-xt-lv2 | 1.3.4 | [home](https://surge-synthesizer.github.io/) |  |  |  |  |  | Trve_AY |  | Subtractive hybrid synthesizer |
+| surge-xt-standalone | 1.3.4 | [home](https://surge-synthesizer.github.io/) |  |  |  |  |  | Trve_AY |  | Subtractive hybrid synthesizer |
+| surge-xt-vst3 | 1.3.4 | [home](https://surge-synthesizer.github.io/) |  |  |  |  |  | Trve_AY |  | Subtractive hybrid synthesizer |
+| svi | 0.2.2 | [home](https://codeberg.org/LinuxNation/svi) |  |  |  |  |  | zenobit |  | Graphical installer for Void Linux, built with GTK4 and Python |
+| tdf | 0.5.0 | [home](https://github.com/itsjunetime/tdf) |  |  |  |  |  | zenobit |  | TUI PDF viewer |
+| tiki | 0.6.1 | [home](https://github.com/boolean-maybe/tiki) |  |  |  |  |  | zenobit |  | Terminal Markdown-based shapeless workflow builder |
+| tls-client | 1.15.1 | [home](https://github.com/bogdanfinn/tls-client) |  |  |  |  |  | zenobit |  | Net/http.Client like HTTP Client |
+| tomlplusplus | 3.4.0 | [home](https://marzer.github.io/tomlplusplus/) |  |  |  |  |  | Cass Spencer |  | TOML config parser and serializer for C++ |
+| tomlplusplus-devel | 3.4.0 | [home](https://marzer.github.io/tomlplusplus/) |  |  |  |  |  | Cass Spencer |  | TOML config parser and serializer for C++ |
+| Trilium | 0.105.0 | [home](https://github.com/TriliumNext/Trilium) |  |  |  |  |  | zenobit |  | Build your personal knowledge base with Trilium Notes |
+| tufw | 0.2.8 | [home](https://github.com/peltho/tufw) |  |  |  |  |  | zenobit |  | Terminal UI for ufw |
+| tuios | 0.7.0 | [home](https://github.com/Gaurav-Gosain/tuios) |  |  |  |  |  | zenobit |  | Terminal UI OS (Terminal Multiplexer) |
+| tuisic | 2.5.2 | [home](https://github.com/Dark-Kernel/tuisic) |  |  |  |  |  | zenobit |  | TUI online music streaming application |
+| typobuster | 1.0.0 | [home](https://github.com/nwg-piotr/typobuster) |  |  |  |  |  | zenobit |  | Lightweight editor with text transformations and auto-correction |
+| undelete-btrfs | 1.0 | [home](https://github.com/danthem/undelete-btrfs) |  |  |  |  |  | zenobit |  | Undelete files in a BTRFS file system |
+| vbm | 1.0.2 | [home](https://codeberg.org/oSoWoSo/vbm) |  |  |  |  |  | zenobit |  | XBPS package management helper for VoidLinux |
+| vibepanel | 0.16.1 | [home](https://github.com/prankstr/vibepanel) |  |  |  |  |  | LinuxNation |  | GTK4 panel for Wayland with notifications, OSD, and quick settings |
+| Vish | 1.1.3 | [home](https://github.com/Lluciocc/Vish) |  |  |  |  |  | zenobit |  | Visual Scripting for Bash |
+| vm-curator | 1.4.0 | [home](https://github.com/mroboff/vm-curator) |  |  |  |  |  | zenobit |  | TUI to build and manage QEMU/KVM virtual machines |
+| void-hardwaremanager-git | 0.0.0 | [home](https://codeberg.org/pinguin-void/Void-Driver-App) |  |  |  |  |  | zenobit | x86_64 aarch64 | Modern GTK4 setup tool for Void Linux |
+| void-live-creator-git | 0.0.0 | [home](https://codeberg.org/pinguin-void/void-live-creator) |  |  |  |  |  | zenobit |  | Create a live ISO from a running system |
+| void-software-store | 1.9.4.02 | [home](https://codeberg.org/oSoWoSo/void-software-store) |  |  |  |  |  | zenobit |  | GUI Software Management |
+| void-software-store-git | 999 | [home](https://codeberg.org/pinguin-void/void-software-store) |  |  |  |  |  | zenobit |  | GUI Software Management |
+| void-src-builder-git | 0.0.0 | [home](https://codeberg.org/pinguin-void/void-src-builder) |  |  |  |  |  | zenobit |  | Build packages from the Void source code |
+| void-user-manager-git | 0.0.0 | [home](https://codeberg.org/pinguin-void/void-user-manager) |  |  |  |  |  | zenobit | x86_64 | Modern, lightweight user and service management application |
+| vote | 0.92 | [home](https://codeberg.org/oSoWoSo/vote) |  |  |  |  |  | zenobit |  | XBPS package management helper for VoidLinux |
+| vtm | 2026.07.30 | [home](https://github.com/directvt/vtm) |  |  |  |  |  | zenobit |  | Text-based desktop environment |
+| waterfox-bin | 6.7.2 | [home](https://www.waterfox.net) |  |  |  |  |  | zenobit | x86_64 aarch64 | Fast and private web browser |
+| wpgtk | 6.7.1 | [home](https://github.com/deviantfero/wpgtk/) |  |  |  |  |  | zenobit |  | Colorscheme, wallpaper and template manager for *nix |
+| xdg-desktop-portal-cosmic | 1.8.0 | [home](https://github.com/pop-os/xdg-desktop-portal-cosmic) |  |  |  |  |  | zenobit | x86_64* | Backend implementation for xdg-desktop-portal for COSMIC |
+| xdg-desktop-portal-hyprland | 1.4.1 | [home](https://github.com/hyprwm/xdg-desktop-portal-hyprland) |  |  |  |  |  | zenobit |  | Backend of xdg-desktop-portal for Hyprland |
+| xut | 0.4.2 | [home](https://codeberg.org/mobinmob/xut) |  |  |  |  |  | mobinmob |  | Work with templates from unofficial repositories |
+| xxtools-git | 0.0.0 | [home](https://github.com/Piraty/xxtools) |  |  |  |  |  | zenobit |  | Tools to ease packaging tasks for Void Linux |
+| zen-browser-bin | 1.22b | [home](https://github.com/zen-browser/desktop) |  |  |  |  |  | Bella109 | x86_64 aarch64 | New Browser based on Firefox |
+| zig | 0.16.0 | [home](https://ziglang.org) |  |  |  |  |  | Bella109 | x86_64* aarch64* | Programming language designed for robustness, optimality, and clarity |
