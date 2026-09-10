@@ -36,7 +36,7 @@ on:
         - amd64
         - arm64
         - nocross
-        - self-host
+        - self-hosted
       all:
         description: 'Everything'
         required: false
@@ -71,7 +71,6 @@ on:
         - Community-Repositories-Collection
         - corekeyboard
         - cosign
-        - cosmic
         - cosmic-applets
         - cosmic-applibrary
         - cosmic-bg
@@ -269,7 +268,6 @@ on:
         - river-compositor
         - runkit
         - rustdesk
-        - sdbus-c++
         - sdkmanager
         - seamonkey-bin
         - sfizz-cli
@@ -576,7 +574,7 @@ jobs:
                                              add_cfg "x86_64"       "x86_64"  "ubuntu-latest"    "linux/amd64" 1 false
               fi
               ;;
-            self-host)
+            self-hosted)
               matrix_configs=""
               arch_needed "x86_64"        && add_cfg "x86_64"       "x86_64"  "self-hosted"      "linux/amd64" 1 false
               needs_cross "aarch64"       && add_cfg "aarch64"      "x86_64"  "self-hosted"      "linux/amd64" 0 false

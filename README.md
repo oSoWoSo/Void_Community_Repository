@@ -89,7 +89,7 @@ Create PR
 | package | version | home | CI | x86_64 | x86_64-musl | aarch64 | aarch64-musl | maintainer | notes | popis |
 |:--------|:--------|:-----|:---|:-------|:------------|:--------|:-------------|:-----------|:------|:------|
 | android-sdk | 36 | [home](https://developer.android.com/studio) | [2026-08-05](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/31010693888) | ✅ |  |  |  | zenobit | x86_64 | Android SDK platform 36 and build-tools 29.0.3 |
-| aquamarine | 0.15.0 | [home](https://github.com/hyprwm/aquamarine) | [2026-08-29](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/33280003423) | ❌ | ❌ | ❌ | ❌ | zenobit |  | Aquamarine is a very light linux rendering backend library |
+| aquamarine | 0.14.0 | [home](https://github.com/hyprwm/aquamarine) | [2026-08-29](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/33280003423) | ❌ | ❌ | ❌ | ❌ | zenobit |  | Aquamarine is a very light linux rendering backend library |
 | blocaled | 0.7 | [home](https://github.com/lfs-book/blocaled) | [2026-09-10](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/34434384696) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Standalone implementation of the localed D-Bus service |
 | brave-browser-bin | 1.94.121 | [home](https://www.brave.com/) | [2026-09-06](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/34004323616) | ✅ |  | ✅ |  | zenobit | x86_64 aarch64 | One of the most private browsers built on top off Chromium project |
 | brave-origin-bin | 1.94.121 | [home](https://www.brave.com/) | [2026-09-06](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/34004836180) | ✅ |  |  |  | zenobit | x86_64 aarc64 | Minimalist browser from the makers of Brave (binary) |
@@ -106,7 +106,6 @@ Create PR
 | Community-Repositories-Collection | 1 | [home](https://repo.osowoso.org) | [2026-08-25](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/32837630220) | ✅ | ✅ | ✅ | ✅ | zenobit |  | CRC: Collection of community repositories |
 | corekeyboard | 5.0.1 | [home](https://gitlab.com/cubocore/coreapps/corekeyboard) | [2026-08-06](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/31131156002) | ✅ | ✅ | ✅ | ✅ | zenobit |  | X11 based virtual keyboard for C Suite |
 | cosign | 3.1.3 | [home](https://github.com/sigstore/cosign) | [2026-08-14](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/31832532827) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Code signing and transparency for containers and binaries |
-| cosmic | 1.8.0 | [home](https://system76.com/cosmic) |  |  |  |  |  | zenobit | x86_64* | COSMIC meta-package for Void Linux |
 | cosmic-applets | 1.8.0 | [home](https://github.com/pop-os/cosmic-applets) | [2026-09-10](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/34428731045) | ✅ | ✅ | – | – | zenobit | x86_64* | Applets for COSMIC Panel |
 | cosmic-applibrary | 1.8.0 | [home](https://github.com/pop-os/cosmic-app-library) | [2026-09-10](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/34428705599) | ✅ | ✅ | – | – | zenobit | x86_64* | Application launcher for the COSMIC desktop |
 | cosmic-bg | 1.8.0 | [home](https://github.com/pop-os/cosmic-bg) | [2026-09-10](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/34428754071) | ✅ | ✅ | – | – | zenobit | x86_64* | COSMIC session service which applies backgrounds to displays |
@@ -184,7 +183,7 @@ Create PR
 | gh-dash | 4.25.2 | [home](https://github.com/dlvhdr/gh-dash) | [2026-08-05](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/31054372001) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Rich terminal UI for GitHub that doesn't break your flow |
 | gh-lazy | 0.6.6 | [home](https://github.com/gizmo385/gh-lazy) | [2026-08-06](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/31129019194) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Terminal UI for interacting with GitHub |
 | ghgrab | 2.0.2 | [home](https://github.com/abhixdd/ghgrab) | [2026-08-17](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/32008206676) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Terminal tool to browse and download files in git forges |
-| glaze | 8.3.0 | [home](https://github.com/stephenberry/glaze) | [2026-08-28](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/33166775092) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Extremely fast, in memory, JSON and interface library for modern C++ |
+| glaze | 8.2.0 | [home](https://github.com/stephenberry/glaze) | [2026-08-28](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/33166775092) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Extremely fast, in memory, JSON and interface library for modern C++ |
 | gofer | 0.5.1 | [home](https://codeberg.org/JakeAtLinux/Gofer) | [2026-08-28](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/33210497767) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Fast, minimal application launcher written in pure Go. Supports both Way |
 | gradle | 9.7.0 | [home](https://gradle.org) | [2026-08-15](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/31854663050) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Build system for Java/C/C++ software |
 | graphite-gtk-theme | 2025.07.06 | [home](https://github.com/vinceliuice/Graphite-gtk-theme) |  |  |  |  |  | zenobit |  | Material design inspired GTK theme with light and dark variants |
@@ -208,24 +207,24 @@ Create PR
 | hister | 0.19.0 | [home](https://github.com/asciimoo/hister) | [2026-09-04](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/33862500692) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Your own search engine |
 | hyprcursor | 0.1.13 | [home](https://github.com/hyprwm/hyprcursor) |  |  |  |  |  | zenobit |  | Hyprland cursor format, library and utilities |
 | hyprdynamicmonitors | 1.4.0 | [home](https://github.com/fiffeek/hyprdynamicmonitors) | [2026-08-22](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/32546718482) | ❌ | ❌ | ❌ | ❌ | zenobit |  | Hyprland configuration based on connected displays, power and lid state |
-| hyprgraphics | 0.5.1 | [home](https://github.com/hyprwm/hyprgraphics) |  |  |  |  |  | zenobit |  | Hyprland graphics resources and utilities |
-| hypridle | 0.1.8 | [home](https://github.com/hyprwm/hypridle) |  |  |  |  |  | zenobit |  | Hyprland's idle daemon |
-| hyprland | 0.56.2 | [home](https://hyprland.org/) |  |  |  |  |  | zenobit |  | Dynamic tiling Wayland compositor that doesn't sacrifice on its looks |
-| hyprland-devel | 0.56.2 | [home](https://hyprland.org/) |  |  |  |  |  | zenobit |  | Dynamic tiling Wayland compositor that doesn't sacrifice on its looks |
-| hyprland-guiutils | 0.2.2 | [home](https://github.com/hyprwm/hyprland-guiutils) |  |  |  |  |  | zenobit |  | Qt/QML utility apps for Hyprland |
+| hyprgraphics | 0.3.0 | [home](https://github.com/hyprwm/hyprgraphics) |  |  |  |  |  | zenobit |  | Hyprland graphics resources and utilities |
+| hypridle | 0.1.7 | [home](https://github.com/hyprwm/hypridle) |  |  |  |  |  | zenobit |  | Hyprland's idle daemon |
+| hyprland | 0.52.1 | [home](https://hyprland.org/) |  |  |  |  |  | zenobit |  | Dynamic tiling Wayland compositor that doesn't sacrifice on its looks |
+| hyprland-devel | 0.52.1 | [home](https://hyprland.org/) |  |  |  |  |  | zenobit |  | Dynamic tiling Wayland compositor that doesn't sacrifice on its looks |
+| hyprland-guiutils | 0.1.0 | [home](https://github.com/hyprwm/hyprland-guiutils) |  |  |  |  |  | zenobit |  | Qt/QML utility apps for Hyprland |
 | hyprland-protocols | 0.7.0 | [home](https://github.com/hyprwm/hyprland-protocols) |  |  |  |  |  | zenobit |  | Wayland protocol extensions for Hyprland |
 | hyprland-qt-support | 0.1.0 | [home](https://github.com/hyprwm/hyprland-qt-support) |  |  |  |  |  | zenobit |  | QML style provider for Hypr* QT apps |
 | hyprlang | 0.6.8 | [home](https://github.com/hyprwm/hyprlang) |  |  |  |  |  | zenobit |  | Official implementation library for the hypr config language |
-| hyprlock | 0.9.6 | [home](https://github.com/hyprwm/hyprlock) |  |  |  |  |  | zenobit |  | Hyprland's GPU-accelerated screen locking utility |
+| hyprlock | 0.9.2 | [home](https://github.com/hyprwm/hyprlock) |  |  |  |  |  | zenobit |  | Hyprland's GPU-accelerated screen locking utility |
 | hyprmoncfg | 1.14.2 | [home](https://github.com/crmne/hyprmoncfg/) | [2026-08-22](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/32547176181) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Terminal-first monitor configurator and daemon for Hyprland |
-| hyprpaper | 0.8.4 | [home](https://github.com/hyprwm/hyprpaper) |  |  |  |  |  | zenobit |  | Fast wallpaper utility for wlroots compositors with IPC controls |
+| hyprpaper | 0.7.6 | [home](https://github.com/hyprwm/hyprpaper) |  |  |  |  |  | zenobit |  | Fast wallpaper utility for wlroots compositors with IPC controls |
 | hyprpicker | 0.4.7 | [home](https://github.com/hyprwm/hyprpicker) |  |  |  |  |  | zenobit |  | Wlroots-compatible Wayland color picker that does not suck |
-| hyprpolkitagent | 0.2.0 | [home](https://github.com/hyprwm/hyprpolkitagent) |  |  |  |  |  | zenobit |  | Simple polkit authentication agent for Hyprland, written in QT/QML |
-| hyprsunset | 0.4.0 | [home](https://github.com/hyprwm/hyprsunset) |  |  |  |  |  | zenobit |  | Application to enable a blue-light filter on Hyprland |
-| hyprsysteminfo | 0.2.0 | [home](https://github.com/hyprwm/hyprsysteminfo) |  |  |  |  |  | zenobit |  | Tiny qt6/qml application to display system informations |
-| hyprtoolkit | 0.6.0 | [home](https://github.com/hyprwm/hyprtoolkit) |  |  |  |  |  | zenobit |  | Modern C++ Wayland-native GUI toolkit |
-| hyprutils | 0.14.2 | [home](https://github.com/hyprwm/hyprutils) |  |  |  |  |  | zenobit |  | Hyprland utilities library used across the ecosystem |
-| hyprwayland-scanner | 0.4.6 | [home](https://github.com/hyprwm/hyprwayland-scanner) |  |  |  |  |  | zenobit |  | Hyprland's implementation of wayland-scanner |
+| hyprpolkitagent | 0.1.3 | [home](https://github.com/hyprwm/hyprpolkitagent) |  |  |  |  |  | zenobit |  | Simple polkit authentication agent for Hyprland, written in QT/QML |
+| hyprsunset | 0.3.3 | [home](https://github.com/hyprwm/hyprsunset) |  |  |  |  |  | zenobit |  | Application to enable a blue-light filter on Hyprland |
+| hyprsysteminfo | 0.1.3 | [home](https://github.com/hyprwm/hyprsysteminfo) |  |  |  |  |  | zenobit |  | Tiny qt6/qml application to display system informations |
+| hyprtoolkit | 0.3.0 | [home](https://github.com/hyprwm/hyprtoolkit) |  |  |  |  |  | zenobit |  | Modern C++ Wayland-native GUI toolkit |
+| hyprutils | 0.13.1 | [home](https://github.com/hyprwm/hyprutils) |  |  |  |  |  | zenobit |  | Hyprland utilities library used across the ecosystem |
+| hyprwayland-scanner | 0.4.5 | [home](https://github.com/hyprwm/hyprwayland-scanner) |  |  |  |  |  | zenobit |  | Hyprland's implementation of wayland-scanner |
 | kairo | 1.7.3 | [home](https://github.com/programmersd21/kairo) | [2026-08-05](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/31056045040) | ✅ | ✅ | ✅ | ✅ | nerdyslacker |  | Fast, keyboard-first terminal task manager |
 | kando | 2.3.1 | [home](https://kando.menu) | [2026-09-09](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/34307449867) | ✅ |  | ❌ |  | zenobit | x86_64 aarch64 | Do things with utmost efficiency |
 | kmscon | 10.0.3 | [home](https://github.com/kmscon/kmscon) | [2026-09-06](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/34000695728) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Linux KMS/DRM based virtual Console Emulator |
@@ -304,7 +303,6 @@ Create PR
 | river-compositor | 0.4.8 | [home](https://codeberg.org/river/river) | [2026-09-06](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/34049764974) | ✅ | ✅ | ❌ | ❌ | LinuxNation | ~i686* ~armv6l* ~armv7l* | Non-monolithic tiling Wayland compositor |
 | runkit | 1.4.0 | [home](https://github.com/Letdown2491/runkit) | [2026-08-16](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/31924913048) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Graphical manager for runit services |
 | rustdesk | 1.4.9 | [home](https://github.com/rustdesk/rustdesk) | [2026-07-01](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/28537315192) | ✅ | ❌ | – | – | Bella109 | x86_64* | Alternative to AnyDesk |
-| sdbus-c++ | 2.3.1 | [home](https://github.com/Kistler-Group/sdbus-cpp) |  |  |  |  |  | Ly-sec |  | High-level C++ D-Bus library |
 | sdkmanager | 0.7.0 | [home](https://gitlab.com/fdroid/sdkmanager) |  |  |  |  |  | zenobit |  | Drop-in replacement for Android sdkmanager written in Python |
 | seamonkey-bin | 2.53.24 | [home](https://www.seamonkey-project.org/) | [2026-08-06](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/31127305333) | ✅ |  |  |  | zenobit | x86_64 | All-in-one internet application suite |
 | sfizz-cli | 1.2.3 | [home](https://sfztools.github.io/sfizz/) |  |  |  |  |  | Trve_AY |  | SFZ sampler |
@@ -325,8 +323,8 @@ Create PR
 | tdf | 0.5.0 | [home](https://github.com/itsjunetime/tdf) | [2026-08-06](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/31065892772) | ✅ | ✅ | ❌ | ❌ | zenobit |  | TUI PDF viewer |
 | tiki | 0.6.1 | [home](https://github.com/boolean-maybe/tiki) |  |  |  |  |  | zenobit |  | Terminal Markdown-based shapeless workflow builder |
 | tls-client | 1.15.1 | [home](https://github.com/bogdanfinn/tls-client) | [2026-08-06](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/31066153508) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Net/http.Client like HTTP Client |
-| tomlplusplus | 3.4.0 | [home](https://marzer.github.io/tomlplusplus/) |  |  |  |  |  | Cass Spencer |  | TOML config parser and serializer for C++ |
-| tomlplusplus-devel | 3.4.0 | [home](https://marzer.github.io/tomlplusplus/) |  |  |  |  |  | Cass Spencer |  | TOML config parser and serializer for C++ |
+| tomlplusplus | 3.4.0 | [home](https://marzer.github.io/tomlplusplus/) |  |  |  |  |  | zenobit |  | TOML config parser and serializer for C++ |
+| tomlplusplus-devel | 3.4.0 | [home](https://marzer.github.io/tomlplusplus/) |  |  |  |  |  | zenobit |  | TOML config parser and serializer for C++ |
 | Trilium | 0.105.0 | [home](https://github.com/TriliumNext/Trilium) | [2026-08-22](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/32546648839) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Build your personal knowledge base with Trilium Notes |
 | tufw | 0.2.8 | [home](https://github.com/peltho/tufw) | [2026-08-06](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/31065594887) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Terminal UI for ufw |
 | tuios | 0.7.0 | [home](https://github.com/Gaurav-Gosain/tuios) | [2026-09-07](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/34116131850) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Terminal UI OS (Terminal Multiplexer) |
@@ -348,7 +346,7 @@ Create PR
 | waterfox-bin | 6.7.2 | [home](https://www.waterfox.net) | [2026-09-10](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/34425981636) | ✅ |  | ✅ |  | zenobit | x86_64 aarch64 | Fast and private web browser |
 | wpgtk | 6.7.1 | [home](https://github.com/deviantfero/wpgtk/) | [2026-08-06](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/31071774648) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Colorscheme, wallpaper and template manager for *nix |
 | xdg-desktop-portal-cosmic | 1.8.0 | [home](https://github.com/pop-os/xdg-desktop-portal-cosmic) | [2026-09-10](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/34428630431) | ✅ | ✅ | – | – | zenobit | x86_64* | Backend implementation for xdg-desktop-portal for COSMIC |
-| xdg-desktop-portal-hyprland | 1.4.1 | [home](https://github.com/hyprwm/xdg-desktop-portal-hyprland) |  |  |  |  |  | zenobit |  | Backend of xdg-desktop-portal for Hyprland |
+| xdg-desktop-portal-hyprland | 1.3.11 | [home](https://github.com/hyprwm/xdg-desktop-portal-hyprland) |  |  |  |  |  | zenobit |  | Backend of xdg-desktop-portal for Hyprland |
 | xut | 0.4.2 | [home](https://codeberg.org/mobinmob/xut) | [2026-08-09](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/31290589621) | ✅ | ✅ | ✅ | ✅ | mobinmob |  | Work with templates from unofficial repositories |
 | xxtools-git | 0.0.0 | [home](https://github.com/Piraty/xxtools) | [2026-09-06](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/34003699024) | ✅ | ✅ | ✅ | ✅ | zenobit |  | Tools to ease packaging tasks for Void Linux |
 | zen-browser-bin | 1.22b | [home](https://github.com/zen-browser/desktop) | [2026-09-05](https://github.com/oSoWoSo/Void_Community_Repository/actions/runs/33988529835) | ✅ |  | ✅ |  | Bella109 | x86_64 aarch64 | New Browser based on Firefox |

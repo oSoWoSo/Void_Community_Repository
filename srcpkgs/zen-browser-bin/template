@@ -16,8 +16,8 @@ replaces="zen-browser>=0 zen-browser-arm64-bin>=0"
 do_extract() {
 	local archiv
 	case "$XBPS_TARGET_MACHINE" in
-		x86_64) archiv="zen.linux-x86_64.tar.xz" ;;
-		aarch64) archiv="zen.linux-aarch64.tar.xz" ;;
+		x86_64)      archiv="zen.linux-x86_64.tar.xz" ;;
+		aarch64)     archiv="zen.linux-aarch64.tar.xz" ;;
 	esac
 	vextract "${XBPS_SRCDISTDIR}/${pkgname}-${version}/${archiv}"
 }
@@ -26,10 +26,10 @@ do_install() {
 	vmkdir usr/lib/zen-browser
 	vcopy * usr/lib/zen-browser
 
-	vinstall "${FILESDIR}/zen-browser.desktop" 644 usr/share/applications
+	vinstall ${FILESDIR}/zen-browser.desktop 644 usr/share/applications
 	for size in 16 32 48 64 128; do
 		vinstall browser/chrome/icons/default/default${size}.png 644 usr/share/icons/hicolor/${size}x${size}/apps zen-browser.png
 	done
 
-	vbin "${FILESDIR}/zen-browser"
+	vbin ${FILESDIR}/zen-browser
 }
