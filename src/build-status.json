@@ -1,1 +1,3537 @@
-{}
+{
+  "<none>": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-08-23",
+        "run_id": 32616373427,
+        "status": "ok"
+      }
+    },
+    "version": ""
+  },
+  "Caerus": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-22",
+        "run_id": 32562203512,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32562203512,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-22",
+        "run_id": 32562203512,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32562203512,
+        "status": "ok"
+      }
+    },
+    "version": ""
+  },
+  "Community-Repositories-Collection": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-25",
+        "run_id": 32837630220,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-25",
+        "run_id": 32837630220,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-25",
+        "run_id": 32837630220,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-25",
+        "run_id": 32837630220,
+        "status": "ok"
+      }
+    },
+    "version": "1"
+  },
+  "DankMaterialShell": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-22",
+        "run_id": 32571652904,
+        "status": "fail"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32571652904,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-22",
+        "run_id": 32571652904,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32571652904,
+        "status": "ok"
+      }
+    },
+    "version": "1.5.3"
+  },
+  "FreeTube": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-08-05",
+        "run_id": 31052769369,
+        "status": "ok"
+      }
+    },
+    "version": "0.25.1"
+  },
+  "NuvioDesktop": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-08-22",
+        "run_id": 32547730058,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32547730058,
+        "status": "fail"
+      }
+    },
+    "version": "0.3.5"
+  },
+  "Trilium": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-22",
+        "run_id": 32546648839,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32546648839,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-22",
+        "run_id": 32546648839,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32546648839,
+        "status": "ok"
+      }
+    },
+    "version": "0.105.0"
+  },
+  "Vish": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31068750531,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31068750531,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31068750531,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31068750531,
+        "status": "ok"
+      }
+    },
+    "version": "1.1.3"
+  },
+  "android-sdk": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-08-05",
+        "run_id": 31010693888,
+        "status": "ok"
+      }
+    },
+    "version": "36"
+  },
+  "aquamarine": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-29",
+        "run_id": 33280003423,
+        "status": "fail"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-29",
+        "run_id": 33280003423,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-29",
+        "run_id": 33280003423,
+        "status": "fail"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-29",
+        "run_id": 33280003423,
+        "status": "fail"
+      }
+    },
+    "version": "0.15.0"
+  },
+  "blocaled": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-10",
+        "run_id": 34434384696,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34434384696,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34434384696,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34434384696,
+        "status": "ok"
+      }
+    },
+    "version": "0.7"
+  },
+  "brave-browser-bin": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-06",
+        "run_id": 34004323616,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-06",
+        "run_id": 34004323616,
+        "status": "ok"
+      }
+    },
+    "version": "1.94.121"
+  },
+  "brave-origin-bin": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-09-06",
+        "run_id": 34004836180,
+        "status": "ok"
+      }
+    },
+    "version": "1.94.121"
+  },
+  "brow6el": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31129153059,
+        "status": "ok"
+      }
+    },
+    "version": "0.3.5"
+  },
+  "btrfs-progs": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-22",
+        "run_id": 32567072456,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32567072456,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-22",
+        "run_id": 32567072456,
+        "status": "fail"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32567072456,
+        "status": "fail"
+      }
+    },
+    "version": "7.1"
+  },
+  "bulletty": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-12",
+        "run_id": 31642775836,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-12",
+        "run_id": 31642775836,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-12",
+        "run_id": 31642775836,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-12",
+        "run_id": 31642775836,
+        "status": "ok"
+      }
+    },
+    "version": "0.3.0"
+  },
+  "bun": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-28",
+        "run_id": 33164080978,
+        "status": "fail"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-28",
+        "run_id": 33164080978,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-28",
+        "run_id": 33164080978,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-28",
+        "run_id": 33164080978,
+        "status": "fail"
+      }
+    },
+    "version": "1.4.0"
+  },
+  "bun-bootstrap": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-22",
+        "run_id": 32541692981,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32541692981,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-22",
+        "run_id": 32541692981,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32541692981,
+        "status": "ok"
+      }
+    },
+    "version": "1.4.0"
+  },
+  "caerus": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-22",
+        "run_id": 32563631240,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32563631240,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-22",
+        "run_id": 32563631240,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32563631240,
+        "status": "ok"
+      }
+    },
+    "version": "0.6.0"
+  },
+  "candy-icons-git": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31131116243,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31131116243,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31131116243,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31131116243,
+        "status": "ok"
+      }
+    },
+    "version": "0.11.1"
+  },
+  "cc-switch": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-29",
+        "run_id": 33246109775,
+        "status": "fail"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-29",
+        "run_id": 33246109775,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-29",
+        "run_id": 33246109775,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-29",
+        "run_id": 33246109775,
+        "status": "ok"
+      }
+    },
+    "version": "3.20.1"
+  },
+  "cliamp": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-07",
+        "run_id": 34167469661,
+        "status": "fail"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-07",
+        "run_id": 34167469661,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-09-07",
+        "run_id": 34167469661,
+        "status": "fail"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-07",
+        "run_id": 34167469661,
+        "status": "fail"
+      }
+    },
+    "version": "2.1.0"
+  },
+  "clitest": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-05",
+        "run_id": 31018256307,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31018256307,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-05",
+        "run_id": 31018256307,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31018256307,
+        "status": "ok"
+      }
+    },
+    "version": "0.5.0"
+  },
+  "corekeyboard": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31131156002,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31131156002,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31131156002,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31131156002,
+        "status": "ok"
+      }
+    },
+    "version": "5.0.1"
+  },
+  "cosign": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-14",
+        "run_id": 31832532827,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-14",
+        "run_id": 31832532827,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-14",
+        "run_id": 31832532827,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-14",
+        "run_id": 31832532827,
+        "status": "ok"
+      }
+    },
+    "version": "3.1.3"
+  },
+  "cosmic-applets": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428731045,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428731045,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-applibrary": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428705599,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428705599,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-bg": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428754071,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428754071,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-comp": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-07-02",
+        "run_id": 28582473145,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-07-02",
+        "run_id": 28582473145,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-desktop-full": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-06-13",
+        "run_id": 27451202777,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-06-13",
+        "run_id": 27451202777,
+        "status": "ok"
+      }
+    },
+    "version": "1.1.0"
+  },
+  "cosmic-desktop-minimal": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-08-05",
+        "run_id": 31019465256,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31019465256,
+        "status": "ok"
+      }
+    },
+    "version": "1.1.0"
+  },
+  "cosmic-edit": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428765173,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428765173,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-files": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-07-02",
+        "run_id": 28584943014,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-07-02",
+        "run_id": 28584943014,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-greeter": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-07-02",
+        "run_id": 28625827149,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-07-02",
+        "run_id": 28625827149,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-icons": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-02",
+        "run_id": 28625837368,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-02",
+        "run_id": 28625837368,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34434408500,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34434408500,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-idle": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428774383,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428774383,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-initial-setup": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-07-03",
+        "run_id": 28673960176,
+        "status": "fail"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-07-03",
+        "run_id": 28673960176,
+        "status": "fail"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-launcher": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-07-03",
+        "run_id": 28673973328,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-07-03",
+        "run_id": 28673973328,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-monitor": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428784772,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428784772,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-notifications": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428797714,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428797714,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-osd": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428806612,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428806612,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-panel": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428820321,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428820321,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-player": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428846661,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428846661,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-randr": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34434435978,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34434435978,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-screenshot": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428860620,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428860620,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-session": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-07-03",
+        "run_id": 28684433095,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-07-03",
+        "run_id": 28684433095,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-settings": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-settings-daemon": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428877642,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428877642,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-sound-theme": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428897249,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428897249,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-term": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428913889,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428913889,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-theme-editor": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-07-08",
+        "run_id": 28959570526,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-07-08",
+        "run_id": 28959570526,
+        "status": "ok"
+      }
+    },
+    "version": ""
+  },
+  "cosmic-tweaks": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-07-08",
+        "run_id": 28964285155,
+        "status": "ok"
+      }
+    },
+    "version": "0.2.2"
+  },
+  "cosmic-wallpapers": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-08",
+        "run_id": 28964309095,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-08",
+        "run_id": 28964309095,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428923372,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428923372,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "cosmic-workspaces-epoch": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428960585,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428960585,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "crush": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-22",
+        "run_id": 32541893914,
+        "status": "fail"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32541893914,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-22",
+        "run_id": 32541893914,
+        "status": "fail"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32541893914,
+        "status": "fail"
+      }
+    },
+    "version": "0.90.0"
+  },
+  "cwal": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-09",
+        "run_id": 34358432448,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-09",
+        "run_id": 34358432448,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-09-09",
+        "run_id": 34358432448,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-09",
+        "run_id": 34358432448,
+        "status": "ok"
+      }
+    },
+    "version": "0.10.1"
+  },
+  "dankcalendar": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-09",
+        "run_id": 34372632967,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-09",
+        "run_id": 34372632967,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-09",
+        "run_id": 34372632967,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-09",
+        "run_id": 34372632967,
+        "status": "ok"
+      }
+    },
+    "version": "1.6.1"
+  },
+  "default-cursors": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-10",
+        "run_id": 34434426752,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34434426752,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34434426752,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34434426752,
+        "status": "ok"
+      }
+    },
+    "version": "1"
+  },
+  "desktop-tui": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-05",
+        "run_id": 31050630933,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31050630933,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-05",
+        "run_id": 31050630933,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31050630933,
+        "status": "ok"
+      }
+    },
+    "version": "0.3.2"
+  },
+  "devedeng": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-22",
+        "run_id": 32548092409,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32548092409,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-22",
+        "run_id": 32548092409,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32548092409,
+        "status": "ok"
+      }
+    },
+    "version": "4.22.1"
+  },
+  "distrobox": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-05",
+        "run_id": 31051133430,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31051133430,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-05",
+        "run_id": 31051133430,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31051133430,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.2.5"
+  },
+  "dragonfly-reverb": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-05",
+        "run_id": 31051562621,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31051562621,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-05",
+        "run_id": 31051562621,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31051562621,
+        "status": "ok"
+      }
+    },
+    "version": "3.2.10"
+  },
+  "drako": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-25",
+        "run_id": 32893940104,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-25",
+        "run_id": 32893940104,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-25",
+        "run_id": 32893940104,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-25",
+        "run_id": 32893940104,
+        "status": "ok"
+      }
+    },
+    "version": "0.3.3"
+  },
+  "faugus-launcher": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-05",
+        "run_id": 33988032485,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-05",
+        "run_id": 33988032485,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-05",
+        "run_id": 33988032485,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-05",
+        "run_id": 33988032485,
+        "status": "ok"
+      }
+    },
+    "version": "2.2.2"
+  },
+  "fcitx5-lotus": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-04",
+        "run_id": 33854321813,
+        "status": "fail"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-04",
+        "run_id": 33854321813,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-09-04",
+        "run_id": 33854321813,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-04",
+        "run_id": 33854321813,
+        "status": "ok"
+      }
+    },
+    "version": "3.5.8"
+  },
+  "flyline": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-06",
+        "run_id": 34004858784,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-06",
+        "run_id": 34004858784,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-06",
+        "run_id": 34004858784,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-06",
+        "run_id": 34004858784,
+        "status": "ok"
+      }
+    },
+    "version": "1.7.1"
+  },
+  "forgejo-runner": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-01",
+        "run_id": 33485454243,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-01",
+        "run_id": 33485454243,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-01",
+        "run_id": 33485454243,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-01",
+        "run_id": 33485454243,
+        "status": "ok"
+      }
+    },
+    "version": "13.1.0"
+  },
+  "ftxui": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-07",
+        "run_id": 31133776832,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-07",
+        "run_id": 31133776832,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-07",
+        "run_id": 31133776832,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-07",
+        "run_id": 31133776832,
+        "status": "ok"
+      }
+    },
+    "version": "7.0.3"
+  },
+  "gama": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-05",
+        "run_id": 31053471992,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31053471992,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-05",
+        "run_id": 31053471992,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31053471992,
+        "status": "ok"
+      }
+    },
+    "version": "1.2.1"
+  },
+  "gh-dash": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-05",
+        "run_id": 31054372001,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31054372001,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-05",
+        "run_id": 31054372001,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31054372001,
+        "status": "ok"
+      }
+    },
+    "version": "4.25.2"
+  },
+  "gh-lazy": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31129019194,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31129019194,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31129019194,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31129019194,
+        "status": "ok"
+      }
+    },
+    "version": "0.6.6"
+  },
+  "ghgrab": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-17",
+        "run_id": 32008206676,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-17",
+        "run_id": 32008206676,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-17",
+        "run_id": 32008206676,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-17",
+        "run_id": 32008206676,
+        "status": "ok"
+      }
+    },
+    "version": "2.0.2"
+  },
+  "glaze": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-28",
+        "run_id": 33166775092,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-28",
+        "run_id": 33166775092,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-28",
+        "run_id": 33166775092,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-28",
+        "run_id": 33166775092,
+        "status": "ok"
+      }
+    },
+    "version": "8.3.0"
+  },
+  "gofer": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-28",
+        "run_id": 33210497767,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-28",
+        "run_id": 33210497767,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-28",
+        "run_id": 33210497767,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-28",
+        "run_id": 33210497767,
+        "status": "ok"
+      }
+    },
+    "version": "0.5.1"
+  },
+  "gradle": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-15",
+        "run_id": 31854663050,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-15",
+        "run_id": 31854663050,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-15",
+        "run_id": 31854663050,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-15",
+        "run_id": 31854663050,
+        "status": "ok"
+      }
+    },
+    "version": "9.7.0"
+  },
+  "graphite-gtk-theme-all": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31077328663,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31077328663,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31077328663,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31077328663,
+        "status": "ok"
+      }
+    },
+    "version": "2025.07.06"
+  },
+  "graphite-gtk-theme-compact-all": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31081919550,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31081919550,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31081919550,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31081919550,
+        "status": "ok"
+      }
+    },
+    "version": "2025.07.06"
+  },
+  "gum-panel": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-21",
+        "run_id": 32533946022,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-21",
+        "run_id": 32533946022,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-21",
+        "run_id": 32533946022,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-21",
+        "run_id": 32533946022,
+        "status": "ok"
+      }
+    },
+    "version": "2.0.0.001"
+  },
+  "helium-browser-bin": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-08",
+        "run_id": 34287372928,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-25",
+        "run_id": 32837630220,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-08",
+        "run_id": 34287372928,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-25",
+        "run_id": 32837630220,
+        "status": "skip"
+      }
+    },
+    "version": "0.16.6.1"
+  },
+  "hister": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-04",
+        "run_id": 33862500692,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-04",
+        "run_id": 33862500692,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-04",
+        "run_id": 33862500692,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-04",
+        "run_id": 33862500692,
+        "status": "ok"
+      }
+    },
+    "version": "0.19.0"
+  },
+  "hyprdynamicmonitors": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-22",
+        "run_id": 32546718482,
+        "status": "fail"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32546718482,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-22",
+        "run_id": 32546718482,
+        "status": "fail"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32546718482,
+        "status": "fail"
+      }
+    },
+    "version": "1.4.0"
+  },
+  "hyprmoncfg": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-22",
+        "run_id": 32547176181,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32547176181,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-22",
+        "run_id": 32547176181,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32547176181,
+        "status": "ok"
+      }
+    },
+    "version": "1.14.2"
+  },
+  "kairo": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-05",
+        "run_id": 31056045040,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31056045040,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-05",
+        "run_id": 31056045040,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31056045040,
+        "status": "ok"
+      }
+    },
+    "version": "1.7.3"
+  },
+  "kando": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-09",
+        "run_id": 34307449867,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-09-09",
+        "run_id": 34307449867,
+        "status": "ok"
+      }
+    },
+    "version": "2.3.1"
+  },
+  "kew": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-04",
+        "run_id": 30961788355,
+        "status": "fail"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-04",
+        "run_id": 30961788355,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-04",
+        "run_id": 30961788355,
+        "status": "fail"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-04",
+        "run_id": 30961788355,
+        "status": "fail"
+      }
+    },
+    "version": ""
+  },
+  "kmscon": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-06",
+        "run_id": 34000695728,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-06",
+        "run_id": 34000695728,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-06",
+        "run_id": 34000695728,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-06",
+        "run_id": 34000695728,
+        "status": "ok"
+      }
+    },
+    "version": "10.0.3"
+  },
+  "lazyrsync": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-15",
+        "run_id": 31875083533,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-15",
+        "run_id": 31875083533,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-15",
+        "run_id": 31875083533,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-15",
+        "run_id": 31875083533,
+        "status": "ok"
+      }
+    },
+    "version": "0.3.0"
+  },
+  "lgogdownloader": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-28",
+        "run_id": 33210420793,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-28",
+        "run_id": 33210420793,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-28",
+        "run_id": 33210420793,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-28",
+        "run_id": 33210420793,
+        "status": "ok"
+      }
+    },
+    "version": "3.18"
+  },
+  "librewolf-bin": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-09",
+        "run_id": 34298159664,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-09",
+        "run_id": 34298159664,
+        "status": "ok"
+      }
+    },
+    "version": "155.0.1.1"
+  },
+  "libtsm": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-06",
+        "run_id": 34000695728,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-06",
+        "run_id": 34000695728,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-06",
+        "run_id": 34000695728,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-06",
+        "run_id": 34000695728,
+        "status": "ok"
+      }
+    },
+    "version": "4.7.1"
+  },
+  "linuxcommandlibrary": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-15",
+        "run_id": 31864794409,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-15",
+        "run_id": 31864794409,
+        "status": "ok"
+      }
+    },
+    "version": "4.5.0"
+  },
+  "llama.cpp": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-22",
+        "run_id": 32541800300,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32541800300,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-22",
+        "run_id": 32541800300,
+        "status": "fail"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32541800300,
+        "status": "fail"
+      }
+    },
+    "version": "10568"
+  },
+  "llmfit": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-05",
+        "run_id": 33988217276,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-05",
+        "run_id": 33988217276,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-05",
+        "run_id": 33988217276,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-05",
+        "run_id": 33988217276,
+        "status": "ok"
+      }
+    },
+    "version": "1.1.14"
+  },
+  "lunasvg": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-13",
+        "run_id": 31753011465,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-13",
+        "run_id": 31753011465,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-13",
+        "run_id": 31753011465,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-13",
+        "run_id": 31753011465,
+        "status": "ok"
+      }
+    },
+    "version": "3.5.0"
+  },
+  "lycan": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-08-14",
+        "run_id": 31845697273,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-14",
+        "run_id": 31845697273,
+        "status": "ok"
+      }
+    },
+    "version": "0.1.2"
+  },
+  "menu-themes": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-05",
+        "run_id": 31057950871,
+        "status": "fail"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31057950871,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-05",
+        "run_id": 31057950871,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31057950871,
+        "status": "fail"
+      }
+    },
+    "version": "0.8.0"
+  },
+  "nebula-gtk": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-16",
+        "run_id": 31924899710,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-16",
+        "run_id": 31924899710,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-16",
+        "run_id": 31924899710,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-16",
+        "run_id": 31924899710,
+        "status": "ok"
+      }
+    },
+    "version": "1.3.7"
+  },
+  "nvchecker": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-22",
+        "run_id": 32541579783,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32541579783,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-22",
+        "run_id": 32541579783,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32541579783,
+        "status": "ok"
+      }
+    },
+    "version": "2.22"
+  },
+  "nwg-bar": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      }
+    },
+    "version": "0.1.6"
+  },
+  "nwg-displays": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-26",
+        "run_id": 32960837019,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-26",
+        "run_id": 32960837019,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-26",
+        "run_id": 32960837019,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-26",
+        "run_id": 32960837019,
+        "status": "ok"
+      }
+    },
+    "version": "0.4.4"
+  },
+  "nwg-dock-hyprland": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      }
+    },
+    "version": "0.4.11"
+  },
+  "nwg-panel": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      }
+    },
+    "version": "0.10.15"
+  },
+  "nwg-shell": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-26",
+        "run_id": 32961703884,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-26",
+        "run_id": 32961703884,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-26",
+        "run_id": 32961703884,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-26",
+        "run_id": 32961703884,
+        "status": "ok"
+      }
+    },
+    "version": "0.5.50"
+  },
+  "nwg-shell-config": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-05",
+        "run_id": 31011820913,
+        "status": "ok"
+      }
+    },
+    "version": "0.5.65"
+  },
+  "omniroute": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-06-14",
+        "run_id": 27488023509,
+        "status": "fail"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-06-14",
+        "run_id": 27488023509,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-06-14",
+        "run_id": 27488023509,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-06-14",
+        "run_id": 27488023509,
+        "status": "fail"
+      }
+    },
+    "version": "3.8.24"
+  },
+  "opencode": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-09",
+        "run_id": 34316835470,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31060293871,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-09",
+        "run_id": 34316835470,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31060293871,
+        "status": "skip"
+      }
+    },
+    "version": "1.18.30"
+  },
+  "pinguintv-installer": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-06-19",
+        "run_id": 27844382705,
+        "status": "ok"
+      }
+    },
+    "version": ""
+  },
+  "pinguintv-installer-git": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31061281305,
+        "status": "ok"
+      }
+    },
+    "version": "0.0.0"
+  },
+  "pop-launcher": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34434395876,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34434395876,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "proxelar": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-13",
+        "run_id": 31653257098,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-13",
+        "run_id": 31653257098,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-13",
+        "run_id": 31653257098,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-13",
+        "run_id": 31653257098,
+        "status": "ok"
+      }
+    },
+    "version": "0.5.1"
+  },
+  "python3-structlog": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-09",
+        "run_id": 31291129028,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-09",
+        "run_id": 31291129028,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-09",
+        "run_id": 31291129028,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-09",
+        "run_id": 31291129028,
+        "status": "ok"
+      }
+    },
+    "version": "26.1.0"
+  },
+  "qrunsvmgr": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-15",
+        "run_id": 31872217404,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-15",
+        "run_id": 31872217404,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-15",
+        "run_id": 31872217404,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-15",
+        "run_id": 31872217404,
+        "status": "ok"
+      }
+    },
+    "version": "0.2.5"
+  },
+  "quickemu": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31061541051,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31061541051,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31061541051,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31061541051,
+        "status": "ok"
+      }
+    },
+    "version": "4.9.9"
+  },
+  "quickosdl": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31061541051,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31061541051,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31061541051,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31061541051,
+        "status": "ok"
+      }
+    },
+    "version": "0.3.2"
+  },
+  "quickshell+": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-22",
+        "run_id": 32562311819,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32562311819,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-22",
+        "run_id": 32562311819,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-22",
+        "run_id": 32562311819,
+        "status": "ok"
+      }
+    },
+    "version": "0.3.1"
+  },
+  "radicle": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31062331555,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31062331555,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31062331555,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31062331555,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "raysession": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31063545332,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31063545332,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31063545332,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31063545332,
+        "status": "ok"
+      }
+    },
+    "version": "0.18.0"
+  },
+  "rebos": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-06",
+        "run_id": 34051058303,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-06",
+        "run_id": 34051058303,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-06",
+        "run_id": 34051058303,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-06",
+        "run_id": 34051058303,
+        "status": "ok"
+      }
+    },
+    "version": "3.5.2"
+  },
+  "rgc": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31064130903,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31064130903,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31064130903,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31064130903,
+        "status": "ok"
+      }
+    },
+    "version": "1.2.0"
+  },
+  "river-compositor": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-06",
+        "run_id": 34049764974,
+        "status": "fail"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-06",
+        "run_id": 34049764974,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-09-06",
+        "run_id": 34049764974,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-06",
+        "run_id": 34049764974,
+        "status": "ok"
+      }
+    },
+    "version": "0.4.8"
+  },
+  "runkit": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-16",
+        "run_id": 31924913048,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-16",
+        "run_id": 31924913048,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-16",
+        "run_id": 31924913048,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-16",
+        "run_id": 31924913048,
+        "status": "ok"
+      }
+    },
+    "version": "1.4.0"
+  },
+  "rustdesk": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-06-15",
+        "run_id": 27561733048,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-06-15",
+        "run_id": 27561733048,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-07-01",
+        "run_id": 28537315192,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28537315192,
+        "status": "fail"
+      }
+    },
+    "version": "1.4.9"
+  },
+  "seamonkey-bin": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31127305333,
+        "status": "ok"
+      }
+    },
+    "version": "2.53.24"
+  },
+  "sfizz-git": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31074232457,
+        "status": "fail"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31074232457,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31074232457,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31074232457,
+        "status": "ok"
+      }
+    },
+    "version": "1.2.3"
+  },
+  "shattered-pixel-dungeon": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-09",
+        "run_id": 34396576217,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-09",
+        "run_id": 34396576217,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-09-09",
+        "run_id": 34396576217,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-09",
+        "run_id": 34396576217,
+        "status": "fail"
+      }
+    },
+    "version": "4.0.0"
+  },
+  "simplex-chat": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-09",
+        "run_id": 31286208259,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-09",
+        "run_id": 31286208259,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-09",
+        "run_id": 31286208259,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-09",
+        "run_id": 31286208259,
+        "status": "ok"
+      }
+    },
+    "version": "7.0.0"
+  },
+  "surge-xt": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31074214661,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31074214661,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31074214661,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31074214661,
+        "status": "ok"
+      }
+    },
+    "version": "1.3.4"
+  },
+  "svi": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31065194979,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31065194979,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31065194979,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31065194979,
+        "status": "ok"
+      }
+    },
+    "version": "0.2.2"
+  },
+  "tdf": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31065892772,
+        "status": "fail"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31065892772,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31065892772,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31065892772,
+        "status": "ok"
+      }
+    },
+    "version": "0.5.0"
+  },
+  "tls-client": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31066153508,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31066153508,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31066153508,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31066153508,
+        "status": "ok"
+      }
+    },
+    "version": "1.15.1"
+  },
+  "tufw": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31065594887,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31065594887,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31065594887,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31065594887,
+        "status": "ok"
+      }
+    },
+    "version": "0.2.8"
+  },
+  "tuios": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-07",
+        "run_id": 34116131850,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-07",
+        "run_id": 34116131850,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-07",
+        "run_id": 34116131850,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-07",
+        "run_id": 34116131850,
+        "status": "ok"
+      }
+    },
+    "version": "0.7.0"
+  },
+  "tuisic": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31065506428,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31065506428,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31065506428,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31065506428,
+        "status": "ok"
+      }
+    },
+    "version": "2.5.2"
+  },
+  "typobuster": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31066955462,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31066955462,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31066955462,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31066955462,
+        "status": "ok"
+      }
+    },
+    "version": "1.0.0"
+  },
+  "undelete-btrfs": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31068608970,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31068608970,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31068608970,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31068608970,
+        "status": "ok"
+      }
+    },
+    "version": "1.0"
+  },
+  "vbm": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31084353246,
+        "status": "fail"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31084353246,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31084353246,
+        "status": "fail"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31084353246,
+        "status": "fail"
+      }
+    },
+    "version": "1.0.2"
+  },
+  "vibepanel": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-06",
+        "run_id": 34046615244,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-06",
+        "run_id": 34046615244,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-06",
+        "run_id": 34046615244,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-06",
+        "run_id": 34046615244,
+        "status": "ok"
+      }
+    },
+    "version": "0.16.1"
+  },
+  "vm-curator": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-17",
+        "run_id": 31983802896,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-17",
+        "run_id": 31983802896,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-17",
+        "run_id": 31983802896,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-17",
+        "run_id": 31983802896,
+        "status": "ok"
+      }
+    },
+    "version": "1.4.0"
+  },
+  "void-hardwaremanager-git": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31061986326,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31061986326,
+        "status": "ok"
+      }
+    },
+    "version": "0.0.0"
+  },
+  "void-live-creator-git": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31070925394,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31070925394,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31070925394,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31070925394,
+        "status": "ok"
+      }
+    },
+    "version": "0.0.0"
+  },
+  "void-software-store": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-06-14",
+        "run_id": 27487508924,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-06-14",
+        "run_id": 27487508924,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-06-14",
+        "run_id": 27487508924,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-06-14",
+        "run_id": 27487508924,
+        "status": "ok"
+      }
+    },
+    "version": "1.9.4.02"
+  },
+  "void-software-store-git": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31070925394,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31070925394,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31070925394,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31070925394,
+        "status": "ok"
+      }
+    },
+    "version": "999"
+  },
+  "void-src-builder-git": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31071408380,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31071408380,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31071408380,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31071408380,
+        "status": "ok"
+      }
+    },
+    "version": "0.0.0"
+  },
+  "void-user-manager-git": {
+    "arches": {
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31071177363,
+        "status": "ok"
+      }
+    },
+    "version": "0.0.0"
+  },
+  "vote": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31071543255,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31071543255,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31071543255,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31071543255,
+        "status": "ok"
+      }
+    },
+    "version": "0.92"
+  },
+  "vtm": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-13",
+        "run_id": 31659304324,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-13",
+        "run_id": 31659304324,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-13",
+        "run_id": 31659304324,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-13",
+        "run_id": 31659304324,
+        "status": "ok"
+      }
+    },
+    "version": "2026.07.30"
+  },
+  "waterfox-bin": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-10",
+        "run_id": 34425981636,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34425981636,
+        "status": "ok"
+      }
+    },
+    "version": "6.7.2"
+  },
+  "wpgtk": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31071774648,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31071774648,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31071774648,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31071774648,
+        "status": "ok"
+      }
+    },
+    "version": "6.7.1"
+  },
+  "xdg-desktop-portal-cosmic": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-07-01",
+        "run_id": 28535755721,
+        "status": "skip"
+      },
+      "x86_64": {
+        "run_date": "2026-09-10",
+        "run_id": 34428630431,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-10",
+        "run_id": 34428630431,
+        "status": "ok"
+      }
+    },
+    "version": "1.8.0"
+  },
+  "xut": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-09",
+        "run_id": 31290589621,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-09",
+        "run_id": 31290589621,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-08-09",
+        "run_id": 31290589621,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-09",
+        "run_id": 31290589621,
+        "status": "ok"
+      }
+    },
+    "version": "0.4.2"
+  },
+  "xxtools-git": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-06",
+        "run_id": 34003699024,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-09-06",
+        "run_id": 34003699024,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-06",
+        "run_id": 34003699024,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-09-06",
+        "run_id": 34003699024,
+        "status": "ok"
+      }
+    },
+    "version": "0.0.0"
+  },
+  "zen-browser-bin": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-09-05",
+        "run_id": 33988529835,
+        "status": "ok"
+      },
+      "x86_64": {
+        "run_date": "2026-09-05",
+        "run_id": 33988529835,
+        "status": "ok"
+      }
+    },
+    "version": "1.22b"
+  },
+  "zig": {
+    "arches": {
+      "aarch64": {
+        "run_date": "2026-08-06",
+        "run_id": 31077263553,
+        "status": "ok"
+      },
+      "aarch64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31077263553,
+        "status": "fail"
+      },
+      "x86_64": {
+        "run_date": "2026-08-06",
+        "run_id": 31077263553,
+        "status": "ok"
+      },
+      "x86_64-musl": {
+        "run_date": "2026-08-06",
+        "run_id": 31077263553,
+        "status": "ok"
+      }
+    },
+    "version": "0.16.0"
+  }
+}
