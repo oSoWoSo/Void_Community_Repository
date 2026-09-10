@@ -84,26 +84,27 @@ _re() {
 usage() {
 	prog=${0##*/}
 	cat <<-EOF
-	Usage: $prog -h | -u | -w | -m | -p | -s | -a | -c | -i | -o | -l
-	       $prog {update|build|main|upload|serve|archs|check-upstream|init|add-oco|shlibs|help}
+	Usage: $prog -h | -u | -w | -m | -p | -s | -a | -c | -i | -o | -l | -t
+	       $prog {update|build|main|upload|serve|archs|check-upstream|init|add-oco|shlibs|test|help}
 
 	Manage the OCO repository.
 
 	Options
-	  -i, --init       Clone void-packages + OCO to CLONE_DEST, apply shlibs
-	  -o, --add-oco    Add OCO remote + branch to an existing void-packages checkout
-	  to-void <pkg...> Copy template(s) from OCO to master, commit "New package: name-ver"
-	  to-oco  <pkg...> Copy template(s) from master to OCO, commit "name ver"
-	  -u, --update     Update list, README, and build.yml
+	  -h, --help           Print this message
+	  -i, --init           Clone void-packages + OCO to CLONE_DEST, apply shlibs
+	  -o, --add-oco        Add OCO remote + branch to an existing void-packages checkout
+	  to-void <pkg...>     Copy template(s) from OCO to master, commit "New package: name-ver"
+	  to-oco <pkg...>      Copy template(s) from master to OCO, commit "name ver"
+	  -u, --update         Update list, README, and build.yml
 
-	  -l, --shlibs     Apply shlibs patches to an existing checkout
-	  -a, --archs      Regenerate architecture pages only (single arch if ARCH is set)
-	  -m, --main       Regenerate main index page only (no arch pages; requires pandoc)
-	  -c, --check      Check upstream Void Linux for newer versions and additions
-	  -w, --build      Regenerate website (requires pandoc)
-	  -s, --serve      Serve website locally on port 8000
-	  -p, --upload     Upload built packages to WebDAV repository
-	  -h, --help       Print this message
+	  -l, --shlibs         Apply shlibs patches to an existing checkout
+	  -a, --archs          Regenerate architecture pages only (single arch if ARCH is set)
+	  -m, --main           Regenerate main index page only (no arch pages; requires pandoc)
+	  -c, --check          Check upstream Void Linux for newer versions and additions
+	  -w, --build          Regenerate website (requires pandoc)
+	  -s, --serve          Serve website locally on port 8000
+	  -p, --upload         Upload built packages to WebDAV repository
+	  -t, --test <pkg...>  Without <pkg> gum menu to choose, then trigger GitHub CI build
 
 	Compound: $prog -uw   (update + build)
 
@@ -988,6 +989,95 @@ do_shlibs() {
 	[ -f "$SHLIBS_APPEND" ] && _shlibs_append "$SHLIBS_FILE" "$SHLIBS_APPEND"
 }
 
+# --- Test in CI ---
+
+_all_templates() {
+	find "${SCRIPT_DIR}/${SRCPKGS}" -maxdepth 1 -mindepth 1 -type d -printf '%f\n' 2>/dev/null | sort -f
+}
+
+_gh_repo_slug() {
+	_url=$(git -C "$SCRIPT_DIR" remote get-url gh 2>/dev/null || printf '%s' "$CI_URL")
+	_slug=${_url#*github.com/}
+	_slug=${_slug#*:}
+	_slug=${_slug%.git}
+	_slug=${_slug%/}
+	printf '%s' "$_slug"
+}
+
+do_test() {
+	command -v gh >/dev/null 2>&1 || fatal 'gh CLI is required: https://cli.github.com/'
+
+	_repo=$(_gh_repo_slug)
+	[ -n "$_repo" ] || fatal 'could not determine GitHub repository (add the "gh" git remote)'
+	_ref="${TEST_REF:-$(git -C "$SCRIPT_DIR" rev-parse --abbrev-ref HEAD 2>/dev/null || echo OCO)}"
+
+	_runner='auto'
+	_pkgs=''
+
+	if [ $# -gt 0 ]; then
+		for _p in "$@"; do
+			[ -d "${SCRIPT_DIR}/${SRCPKGS}/${_p}" ] || fatal "template not found: ${_p}"
+		done
+		_pkgs="$*"
+	else
+		command -v gum >/dev/null 2>&1 \
+			|| fatal 'gum is required for the interactive picker: https://github.com/charmbracelet/gum'
+
+		_mode=$(printf '%s\n' 'Single template' 'Multiple templates' \
+			| gum filter --reverse --limit 1 --header 'Selection mode?') \
+			|| { _y 'Aborted'; return 1; }
+
+		_runner=$(printf '%s\n' auto amd64 arm64 nativ \
+			| gum filter --reverse --limit 1 --header 'Runner?' --selected auto) \
+			|| { _y 'Aborted'; return 1; }
+
+		_tpls=$(_all_templates)
+		[ -n "$_tpls" ] || fatal 'no templates found in srcpkgs'
+
+		case "$_mode" in
+			'Multiple templates')
+				_pkgs=$(printf '%s\n' "$_tpls" \
+					| gum filter --reverse --no-limit --height 15 \
+						--header 'Select templates (type to filter, Tab toggles, Enter confirms)') \
+					|| { _y 'Aborted'; return 1; }
+				;;
+			*)
+				_pkgs=$(printf '%s\n' "$_tpls" \
+					| gum filter --reverse --limit 1 --header 'Select a template') \
+					|| { _y 'Aborted'; return 1; }
+				;;
+		esac
+
+		_pkgs=$(printf '%s\n' "$_pkgs" | grep -v '^$' | tr '\n' ' ' | sed 's/ $//')
+		[ -n "$_pkgs" ] || { _r 'No templates selected; aborting'; return 1; }
+	fi
+
+	echo ''
+	_b '==> Dispatching CI build on GitHub'
+	echo "  Repository: $_repo"
+	echo "  Branch:     $_ref"
+	[ "$_runner" != 'auto' ] && echo "  Runner:     $_runner"
+	echo "  Templates:  $_pkgs"
+	echo ''
+
+	if [ "$_runner" = 'auto' ]; then
+		gh workflow run build.yml --repo "$_repo" --ref "$_ref" -f "templates=$_pkgs"
+	else
+		gh workflow run build.yml --repo "$_repo" --ref "$_ref" -f "runner=$_runner" -f "templates=$_pkgs"
+	fi
+	[ $? -eq 0 ] || fatal 'failed to dispatch workflow (check gh auth / permissions)'
+
+	_run_id=$(gh run list --workflow=build.yml --branch "$_ref" --limit 1 \
+		--json databaseId --jq '.[0].databaseId' 2>/dev/null || true)
+	_g '==> CI build dispatched'
+	if [ -n "$_run_id" ]; then
+		_y "    Run:     https://github.com/${_repo}/actions/runs/${_run_id}"
+		echo "    Watch:   gh run watch $_run_id --repo $_repo"
+	else
+		echo '    See:   gh run list --workflow build.yml'
+	fi
+}
+
 # --- Main ---
 
 main() {
@@ -1005,12 +1095,13 @@ main() {
 		to-void)              shift; do_to_void "$@"; return 0 ;;
 		to-oco)               shift; do_to_oco  "$@"; return 0 ;;
 		shlibs)               set -- -l ;;
+		test)                 shift; set -- -t "$@" ;;
 	esac
 
 	_opt='' OPTIND=1 OPTARG=''
 	_do_update='' _do_packages='' _do_web='' _do_main='' _do_archs='' _do_check=''
-	_do_init='' _do_add_oco='' _do_shlibs=''
-	while getopts 'huwmpsaciol' _opt; do
+	_do_init='' _do_add_oco='' _do_shlibs='' _do_test=''
+	while getopts 'huwmpsaciolt' _opt; do
 		case "$_opt" in
 			h) usage; return 0 ;;
 			u) _do_update=1 ;;
@@ -1023,15 +1114,23 @@ main() {
 			i) _do_init=1 ;;
 			o) _do_add_oco=1 ;;
 			l) _do_shlibs=1 ;;
+			t) _do_test=1 ;;
 			*) usage >&2; return 1 ;;
 		esac
 	done
 
-	[ -n "$_do_update$_do_packages$_do_web$_do_main$_do_archs$_do_check$_do_init$_do_add_oco$_do_shlibs" ] ||
+	[ -n "$_do_update$_do_packages$_do_web$_do_main$_do_archs$_do_check$_do_init$_do_add_oco$_do_shlibs$_do_test" ] ||
 		{ usage >&2; return 1; }
 
-	if [ "$_do_update" = 1 ] || [ "$_do_web" = 1 ] || [ "$_do_main" = 1 ] || [ "$_do_check" = 1 ]; then
+	if [ "$_do_update" = 1 ] || [ "$_do_web" = 1 ] || [ "$_do_main" = 1 ] || [ "$_do_check" = 1 ] \
+			|| [ "$_do_test" = 1 ]; then
 		[ -d "$SRCPKGS" ] || fatal "srcpkgs directory not found: ${SRCPKGS}"
+	fi
+
+	if [ "$_do_test" = 1 ]; then
+		shift $((OPTIND - 1))
+		do_test "$@"
+		return $?
 	fi
 
 	if [ "$_do_init" = 1 ]; then
