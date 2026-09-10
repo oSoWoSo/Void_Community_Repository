@@ -44,7 +44,7 @@ assert_rc() {
 	fi
 }
 
-. "$SCRIPT_DIR/.github/pkg-helpers.sh"
+. "$SCRIPT_DIR/src/pkg-helpers.sh"
 
 eval "$(awk '
 	/^pkg_name\(\)/        {p=1}
@@ -253,7 +253,7 @@ open("index.plist","wb").write(plistlib.dumps({
 }, fmt=plistlib.FMT_XML))
 '
 		tar -cf x86_64-repodata index.plist
-		python3 "$SCRIPT_DIR/.github/repodata-list.py" x86_64-repodata | sort | tr '\n' ','
+		python3 "$SCRIPT_DIR/src/repodata-list.py" x86_64-repodata | sort | tr '\n' ','
 	) > "$_wd/out"
 	it 'lists all package names'
 	assert_eq "$(cat "$_wd/out")" 'alpha,alpha-devel,zeta,'
@@ -262,16 +262,16 @@ open("index.plist","wb").write(plistlib.dumps({
 		cd "$_wd" || exit 1
 		python3 -c 'import plistlib; open("index.plist","wb").write(plistlib.dumps({}, fmt=plistlib.FMT_XML))'
 		tar -cf empty-repodata index.plist
-		python3 "$SCRIPT_DIR/.github/repodata-list.py" empty-repodata
+		python3 "$SCRIPT_DIR/src/repodata-list.py" empty-repodata
 	) > "$_wd/out"; _rc=$?
 	it 'empty index: rc 0';        assert_rc "$_rc" 0
 	it 'empty index: no output';   assert_eq "$(cat "$_wd/out")" ''
 
-	python3 "$SCRIPT_DIR/.github/repodata-list.py" >/dev/null 2>&1; _rc=$?
+	python3 "$SCRIPT_DIR/src/repodata-list.py" >/dev/null 2>&1; _rc=$?
 	it 'missing arg: rc 2';        assert_rc "$_rc" 2
 
 	echo bogus > "$_wd/garbage"
-	python3 "$SCRIPT_DIR/.github/repodata-list.py" "$_wd/garbage" >/dev/null 2>&1; _rc=$?
+	python3 "$SCRIPT_DIR/src/repodata-list.py" "$_wd/garbage" >/dev/null 2>&1; _rc=$?
 	it 'garbage input: rc 1';      assert_rc "$_rc" 1
 
 	if command -v zstd >/dev/null 2>&1; then
@@ -285,14 +285,14 @@ open("index.plist","wb").write(plistlib.dumps({
 '
 			tar -cf zst.tar index.plist
 			zstd -q -o zst-repodata zst.tar
-			python3 "$SCRIPT_DIR/.github/repodata-list.py" zst-repodata | sort | tr '\n' ','
+			python3 "$SCRIPT_DIR/src/repodata-list.py" zst-repodata | sort | tr '\n' ','
 		) > "$_wd/out"
 		it 'zstd input: lists all entries'
 		assert_eq "$(cat "$_wd/out")" 'zst-a,zst-b,'
 
 		(
 			cd "$_wd" || exit 1
-			python3 "$SCRIPT_DIR/.github/repodata-strip.py" zst-repodata zst-a >/dev/null
+			python3 "$SCRIPT_DIR/src/repodata-strip.py" zst-repodata zst-a >/dev/null
 			head -c 4 zst-repodata | od -An -tx1 | tr -d ' \n'
 		) > "$_wd/out"
 		it 'zstd strip: output is still zstd'
@@ -300,7 +300,7 @@ open("index.plist","wb").write(plistlib.dumps({
 
 		(
 			cd "$_wd" || exit 1
-			python3 "$SCRIPT_DIR/.github/repodata-list.py" zst-repodata | tr '\n' ','
+			python3 "$SCRIPT_DIR/src/repodata-list.py" zst-repodata | tr '\n' ','
 		) > "$_wd/out"
 		it 'zstd strip: surviving entry is correct'
 		assert_eq "$(cat "$_wd/out")" 'zst-b,'
@@ -329,7 +329,7 @@ with open("index.plist", "wb") as f:
     }, fmt=plistlib.FMT_XML))
 '
 		tar -cf x86_64-repodata index.plist
-		python3 "$SCRIPT_DIR/.github/repodata-strip.py" \
+		python3 "$SCRIPT_DIR/src/repodata-strip.py" \
 			x86_64-repodata beta nope >/dev/null
 		tar -xOf x86_64-repodata index.plist | python3 -c '
 import sys, plistlib
